@@ -1,0 +1,457 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+body {
+    
+    overflow: hidden;
+}
+/*---加载动画---*/
+div#content {
+    background-image: url(../images/paper-backgroundBlack.png);
+    visibility: hidden;
+  }
+div#loader {
+    display: flex;
+    width: 100%vw;
+    height:100%vh;
+    background-color: rgba(31, 29, 29, 0.692);
+    transition: opacity 0.5s ease-out;
+  }
+.loading-disappear {
+    display: none;
+  }
+div#Tsutsu {
+    position: absolute;
+    border: 4px rgba(3, 14, 44, 0.856) double;
+    border-radius:6% 92% 8% 66% / 6% 66% 8% 91%  ;
+    left: calc(78% - 28.125px);
+    top: 71%;
+    width: 56.25px;/*150,3/8*/
+    height: auto;
+    aspect-ratio: 5/2.6;
+    background-color: rgba(255, 38, 0, 0.747);
+    box-shadow: 13px 13px 20px 13px rgba(0, 28, 54, 0.76),
+    inset 5px 15px 36px -3px #ffe600a4;
+    filter: url(#mosaic);
+    anchor-name: --my-anchor;
+}
+div#tsutsuShadow{
+    position: absolute;
+    border: 4px rgba(3, 14, 44, 0.856) double;
+    position-anchor: --my-anchor;
+    left: anchor(left);
+    left: calc(84% - 33.75px);
+    top: 70%;
+    width: 67.5px;/*180,5/6*/
+    height: auto;
+    aspect-ratio: 5/2.6;
+    border-radius:6% 92% 8% 66% / 6% 66% 8% 91%  ;
+    transform: scale(-1, 1);
+    background-color: rgb(146, 187, 0);
+    opacity: 0.2;
+}
+div#loaderNumber {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    background-image:linear-gradient(to top,rgb(0,0,0),#b0b184 90%) ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: lighter;
+    
+    text-shadow: 2px 2px 3000px rgba(0, 0, 0, 0.9);
+}
+
+canvas {
+    position: fixed;
+    width: 200%;
+    height: 200%;}
+
+
+
+.header{
+    display: flex;
+    position: relative;
+    top: -40px;/* 调整这个值以控制超出部分的高度 */
+    left: 0.5%; /* 定位在页面中线 */
+    width: 50%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    
+    color: #edeedda1;
+    cursor: pointer;
+    margin: 0 auto; /* 水平居中 */
+    user-select: none; /* 通用的不可选中设置 */
+    margin-bottom: 10%;
+    z-index: 1;
+}
+
+.hello{
+    display: inline-block;
+font-size: 500px;
+    font-weight: 900;  
+    font-family: "ZCOOL XiaoWei", sans-serif;
+    width:80%vw;
+    text-shadow: 2px 2px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+
+audio{
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 200px;
+    z-index: 2;
+}
+
+.grid-container {  
+    display: grid;  
+    grid-template-columns: repeat(1, 1fr); /* 单列布局，因为每个grid-item内部会处理列 */  
+    grid-template-rows: repeat(5, 1fr);
+    gap:260px; /* 网格项之间的间隙 */
+    padding: 0;
+    margin: 0 auto;
+  }  
+    
+  .grid-item {  
+    display: grid;  
+    grid-template-columns:  20% 1fr 40% 1fr 20%; /* 左联、图片、右联三列 */  
+    align-items: end;  
+   justify-content: center;
+    gap: -10px; /* 内部列之间的间隙 */  
+    padding: 0;
+    margin: 0;
+    align-self: end;
+  }  
+   .grid-item2{
+    display: grid;  
+    grid-template-columns: 1fr 20% 1fr 40% 1fr 20% 1fr; /* 左联、图片、右联三列 */  
+    align-items: end;  
+    gap: 10px; /* 内部列之间的间隙 */  
+    padding: 0;
+    margin: 0;
+    align-self: end;
+   } 
+   .grid-item3{
+    display: grid;
+    grid-template-columns:  1fr 40% 1fr; /* 左联、图片、右联三列 */  
+    align-items: end;  
+    gap: -10px; /* 内部列之间的间隙 */  
+    padding: 0;
+    margin: 0;
+    
+   } 
+
+img.photo{
+    width: 400px; /* 使得图片宽度填满中间列 */  
+    height: auto; /* 保持图片原有宽高比 */
+    border: #e6ce4c 3px solid; 
+    display: block; /* 移除图片下方的默认间隙 */
+    margin: 0 auto; /* 图片居中 */
+    box-shadow: #2e0328 0px 0px 10px;
+    anchor-name:img-anchor;
+}
+img.glass:hover{
+    width:1000px;
+    image-rendering: pixelated;
+}
+    
+  .couplet-left, .couplet-right,.couplet2-left,.couplet2-right,.couplet3-left,.couplet3-right {  
+    text-align: center; /* 对联字居中 */
+    writing-mode: vertical-rl; 
+    place-self: center; /* 居中对齐 */
+    padding: 0;
+    margin: 0;
+    background-color: #b3b8b7;
+    font-family: "shanziguaziti";
+    font-weight: lighter;
+    overflow: visible;
+  }  
+  .couplet-left, .couplet-right{
+    font-size: 80px;
+    letter-spacing: 8px;
+  }
+  .couplet2-left,.couplet2-right,.couplet3-left,.couplet3-right{
+    font-size: 50px;
+
+  }
+  .grid-container p{
+    color: #100418;
+  }
+
+  /*对话效果*/
+  .dialog {  
+    grid-column: 3 / -3; /* 对话内容跨越所有列 */
+    position-anchor: img-anchor;
+    left:anchor(left);
+    margin-top: 50px; /* 与上方内容之间的间距 */  
+    font-family:"TekitouPoem_SemiBold";
+    font-size: 24px;
+    text-align: center; /* 对话内容居中 */
+    margin: 0, auto; /* 对话内容居中 */
+    padding: 50px;
+    color: #131014;
+    min-width:max-content;
+    
+    background-color: #f7f7f78c;
+    backdrop-filter: blur(10px);
+    border-radius: 11px;
+    /* 投影 */
+    box-shadow: 20px 20px 30px rgba(229, 232, 235, 0.288);
+    /* 动画效果 50%的时候向上移动20px */
+    animation: animate1 4s ease-in-out infinite;
+  }
+dialog1{
+    font-family:"TekitouPoem_SemiBold";
+  }
+  #dialog2{
+    
+  }
+  #dialog3{
+    
+  }
+  #dialog4{
+    font-family: 'OtsutomeFont_Ver3_15';
+  }
+  #dialog5{
+    font-family: 'OtsutomeFont_Ver3_15';
+  }
+  /* 实现底部横线与圆点 */
+
+  .dialog::after, .dialog::before {
+    position: absolute;
+    content: '';
+    height: 11px;
+    left: 0px;
+    background-color: #ECE5CE;
+    border-radius: 11px;
+    /* 投影 */
+    box-shadow: -20px -20px #83af9b;
+}
+
+/* 单独定义底部横线的样式，宽度为50px */
+
+.dialog::after {
+    width: 50px;
+    bottom: 130px;
+    /* 动画效果 50%的时候向上移动10px 加上P元素向上移动20，真实移动像素为20+10px */
+    animation: animate2 4s ease-in-out infinite;
+}
+
+/* 单独定义底部圆点的样式，宽度为11px */
+
+.dialog::before {
+    width: 11px;
+    bottom: 200px;
+    /* 动画效果 50%的时候向上移动15px 加上P元素向上移动20，真实移动像素为20+15px */
+    animation: animate3 4s ease-in-out infinite;
+}
+
+@keyframes animate1 {
+    /* 初始化和结束状态为默认 */
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes animate2 {
+    /* 初始化和结束状态为默认 */
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes animate3 {
+    /* 初始化和结束状态为默认 */
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.board-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 200px; /* 修改为200px */
+    height: 30px; /* 修改为30px */
+    background-color: #422323;
+    border: 1px solid #ECE5CE;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.board-header {
+    padding: 5px; /* 修改为5px */
+    background-color: #011420;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center; /* 修改为center */
+    align-items: center;
+    cursor: pointer;
+}
+
+.board-body {
+    padding: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.board-body.expanded {
+    max-height: 500px;
+}
+
+#namesList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#namesList li {
+    position: relative;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+#namesList li button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.registration-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.registration-container input {
+    width: 200px;
+}
+
+.registration-container button {
+    margin-left: 10px;
+}
+
+.registration-container button {
+    margin-left: 10px;
+}
+/*-----------表单-----------*/
+.shell1 {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/images/方格布.png);
+    border-radius: 300px 300px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) inset;
+    transform: rotate(30deg);
+    transform-style: preserve-3d;
+}
+.shellContent{
+    transform: rotate(-30deg);
+    transform-style: preserve-3d;
+}
+.title {
+    transform: none;
+    transform-style: preserve-3d;
+    font-size: 80px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0 0 10px #ff9dff80;
+    position: absolute;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    border: 5px solid transparent;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 100px;
+    padding: 5px 20px 0 20px;
+    transition: 0.3s;
+    font-size: 18px;
+    outline: none
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    background: rgba(255, 255, 255, 0);
+    border: 5px solid #ffffff;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 100px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+input::placeholder {
+    color: #92A7E8;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Remember {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #7597ff;
+}
+
+input[type="checkbox"] {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-color: #007bff;
+}
+
+#Password {
+    border: none;
+    background-color: #ffffff00;
+    color: #7597ff;
+    font-size: 18px;
+}

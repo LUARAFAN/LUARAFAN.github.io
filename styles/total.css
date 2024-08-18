@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "MiSans-Normal";
+    src: url("../fonts/MiSans-Normal.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "shanziguaziti";
+    src: url("../fonts/山字瓜子体.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "MadokaLetters";
+    src: url("../fonts/MadokaLetters.otf") format("opentype");
+}
+@font-face {
+    font-family: 'TekitouPoem_SemiBold';
+    src: url(../fonts/TekitoTekitouPoem_SemiBold.ttf);
+}
+@font-face {
+    font-family: 'OtsutomeFont_Ver3_15';
+    src: url(../fonts/OtsutomeFont_Ver3_15.ttf);
+}
+body {
+    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-width: thin;
+}
+
+
+/*个性化的鼠标指针样式，可结合个人需要自行修改*/
+body {
+	cursor: url(../cursor/normal.cur), default;
+}
+select{
+	cursor: url(../cursor/alt.cur), pointer;
+}
+button,link a:hover{
+	cursor: url(../cursor/link.cur), pointer;
+}
+input{
+	cursor:url(../cursor/handwriting.cur), text;	
+}
+textarea,input:focus{
+	cursor:url(../cursor/loc2.cur), text;	
+}
+code{
+	cursor: url(../cursor/exclamation.cur), default;	
+}
+pre>code{
+	cursor: url(../cursor/loc.cur), default;
+
+}
+

@@ -1,0 +1,161 @@
+/*----------时钟--------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("/images/paper-background.jpg");
+}
+@keyframes animate{
+    0%,100%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+.clockContainer{
+    position:absolute;
+    z-index: 500000;
+    width: 100%;
+    height: 100%;
+}
+.box{
+    width:100%;
+    height:100%;
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    line-height: 100%;
+border: 1px solid rgba(255, 255, 255, 0.4);
+animation: animate 5s ease-in-out infinite;
+animation-delay: -2.5s;
+}
+.clock{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: radial-gradient(transparent,rgba(255, 255, 255, 0.2)),url(/images/clock.png);
+background-size: cover;
+border-radius: 50%;
+backdrop-filter: blur(25px);
+border:1px solid rgba(255,255,255,.5);
+border-bottom: none;
+border-right: none;
+box-shadow: -10px 10px 20px rgba(255, 255, 255, 0.1),
+10px 10px 20px rgba(0,0,0,0.1),
+0px 40px 50px rgba(0,0,0,0.2);
+}
+.clock:hover{
+    backdrop-filter:none;
+}
+.hour,
+.min,
+.sec{
+   position: absolute; 
+}
+.hour,.hr{
+    width: 160px;
+    height: 160px;
+}
+.min,.mn{
+    width: 190px;
+    height: 190px;
+}
+.sec,.sc{
+    width: 230px;
+    height: 230px;
+}
+.hr,.mn,.sc{
+    display: flex;
+    justify-content: center;
+position: absolute;
+border-radius: 50%;
+}
+.hr::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #b97fd4;
+    z-index: 11;
+    border-radius: 6px;
+
+}
+.mn::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #ffffff;
+    z-index: 12;
+    border-radius: 6px;
+}
+.sc::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #ffffff;
+    z-index: 13;
+    border-radius: 6px;
+}
+
+/*------------tab-------------*/
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.tabs {
+    background-color: #f0f0f0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+.content-area {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.content {
+    display: none;
+}
+
+.toggle-icon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 7a1 1 0 011-1h10a1 1 0 110 2H3a1 1 0 01-1-1zm0 3a1 1 0 011-1h10a1 1 0 110 2H3a1 1 0 01-1-1zm0-5a1 1 0 011-1h10a1 1 0 110 2H3a1 1 0 01-1-1z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/total.css">
+    <link rel="stylesheet" type="text/css" href="styles/mourning-hall.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://www.unpkg.com/siteloader"></script>
+    <title>REVERSE: 1107|Mourning Hall</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+    </style>
+<body>
+    
+    <div id="loader">
+        <div id="Tsutsu"></div>
+        <div id="tsutsuShadow"></div>
+      <div id="loaderNumber"><span id="loaderNumberSpan">0</span></div>
+      
+   </div>
+
+
+    <div id="content">
+        <canvas></canvas>
+    
+
+    <header class="header"><h1 class="hello">奠</h1></header>
+    <main>
+        <audio id="myAudio" controls autoplay loop><source src="bgm/cheerful-promenade-easy-going-electro-swing-composition-for-blogs-149595.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+        
+        <nav>
+            <ul></ul>
+            <ul></ul>
+            <ul></ul>
+            <ul></ul>
+            <ul></ul>
+        </nav>
+        <section>
+         <div class="grid-container">  
+    
+                <div class="grid-item">  
+                    <h3 class="couplet-left"><p>典型留与后人看</p></h3>  
+                    <h5 class="couplet2-left"><p>嬉笑悲歌怒骂到此皆休</p></h5>
+                    <img src="images/秋遗照_v1.jpg" alt="Image 1" class="photo"> 
+                    <h5 class="couplet2-right"><p>功名事业文章他生未卜</p></h5> 
+                    <h3 class="couplet-right"><p>事业已归前辈录</p></h3>  
+                    <div class="dialog dialog1">
+                    <pre>……曙色原罪。<br/>“未来是一片粉色的天空，五彩的花朵在天空下微笑。”</pre>
+                </div>  
+                </div>
+                <div class="grid-item2">  
+                    <h5 class="couplet3-left"><p>人间少名俊杰</p></h5>
+                    <h3 class="couplet-left"><p>此后何缘在晤言</p></h3>  
+                    <h5 class="couplet2-left"><p>佛国添座金刚</p></h5>
+                    <img src="images/雅菜遗照_v1.jpg" alt="Image 1" class="photo"> 
+                    <h5 class="couplet2-right"><p>瑶池来位贵客</p></h5> 
+                    <h3 class="couplet-right"><p>等闲暂别犹惊梦</p></h3>  
+                    <h5 class="couplet3-right"><p>天上陨颗明星</p></h5>
+                    <div class="dialog" id="dialog2"><pre>……什么时候结束？<br/>日高说欢迎。</pre></div>
+                </div> 
+            <div class="grid-item2">  
+                    <h5 class="couplet3-left"><p>黄粱入梦将星一夜陨江南</p></h5>
+                    <h3 class="couplet-left"><p>南国辉空仰婺星</p></h3>  
+                    <h5 class="couplet2-left"><p>仙驾返瑶池</p></h5>
+                    <img src="images/杏梨遗照_v1.jpg" alt="Image 1" class="photo"> 
+                    <h5 class="couplet2-right"><p>女星沉宝婺</p></h5> 
+                    <h3 class="couplet-right"><p>西地驾已归王母</p></h3> 
+                    <h5 class="couplet3-right"><p>铁券分封剑气当年横塞北</p></h5> 
+                    <div class="dialog" id="dialog3"><pre>贵安，妾身乃死蝶悲歌。不要嫌弃萌乃啊，雅菜酱。<br/>……把你的衣服换掉</pre></div>  
+                </div>
+
+                <div class="grid-item">  
+                    <h3 class="couplet-left"><p>挚友还在梦间交</p></h3>  
+                    <h5 class="couplet2-left"><p>子孙维业业长存</p></h5>
+                    <img src="images/萌乃遗照_v1.jpg" alt="穿着花绿制服的萌萌乃，我还没画" class="photo"> 
+                    <h5 class="couplet2-right"><p>著作等身身不老</p></h5> 
+                    <h3 class="couplet-right"><p>锦章留于后世读</p></h3>  
+                    <div class="dialog" id="dialog4"><pre>吾乃蔷薇死神哇！此界吾友阖眼之地jie……唔呜呜，欢迎你们所有人！<br/>不要只是转述我的话啊！</pre></div>  
+                </div> 
+                
+                
+                <div class="grid-item3">  
+         
+                    <h3 class="couplet-left"><p>古今名将白头稀</p></h3>
+                    <img src="images/赤老师_v1.jpg" alt="Image 1" class="photo glass"> 
+                    <h3 class="couplet-right"><p>南朔战功青史在</p></h3> 
+                    
+                    <div class="dialog" id="dialog5"><pre>(哈欠)是不是太早了呢？</pre></div>  
+                 
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="board-container" id="boardContainer">
+                <div class="board-header">
+                    <svg class="icon icon-profile">
+                        <use xlink:href="#icon-profile"></use>
+                    </svg>
+                </div>
+                <div class="board-body" id="boardBody">
+                    <ul id="namesList"></ul>
+                </div>
+            </div>
+            
+            <div class="registration-container" id="registrationContainer">
+                <input type="text" id="nameInput" placeholder="登记">
+                <button id="registerBtn" style="display: none;">提交</button>
+            </div> 
+        </section>
+        <section>
+            <div class="shell1">
+                <div class="shellContent">
+                <form action="">
+                <h2 class="title">亲友坐垫，请输入名字坐下</h2>
+                <input type="text" id="username" placeholder="姓名">
+                <input type="submit" value="Login" id="loginBtn">
+                <div class="footer">
+                    <div class="Remember">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">记住我</label>
+                    </div>
+        
+                </div>
+            </form>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    
+    <script src="scripts/mourning-hall.js"></script>
+    
+
+    <!-- 图标定义 -->
+    <svg style="display: none;">
+        <symbol id="icon-profile" viewBox="0 0 1024 1024">
+            <path d="M512 64a256 256 0 1 1-256 256 256.32 256.32 0 0 1 256-256zM512 704c-177.28 0-512 83.52-512 240v16a64 64 0 0 0 64 64h896a64 64 0 0 0 64-64v-16c0-156.48-334.72-240-512-240z"/>
+        </symbol>
+    </svg>
+</div>
+
+</body>
+</html>

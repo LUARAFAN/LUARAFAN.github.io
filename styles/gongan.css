@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'TekitouPoem_SemiBold';
+    src: url(../fonts/TekitoTekitouPoem_SemiBold.ttf);
+}
+@font-face {
+    font-family:'TekitouPoem_ExtraBold' ;
+    src: url(../fonts/TekitouPoem_ExtraBold.ttf);
+}
+@font-face{
+    font-family: 'TekitouPoem';
+    src: url(../fonts/TekitouPoem.ttf);
+}
+@media (min-width: 1024px) and (max-width: 1919px) {
+    body {
+      width: 65%;
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    body {
+      width: 100%;
+    }
+  }
+  
+html{
+    padding: 0;
+background-image: url(../images/paper-background.jpg);
+background-repeat: repeat;
+display: flex; justify-content: center;}
+
+body{
+    top: -15px;
+    
+}
+h1{
+    font-family:'TekitouPoem_ExtraBold' ;
+}
+header{
+    margin: 7px auto;
+top: -20px;
+}
+header img{
+    position: relative;
+    margin: 0;
+    top: -20px;
+}
+header div.logo{
+    display: flex;
+    row-gap: 2px;
+    position: relative;
+    margin: auto;
+    background-color: black;
+}
+header div.changeName{
+    position: absolute;
+    top: 3px;
+    margin-left: 85px;
+    line-height: 30px;
+    
+}
+header h1{
+margin-top: 7px;
+margin-bottom: 0;
+font-size: 47px;
+letter-spacing: -5px;
+}
+header div.changeName p{
+    position:relative;
+    margin: 0;
+    top: 15px;
+    font-size: small;
+}
+
+nav ul{
+    font-family: 'TekitouPoem_SemiBold';
+    line-height: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #2e4586 5%,#28397e,#24388a 60%);
+}
+nav ul li{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 2px solid #aaf5ff;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li:hover {
+    background: linear-gradient(to top, #2e4586 5%,#28397e,#24388a 60%);
+}
+
+/*------dialog------*/
+section#dialogue{
+    position: relative;
+    padding: 70px;
+    margin: 0 auto;
+    line-height: 40px;
+    margin-bottom: 20px;
+    left: 0;
+    overflow: hidden;
+    background-image: url(../images/goanbackground.png);
+    background-repeat: no-repeat; /* 不重复背景图片 */
+    background-position: center; /* 图片居中 */
+    background-size: cover; /* 拉伸图片以填满容器 */
+
+}
+
+.copy {
+	width: 80%;
+	display: flex;
+    flex-shrink: 0;
+    margin-left: 10%;
+	justify-content: safe center;
+    align-items: safe center;
+    text-shadow: 
+    6px 2px 6px rgba(0, 0, 0, 1), /* 右下角阴影 */
+    -2px -2px 6px rgba(0, 0, 0, 0.7), /* 左上角阴影 */
+    2px -2px 6px rgba(0, 0, 0, 0.7), /* 右上角阴影 */
+    -2px 2px 6px rgba(0, 0, 0, 0.6); /* 左下角阴影 */
+    white-space: nowrap;
+}
+#title{
+    flex-shrink: 0;
+    margin-top: 40px;
+	font-weight: bolder;
+    font-size: 50px;
+}
+#standing{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/*------------main area-----------*/
+
+
+div#mainArea .newsList {
+	margin: 0 0 15px 0;
+	list-style: none;
+	background-color: #ffffff;
+	border: 1px solid #D2D2D2;
+	border-top: none;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 686px;
+	height: 330px;
+}
+div#mainArea .newsList:hover{
+    font-family: "TekitouPoem";
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -5px;
+}
+
+div#mainArea .newsList dl {
+	padding: 20px 20px 15px
+}
+
+div#mainArea .newsList dt {
+	float: left;
+	clear: both;
+	width: 130px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+div#mainArea .newsList dd {
+	margin-left: 130px;
+	margin-bottom: 15px;
+}
+ul.pickUp{
+    display: flex;
+    flex-direction: row;
+gap: 10px;
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+footer{
+    background-color: #000000;
+}
+/*news排布*/
+section.news{
+    display: flex;
+    flex-direction: rows;
+    text-align: left;
+    padding: 20px 0 30px 0;
+}
+div#mainArea{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height:auto;
+}
+div#sideArea{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height:auto;
+}
+div#notBird{
+    width: 230px;
+height: 14px;
+position: relative;}
+
+div#sideArea.subMenu{
+    position: relative;
+    color: aqua;
+}
+div#sideArea.subMenu li{
+    list-style-image: url(https://www.moj.go.jp/content/001140704.gif);
+    background-color: initial;
+    padding-left: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+div#sideArea.subMenu:hover{
+    font-family: "TekitouPoem";
+    font-size: 21px;
+    font-weight: bold;
+letter-spacing: -5px;
+}s
+ul#subMenuSecond{
+    width: 230px;
+    height: 408.52px;
+    word-wrap: break-word;
+    overflow: hidden;
+
+}
+/*弹出框*/
+.popover {
+    display: none;
+    position: absolute;
+    font-size: 70px;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  #title:hover + #myPopover {
+    display: block;
+    background-color: rgb(255, 255, 255,0);
+  }

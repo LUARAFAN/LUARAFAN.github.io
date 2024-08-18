@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/total.css">
+    <link rel="stylesheet" href="styles/game.css">
+    <title>魔法少女1107民间唯一指定咨询处</title>
+</head>
+<body>
+    <header></header>
+    <div class="clockContainer">
+        <div class="box">
+            <div class="clock">
+                <div class="hour">
+                    <div class="hr" id="hr"></div>
+                </div>
+               <div class="min">
+                        <div class="mn" id="mn"></div>
+                    </div>
+                <div class="sec">
+                   <div class="sc" id="sc"></div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab" data-tab="content1">Tab 1</button>
+            <button class="tab" data-tab="content2">Tab 2</button>
+            <button class="tab" data-tab="content3">Tab 3</button>
+            <button class="tab" data-tab="content4">Tab 4</button>
+            <button class="tab" data-tab="content5">Tab 5</button>
+        </div>
+        <p>gh</p>
+        <div class="content-area">
+            <div class="content" id="content1" style="display: none;">
+                <h1>Content 1</h1>
+                <p>This is the content for tab 1.</p>
+            </div>
+            <div class="content" id="content2" style="display: none;">
+                <h1>Content 2</h1>
+                <p>This is the content for tab 2.</p>
+            </div>
+            <div class="content" id="content3" style="display: none;">
+                <h1>Content 3</h1>
+                <p>This is the content for tab 3.</p>
+            </div>
+            <div class="content" id="content4" style="display: none;">
+                <h1>Content 4</h1>
+                <p>This is the content for tab 4.</p>
+            </div>
+            <div class="content" id="content5" style="display: none;">
+                <h1>Content 5</h1>
+                <p>This is the content for tab 5.</p>
+            </div>
+        </div>
+        <button class="toggle-icon" aria-label="Toggle main content">
+            <span class="icon"></span>
+        </button>
+    </div>
+<script src="scripts/game.js"></script>
+</body>
+</html>
