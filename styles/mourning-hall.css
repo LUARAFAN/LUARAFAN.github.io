@@ -359,6 +359,7 @@ dialog1{
 }
 /*-----------表单-----------*/
 .shell1 {
+    display: none;
     width: 50%;
     padding: 40px;
     display: flex;
