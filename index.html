@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles/total.css">
     <link rel="stylesheet" type="text/css" href="styles/mourning-hall.css">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://www.unpkg.com/siteloader"></script>
     <title>REVERSE: 1107|Mourning Hall</title>
 </head>
 <style>
@@ -21,7 +20,7 @@
     <div id="loader">
         <div id="Tsutsu"></div>
         <div id="tsutsuShadow"></div>
-      <div id="loaderNumber"><span id="loaderNumberSpan">0</span></div>
+      <div id="loaderNumber"><span id="loaderNumberSpan">0%</span></div>
       
    </div>
 
@@ -47,7 +46,9 @@
                 <div class="grid-item">  
                     <h3 class="couplet-left"><p>典型留与后人看</p></h3>  
                     <h5 class="couplet2-left"><p>嬉笑悲歌怒骂到此皆休</p></h5>
-                    <img src="images/秋遗照_v1.jpg" alt="Image 1" class="photo"> 
+                    <div class="card">
+                    <img src="images/秋遗照_v1.jpg" alt="Image 1" class="photo" loading="lazy">
+                </div>
                     <h5 class="couplet2-right"><p>功名事业文章他生未卜</p></h5> 
                     <h3 class="couplet-right"><p>事业已归前辈录</p></h3>  
                     <div class="dialog dialog1">
@@ -58,7 +59,9 @@
                     <h5 class="couplet3-left"><p>人间少名俊杰</p></h5>
                     <h3 class="couplet-left"><p>此后何缘在晤言</p></h3>  
                     <h5 class="couplet2-left"><p>佛国添座金刚</p></h5>
-                    <img src="images/雅菜遗照_v1.jpg" alt="Image 1" class="photo"> 
+                    <div class="card">
+                        <img src="images/雅菜遗照_v1.jpg" alt="Image 1" class="photo" loading="lazy">
+                    </div>
                     <h5 class="couplet2-right"><p>瑶池来位贵客</p></h5> 
                     <h3 class="couplet-right"><p>等闲暂别犹惊梦</p></h3>  
                     <h5 class="couplet3-right"><p>天上陨颗明星</p></h5>
@@ -68,7 +71,9 @@
                     <h5 class="couplet3-left"><p>黄粱入梦将星一夜陨江南</p></h5>
                     <h3 class="couplet-left"><p>南国辉空仰婺星</p></h3>  
                     <h5 class="couplet2-left"><p>仙驾返瑶池</p></h5>
-                    <img src="images/杏梨遗照_v1.jpg" alt="Image 1" class="photo"> 
+                    <div class="card">
+                    <img src="images/杏梨遗照_v1.jpg" alt="Image 1" class="photo" loading="lazy"> 
+                </div>
                     <h5 class="couplet2-right"><p>女星沉宝婺</p></h5> 
                     <h3 class="couplet-right"><p>西地驾已归王母</p></h3> 
                     <h5 class="couplet3-right"><p>铁券分封剑气当年横塞北</p></h5> 
@@ -78,7 +83,9 @@
                 <div class="grid-item">  
                     <h3 class="couplet-left"><p>挚友还在梦间交</p></h3>  
                     <h5 class="couplet2-left"><p>子孙维业业长存</p></h5>
-                    <img src="images/萌乃遗照_v1.jpg" alt="穿着花绿制服的萌萌乃，我还没画" class="photo"> 
+                    <div class="card">
+                    <img src="images/萌乃遗照_v1.jpg" alt="穿着花绿制服的萌萌乃，我还没画" class="photo" loading="lazy">
+                </div> 
                     <h5 class="couplet2-right"><p>著作等身身不老</p></h5> 
                     <h3 class="couplet-right"><p>锦章留于后世读</p></h3>  
                     <div class="dialog" id="dialog4"><pre>吾乃蔷薇死神哇！此界吾友阖眼之地jie……唔呜呜，欢迎你们所有人！<br/>不要只是转述我的话啊！</pre></div>  
@@ -88,7 +95,9 @@
                 <div class="grid-item3">  
          
                     <h3 class="couplet-left"><p>古今名将白头稀</p></h3>
-                    <img src="images/赤老师_v1.jpg" alt="Image 1" class="photo glass"> 
+                    <div class="card">
+                     <img src="images/赤老师_v1.jpg" alt="Image 1" class="photo glass" loading="lazy">
+                 </div>
                     <h3 class="couplet-right"><p>南朔战功青史在</p></h3> 
                     
                     <div class="dialog" id="dialog5"><pre>(哈欠)是不是太早了呢？</pre></div>  
@@ -109,8 +118,8 @@
             </div>
             
             <div class="registration-container" id="registrationContainer">
-                <input type="text" id="nameInput" placeholder="登记">
-                <button id="registerBtn" style="display: none;">提交</button>
+                <input type="text" id="nameInput" placeholder="姓名">
+                <button id="registerBtn" style="display: none;">提交到登记板（可不提交）</button>
             </div> 
         </section>
         <section>
@@ -118,7 +127,7 @@
                 <div class="shellContent">
                 <form action="">
                 <h2 class="title">亲友坐垫，请输入名字坐下</h2>
-                <input type="text" id="username" placeholder="姓名">
+                <input type="text" id="username" placeholder="">
                 <input type="submit" value="Login" id="loginBtn">
                 <div class="footer">
                     <div class="Remember">
@@ -128,7 +137,7 @@
         
                 </div>
             </form>
-            </div>
+             </div>
             </div>
         </section>
     </main>

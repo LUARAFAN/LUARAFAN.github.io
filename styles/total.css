@@ -24,6 +24,7 @@
     src: url(../fonts/OtsutomeFont_Ver3_15.ttf);
 }
 body {
+    overflow: scroll; 
     scrollbar-color: #6969dd #e0e0e0;
     scrollbar-width: thin;
 }

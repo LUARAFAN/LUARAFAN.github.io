@@ -1,29 +1,31 @@
 /*----加载动画----*/
+window.addEventListener('load', function() {
+    const loadingDiv = document.querySelector('#loader');
+    const contentDiv = document.querySelector('#content');
 
-const sl = new SiteLoader()
-const loadingContainer = document.querySelector('#loader')
-const afterLoadContent= document.querySelector('#content')
+    contentDiv.style.visibility = 'visible';
+    loadingDiv.style.display = 'none';
+});
 
+const loaderNumber = document.getElementById('loaderNumber');
+const loaderNumberSpan = document.getElementById('loaderNumberSpan');
 
-sl.addEventListener('trueLoadFinish', () => {
-    console.log("加载完")
-    document.body.style.overflow="auto"
-    loadingContainer.classList.add("loading-disappear") 
-    loadingContainer.style.display="none"
-    afterLoadContent.style.visibility="visible"
-    console.log("加载完成")
-})
+let progress = 0;
 
-sl.setTargetTextDom("#loaderNumber")
-sl.progressSpeed = 12
-sl.needSpeedUp = true
-sl.startLoad()
-
+const intervalId = setInterval(() => {
+    if (progress >= 100) {
+        clearInterval(intervalId);
+    } else {
+        progress += Math.random() * 5; // 每次增加一个随机值
+        loaderNumber.style.width = `${progress}%`;
+        loaderNumberSpan.textContent = `${Math.round(progress)}%`;
+    }
+}, 5); // 每隔500毫秒更新一次
 
 
 
 /*---------音乐---------*/
-var audio = document.getElementById('myAudio');
+const audio = document.getElementById('myAudio');
 
     // 检查音频是否播放结束
     audio.addEventListener('ended', function () {
@@ -466,4 +468,32 @@ img.onload = function () {
     // 替换图片地址
     this.src = canvas.toDataURL();
 };
+
+/*-------卡片照片3d效果-------*/
+const multiple = 15;
+const mouseOverContainer = document.getElementsByTagName("body")[0];
+const card = document.getElementsByClassName("card");
+const photo = document.getElementsByClassName("photo");
+
+function transformElement(x, y){
+  let box = card.getBoundingClientRect();
+  const calcX = -(y - box.y - box.height / 2) / multiple;
+const calcY = (x - box.x - box.width / 2) / multiple;
+  const percentage = parseInt((x - box.x) / box.width * 1000) / 10;
+    
+  card.style.transform  = "rotateY(" + calcY + "deg) "+ "rotateY("+ calcY +"deg)";
+  photo.style.setProperty('--per', `${percentage}%`);
+
+}
+
+mouseOverContainer.addEventListener('mousemove', (e) => {
+    window.requestAnimationFrame(function(){
+      transformElement(e.clientX, e.clientY);
+    });
+  });
+mouseOverContainer.addEventListener('mouseleave', (e) => {
+    window.requestAnimationFrame(function(){
+        card.style.transform = "rotateX(0) rotateY(0)";
+    });
+  });
 

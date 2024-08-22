@@ -6,8 +6,10 @@
     box-sizing: border-box;
 }
 body {
-    
-    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    transform-style: preserve-3d;
 }
 /*---加载动画---*/
 div#content {
@@ -16,13 +18,13 @@ div#content {
   }
 div#loader {
     display: flex;
+    margin:0;
+    padding:0;
     width: 100%vw;
     height:100%vh;
     background-color: rgba(31, 29, 29, 0.692);
     transition: opacity 0.5s ease-out;
-  }
-.loading-disappear {
-    display: none;
+    pointer-events: none;
   }
 div#Tsutsu {
     position: absolute;
@@ -59,13 +61,14 @@ div#loaderNumber {
     top: 80%;
     left: 80%;
     transform: translate(-50%, -50%);
+    width:400px;
     font-size: 150px;
-    background-image:linear-gradient(to top,rgb(0,0,0),#b0b184 90%) ;
+    font-weight: lighter;
+    background-image:linear-gradient(to top,rgb(24, 24, 24),#d9dab6 95%) ;
     -webkit-background-clip: text;
     background-clip: text;
-    font-weight: lighter;
-    
-    text-shadow: 2px 2px 3000px rgba(0, 0, 0, 0.9);
+    -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 3000px rgba(0, 0, 0, 0.9);
 }
 
 canvas {
@@ -85,7 +88,7 @@ canvas {
     justify-content: center;
     align-items: center;
     
-    color: #edeedda1;
+    color: #f4f5e6bb;
     cursor: pointer;
     margin: 0 auto; /* 水平居中 */
     user-select: none; /* 通用的不可选中设置 */
@@ -107,7 +110,7 @@ audio{
     position: absolute;
     top: 0;
     left: 80%;
-    width: 200px;
+    width: 340px;
     z-index: 2;
 }
 
@@ -134,7 +137,7 @@ audio{
     display: grid;  
     grid-template-columns: 1fr 20% 1fr 40% 1fr 20% 1fr; /* 左联、图片、右联三列 */  
     align-items: end;  
-    gap: 10px; /* 内部列之间的间隙 */  
+    gap: -10px; /* 内部列之间的间隙 */  
     padding: 0;
     margin: 0;
     align-self: end;
@@ -148,18 +151,56 @@ audio{
     margin: 0;
     
    } 
-
-img.photo{
+img.card{
+    display: block; /* 移除图片下方的默认间隙 */
+    margin: 0;
+    padding:0;
     width: 400px; /* 使得图片宽度填满中间列 */  
     height: auto; /* 保持图片原有宽高比 */
-    border: #e6ce4c 3px solid; 
-    display: block; /* 移除图片下方的默认间隙 */
-    margin: 0 auto; /* 图片居中 */
     box-shadow: #2e0328 0px 0px 10px;
     anchor-name:img-anchor;
+    border: #e6ce4c 3px solid; 
+    transform-style: preserve-3d;
+    transition: all .1s;
+}
+img.photo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1.2);
+}
+.photo::after{
+    content: "";
+        display: none;
+        position: absolute;
+        inset: 0;
+        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/13471/sparkles.gif");
+        mix-blend-mode: color-dodge;
+}
+.photo::before{
+    content: "";
+    display: none;
+        position: absolute;
+        inset: 0;
+        background: 
+        linear-gradient(
+            115deg, 
+            transparent 0%, 
+            rgba(255, 255, 255, 0.5) var(--per), 
+            rgba(0, 0, 0, .5) calc(var(--per) + 25%), 
+            rgba(255, 255, 255, .5) calc(var(--per) + 50%),
+            transparent 100%
+        );
+        mix-blend-mode: color-dodge;
+}
+.photo::after,
+.photo::before{
+    display: block;
 }
 img.glass:hover{
-    width:1000px;
+    width:100px;
     image-rendering: pixelated;
 }
     
@@ -174,6 +215,10 @@ img.glass:hover{
     font-weight: lighter;
     overflow: visible;
   }  
+  .couplet2-left{
+    position-anchor: img-anchor;
+right: img-anchor(left);
+  }
   .couplet-left, .couplet-right{
     font-size: 80px;
     letter-spacing: 8px;
@@ -274,8 +319,7 @@ dialog1{
         transform: translateY(-15px);
     }
 }
-
-
+/*----------登记板-----------*/
 .icon {
     display: inline-block;
     width: 1em;
@@ -289,8 +333,8 @@ dialog1{
     position: fixed;
     top: 20px;
     left: 20px;
-    width: 200px; /* 修改为200px */
-    height: 30px; /* 修改为30px */
+    width: 200px;
+    height: 30px; 
     background-color: #422323;
     border: 1px solid #ECE5CE;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -340,29 +384,11 @@ dialog1{
     color: #ff0000;
 }
 
-.registration-container {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-}
-
-.registration-container input {
-    width: 200px;
-}
-
-.registration-container button {
-    margin-left: 10px;
-}
-
-.registration-container button {
-    margin-left: 10px;
-}
 /*-----------表单-----------*/
 .shell1 {
     display: none;
     width: 50%;
     padding: 40px;
-    display: flex;
     align-items: center;
     flex-direction: column;
     background-image: url(/images/方格布.png);

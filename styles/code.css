@@ -1,0 +1,527 @@
+@charset "UTF-8";
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #000;
+  font-family: monospace;
+}
+.g-panel {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  box-sizing: border-box;
+  display: flex;
+  animation: colorChange 1s steps(12) infinite;
+}
+.g-panel div {
+  position: relative;
+  width: 25px;
+  height: 800px;
+  flex-shrink: 0;
+}
+.g-panel div::before {
+  content: "3g▦6◄l►d►♂obkq6m—！h88♂7Axz。&H！◄69m【HqE8JL♀d4tiQO《，ipyEzi（？axnX♂6sy▥LO】「XF」ub6lhs";
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  font-size: 24px;
+  width: 25px;
+  text-align: center;
+  word-break: break-all;
+  overflow: hidden;
+  line-height: 25px;
+  color: transparent;
+  background: linear-gradient(#bd3891 0 25px, #38567d 0 50px, #d93d12 0 75px, #872df8 0 100px, #0a0e63 0 125px, #65560d 0 150px, #c93b4b 0 175px, #7e4a14 0 200px, #bed783 0 225px, #06b8d1 0 250px, #c3ba18 0 275px, #cb4861 0 300px, #9d4d86 0 325px, #ddf2f0 0 350px, #d7032b 0 375px, #79856e 0 400px, #cb6199 0 425px, #bf433b 0 450px, #ae9924 0 475px, #389e80 0 500px, #332afa 0 525px, #011ca0 0 550px, #a8d27f 0 575px, #a8a75f 0 600px, #7bb0aa 0 625px, #ff9598 0 650px, #6b5c9c 0 675px, #65df51 0 700px, #053ac3 0 725px, #4cbefb 0 750px, #f9c444 0 775px, #dc5ea3 0 800px, #fbd435 0 825px, #f657ec 0 850px, #a2799c 0 875px, #533b1a 0 900px, #b552c2 0 925px, #e2bf89 0 950px, #3a0810 0 975px, #a62502 0 1000px, #aaef56 0 1025px, #798ae1 0 1050px, #fdc07f 0 1075px, #102f3f 0 1100px, #755fc2 0 1125px, #970a7c 0 1150px, #2ea16e 0 1175px, #9c49c9 0 1200px, #7184ac 0 1225px, #676dcb 0 1250px, #30a75b 0 1275px, #45d984 0 1300px, #d9eb3a 0 1325px, #8fb621 0 1350px, #5623c8 0 1375px, #2937d6 0 1400px, #3dd7df 0 1425px, #496ae9 0 1450px, #aac207 0 1475px, #62f37a 0 1500px, #d5d449 0 1525px, #c0fe12 0 1550px, #4adce1 0 1575px, #7a52ce 0 1600px, #067895 0 1625px, #4f4514 0 1650px, #ab0694 0 1675px, #2f1e7b 0 1700px, #b3ec76 0 1725px, #363920 0 1750px, #68956e 0 1775px, #e7bec6 0 1800px, #83c1e3 0 1825px, #571b31 0 1850px, #405204 0 1875px, #09c1c1 0 1900px, #218f56 0 1925px, #892590 0 1950px, #a31987 0 1975px, #7d768d 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(1)::before {
+  content: "》】DTGaa☻6？b▧@9…《WI？dfyWZ）G「gNhrL）faO&9k【h5。►1（vmw9g♂♀OF►F5YXQ♀&k，yf☻8Z！♀O▤lH26♀…";
+  --content1: "qz►bwAo*C￥my1NiqgDXB▧rc@…。+V7k◄zbK♀♦f96gTFQ￥K&5…？Yr6》、T▣9+hFL》LPMq9Kt？7Zosikgkg】";
+  --content2: "geh%Y▣sK&9n》！S4x9T。K—▥B♦）e♥Fi6XX8。B►♦4，yq▧…FS」▨—】U」I►gCHHf▧☻AoC》◁。♀Ia@&P《K？3QP▧C";
+  --content3: "1▧《O▨RO9」▤gJZ…8L—g*k▣《…。sz】3s*N►KI◄XQggCk，n）▨…BV（g▣26IBg&6C《6￥◄cGxHn，♦】b☻U▧L▧【F▥";
+  --content4: "zMo▧zur「@♥r♦▧zCZ？《？2W►OFRXDZ「▨♀▧wQJ》K▨K◄▧？▨♀【▧◁）H+9w（☻yOsULAaIsLRZygM…aaw）i【T「a9";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#d9831a 0 25px, #8928ad 0 50px, #de9d28 0 75px, #5e5992 0 100px, #85da24 0 125px, #903077 0 150px, #2b64b7 0 175px, #bbeb17 0 200px, #973444 0 225px, #cb0f33 0 250px, #d721be 0 275px, #ec340c 0 300px, #ca7c3e 0 325px, #4b5136 0 350px, #16171f 0 375px, #ab7158 0 400px, #7cf5d3 0 425px, #19ba88 0 450px, #67702b 0 475px, #f0d8c9 0 500px, #e367ab 0 525px, #7cb413 0 550px, #db0fd9 0 575px, #416f2d 0 600px, #d9944a 0 625px, #877315 0 650px, #57bad2 0 675px, #2bd1f3 0 700px, #cc7af5 0 725px, #c88054 0 750px, #4c9468 0 775px, #519680 0 800px, #8a94bb 0 825px, #9676c9 0 850px, #14c2df 0 875px, #a99d11 0 900px, #02a54b 0 925px, #08f129 0 950px, #503377 0 975px, #fe52bb 0 1000px, #e81ef3 0 1025px, #17b643 0 1050px, #26d814 0 1075px, #fcfbdd 0 1100px, #4dad96 0 1125px, #ed4c31 0 1150px, #4e4edc 0 1175px, #cd4214 0 1200px, #582b86 0 1225px, #aa2a0f 0 1250px, #ad3fa8 0 1275px, #b6e23e 0 1300px, #6edcb8 0 1325px, #f786e1 0 1350px, #1040bc 0 1375px, #75b05c 0 1400px, #f6ec08 0 1425px, #6c63c6 0 1450px, #45841b 0 1475px, #6003f1 0 1500px, #e73cdb 0 1525px, #d67da6 0 1550px, #3961b0 0 1575px, #cd8547 0 1600px, #e0ed59 0 1625px, #1f98f1 0 1650px, #631c09 0 1675px, #a45431 0 1700px, #26cd4d 0 1725px, #558d94 0 1750px, #4bad07 0 1775px, #b0ae35 0 1800px, #ff40e7 0 1825px, #7e7613 0 1850px, #05a9b7 0 1875px, #580e2e 0 1900px, #708b68 0 1925px, #fb500d 0 1950px, #b64c08 0 1975px, #bf52b0 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(2)::before {
+  content: "Ly。I◄2☻。♀FFBvn—Jitb《G►*+Fm♂1+♂g」Ohtq）（OY，@▣（♂g8@、G▦►YfK+？42r♥hfsz&+3☻aMM！►H+—？Jk";
+  --content1: "Fnd【e♀t3▧☻，P9Irt*kmbLWH6「（，V♦r&J♀m3Q@♂ZatPlFQcgq►peIb8）？Z▧*…￥XfgYf9《▥？OC▥m？♦7pDL";
+  --content2: "h▦u—Un~eki￥znwQ@►u8+！Zrr）79*》◄A】3◁￥lK？3RAbQ♀YucbO￥4JbS）Y▧733▦、o♂m►1BwtK（▧HvFg》Z。";
+  --content3: "GBCb*AJy%☻W▧D▤K+）QmI♦VV◁Z2HF%*？♀%【M，qa—hLh5fd7♂▧J】plCh￥K%Z▣59Op6Yx」bST…♀J8%1c◄）！";
+  --content4: "%♀N▦xCg￥▧♀tORx▤♦b！R「—▧b+**h☻9—ar◁N）ST+☻▧FNa》XfL▦1M，、▦g◄。vB▤♀x￥&32yAc♦F—Yq%ZJg☻h—";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#bcaa79 0 25px, #d8db17 0 50px, #5929cb 0 75px, #715d37 0 100px, #21a2b9 0 125px, #d235c6 0 150px, #f0f0c4 0 175px, #54c146 0 200px, #c3c819 0 225px, #e5787e 0 250px, #cff185 0 275px, #a65dbb 0 300px, #f8b7ef 0 325px, #813699 0 350px, #87b5c6 0 375px, #e03c4e 0 400px, #b11be4 0 425px, #2f1367 0 450px, #eb6357 0 475px, #dd69b5 0 500px, #80d36c 0 525px, #6a5bda 0 550px, #540afd 0 575px, #d47119 0 600px, #9d40d3 0 625px, #10fd93 0 650px, #570d0f 0 675px, #ad850d 0 700px, #4081d0 0 725px, #65d1fa 0 750px, #ec9411 0 775px, #ec6ef9 0 800px, #4555e3 0 825px, #df436c 0 850px, #545a76 0 875px, #36e8c9 0 900px, #bf3989 0 925px, #e0a948 0 950px, #e32f7c 0 975px, #dccfa3 0 1000px, #1e0b3c 0 1025px, #4cc693 0 1050px, #0220e7 0 1075px, #3e5d0b 0 1100px, #0efa73 0 1125px, #517e7f 0 1150px, #800a47 0 1175px, #1b9d70 0 1200px, #e538ae 0 1225px, #ae9b29 0 1250px, #6bf2ae 0 1275px, #81b673 0 1300px, #d74e79 0 1325px, #6b6ef8 0 1350px, #1d7b90 0 1375px, #bb8f21 0 1400px, #4da6f0 0 1425px, #839e29 0 1450px, #1b0dab 0 1475px, #5df413 0 1500px, #e6fd6d 0 1525px, #63fbbb 0 1550px, #45af97 0 1575px, #a040f8 0 1600px, #c1b358 0 1625px, #8e123f 0 1650px, #4906fd 0 1675px, #2752dd 0 1700px, #9fa1db 0 1725px, #83b7d3 0 1750px, #cb495a 0 1775px, #e19756 0 1800px, #83b36c 0 1825px, #fffc77 0 1850px, #9d4854 0 1875px, #21bb61 0 1900px, #41aaee 0 1925px, #188f9c 0 1950px, #32f3f1 0 1975px, #1eb211 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(3)::before {
+  content: "@z…▥f&+1Yk☻。*J5GP◄T、！♀As、K】s♦9YW▥FyW8~fX☻~fk…q3▣Y▧（dJ3TKg▦N~▦Ua▥+cqV♥◄。N►q▦yg、+】";
+  --content1: "B6、W7DS3【qf◄G%6，V【F944@「￥fN￥U—▧♦Nho】y，T5…~y♂HnFh》▨C◁aqT▣qTHf◄1TNaqkg3YAT♀&】a▤X▥♂";
+  --content2: "qtbYq、》☻▥」Id…「&）l♦3C？L@U&…2*3t♥pF►kR*I▣+rUZI◄5lT&▥▥7L《」hCHvK▧►—。tC6aV…♂o】e》♂▧IlC";
+  --content3: "3？♂+H1*】、x、J83▦▧？ObgKXc」UP】4K6OyC3X♂6tT◁▨W►PfTrpJ8▤。Gk6◁l￥JpJO▤tqghFX♦*►2g◁U￥「。t";
+  --content4: "♥&gcBE*7y@♂g」◁】5r♦」◄prv，f—TW！Jb▨◄zf，&Q▣v】？V▤N。b—￥，…）q►g♂【◄d…8F♥sfm「▧wm▤m《o◄Bl◁O☻";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#287730 0 25px, #0226b3 0 50px, #0eaabe 0 75px, #4a64b7 0 100px, #5cc597 0 125px, #430884 0 150px, #5b51e0 0 175px, #6f4892 0 200px, #7f2eab 0 225px, #035e85 0 250px, #612510 0 275px, #688f2e 0 300px, #3155d0 0 325px, #b7f191 0 350px, #e5d853 0 375px, #761af7 0 400px, #32d34a 0 425px, #d3ce93 0 450px, #b904d8 0 475px, #238f37 0 500px, #81ac24 0 525px, #c66ee4 0 550px, #4e437d 0 575px, #e243af 0 600px, #8f3f1c 0 625px, #e53c26 0 650px, #3d9834 0 675px, #559038 0 700px, #0ba14c 0 725px, #899d5e 0 750px, #9e32e4 0 775px, #d8fd8a 0 800px, #84e7f9 0 825px, #e83164 0 850px, #a26d7e 0 875px, #51bbd7 0 900px, #dcad62 0 925px, #f5e4ae 0 950px, #999c2d 0 975px, #267cc2 0 1000px, #88bb54 0 1025px, #728726 0 1050px, #55b92e 0 1075px, #5c5fd4 0 1100px, #7a6150 0 1125px, #2e49ff 0 1150px, #62dfd9 0 1175px, #1be63d 0 1200px, #d20c59 0 1225px, #f3425b 0 1250px, #70a2b2 0 1275px, #b929e3 0 1300px, #aae1c7 0 1325px, #8744d9 0 1350px, #cbad36 0 1375px, #203b63 0 1400px, #654b91 0 1425px, #975b4c 0 1450px, #f20625 0 1475px, #57d9e9 0 1500px, #3d0ecd 0 1525px, #547120 0 1550px, #d584ea 0 1575px, #c6e0b4 0 1600px, #4f21dc 0 1625px, #8d6934 0 1650px, #5ad2d9 0 1675px, #477b14 0 1700px, #d264c3 0 1725px, #ca2c10 0 1750px, #222b66 0 1775px, #79360a 0 1800px, #961acd 0 1825px, #47a927 0 1850px, #c87e54 0 1875px, #77629a 0 1900px, #6126bf 0 1925px, #bd4bc4 0 1950px, #537e16 0 1975px, #f04323 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(4)::before {
+  content: "HJN◁%FLd%M♥yQ*uY◄◄k☻♥v…+【YPO▤kK48【t5GWeMIkq▣Yec6》xm♥（H！◄lx▤！m」%—X9▦83►N▥eHFr7【，f";
+  --content1: "Hg5t8、（6rv…&R）wgvy！、+su+p☻+！♥No☻。。、▦►me♥BDO45♦▨B7frumek￥BiJ「GN4nTJ7w♥P，OCOG2dE▧c";
+  --content2: "◄yX▤」hL】mU（H▦☻Y▧▨UQ2l，vq►T￥p3「E►~♀Cz）RGngAL1+—48。（s▧v「TwP【a&wS》9、、L，u8W*Mu8Aq▨—Y";
+  --content3: "▨ZQC♀se☻▧7♥3Y▦d…、♥￥G%uJi▨kD♂iU2R▥）》。◁yr「z…V…》、◄—pFo1g！cF*K9♦》G☻ZzRZ@▤MJQk2nfsto。";
+  --content4: "。▨rmpw♦9+x@♦lAc】lL—d9【LaCFmXeq~L▧♂BdW！%TfH「%wG♥s♦GT￥NgQW2G，HCZ&zi♂7+♦♂》「【%*G！▨【G";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#b50c13 0 25px, #b53684 0 50px, #5a789a 0 75px, #10bf70 0 100px, #8df527 0 125px, #eb86a2 0 150px, #2fc7ac 0 175px, #76309d 0 200px, #d8064f 0 225px, #d5d252 0 250px, #a5291a 0 275px, #ba2202 0 300px, #b4b3e8 0 325px, #1401cc 0 350px, #b7a656 0 375px, #b16c49 0 400px, #765bd2 0 425px, #53cc58 0 450px, #d57c9f 0 475px, #5f78ec 0 500px, #2a5be9 0 525px, #319e46 0 550px, #74f413 0 575px, #aa74f2 0 600px, #d75936 0 625px, #08adaa 0 650px, #5034d1 0 675px, #d3e6ec 0 700px, #01325e 0 725px, #346790 0 750px, #2e5f40 0 775px, #092097 0 800px, #ecb020 0 825px, #cb18ec 0 850px, #b2b93d 0 875px, #470668 0 900px, #de40c6 0 925px, #2b2505 0 950px, #ef1fa3 0 975px, #bb68bf 0 1000px, #299ccd 0 1025px, #8c2003 0 1050px, #c8b950 0 1075px, #8aabf3 0 1100px, #ce1cb6 0 1125px, #96f608 0 1150px, #71fa35 0 1175px, #d837fd 0 1200px, #2a4ccc 0 1225px, #94eec2 0 1250px, #027dfe 0 1275px, #5856fa 0 1300px, #a61c66 0 1325px, #6a6ce5 0 1350px, #9fd71d 0 1375px, #22072b 0 1400px, #597f0f 0 1425px, #2e01d2 0 1450px, #aa9c72 0 1475px, #5ff442 0 1500px, #ed8c2a 0 1525px, #d5b75a 0 1550px, #7d4003 0 1575px, #dbea0b 0 1600px, #8d2fdf 0 1625px, #881c7d 0 1650px, #486ba3 0 1675px, #7ff121 0 1700px, #10fadc 0 1725px, #0cdb08 0 1750px, #a7724e 0 1775px, #6922cd 0 1800px, #4e9896 0 1825px, #38aaec 0 1850px, #26cef0 0 1875px, #0d20b6 0 1900px, #eb6805 0 1925px, #366c1d 0 1950px, #4f84e4 0 1975px, #72457b 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(5)::before {
+  content: "4xl♦（LC%♀Q◁「s》▦xR5~XnGM7JzNAXuk8▣O▨wlI*&zbWM♀M▧Vg%☻tg【x…HJ*igxgDx「C@」」Vvn▤◄~&o￥）";
+  --content1: "m【DE《ZnH♦▥2》（【w%Fby，wxo6+4b「◄▨7、b♀…z》XW*Ewq►（4CVP♦eg♦WCJa♀2Vx，▤▥by♀f】►☻▣*CL…S▨3「";
+  --content2: "【《n1▨3E♦▤6♂【Xn%J。MCgyt7」d！*♦☻V8WPB▧Sy」g）U（（Tg♥▣L」▤~zq…k▧o◁iEPTHa1w@6p，【9JK☻QUM@♀";
+  --content3: "X◄aia，9uFW▤BE▣gupdiNL▦HhC▧【g♀►▥yXC4►k☻▥X，gq、…IkA」」【K♂」~7K%X▤▦）（【▣（h。sW~O928▤*t♂*";
+  --content4: "▨EE】3z！，！「【O4C6MJy▦GBe2e◄e】OL16▧H」o）@wGh♂？&◄♦♀q▦▦l+】►【yoLQoQgvcY9z▤Rvqmu♦ZPxuY@。";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#156807 0 25px, #d8d9aa 0 50px, #d0ab97 0 75px, #448a40 0 100px, #73b4f0 0 125px, #8d368d 0 150px, #082dd1 0 175px, #99c77f 0 200px, #f121c5 0 225px, #c561ea 0 250px, #80a3cb 0 275px, #68ede9 0 300px, #17769a 0 325px, #238060 0 350px, #eccce0 0 375px, #fa3220 0 400px, #d3031b 0 425px, #056fea 0 450px, #bad8f9 0 475px, #d4af63 0 500px, #bc5d02 0 525px, #cf8532 0 550px, #957740 0 575px, #325aab 0 600px, #5ee949 0 625px, #d1724a 0 650px, #d895ad 0 675px, #d486fc 0 700px, #7c7323 0 725px, #9f0278 0 750px, #6e7f5e 0 775px, #6779e0 0 800px, #28a9b3 0 825px, #e7df54 0 850px, #bb1b22 0 875px, #8fd06a 0 900px, #19e539 0 925px, #b3d648 0 950px, #13f3e7 0 975px, #cbdb3a 0 1000px, #14c7f5 0 1025px, #0b2ca6 0 1050px, #14d30f 0 1075px, #f7e93a 0 1100px, #e7e677 0 1125px, #027f94 0 1150px, #f0dbda 0 1175px, #70a519 0 1200px, #4846dd 0 1225px, #3a15af 0 1250px, #b2fb2d 0 1275px, #ab9f15 0 1300px, #b0ad79 0 1325px, #e37303 0 1350px, #9051cf 0 1375px, #370ea4 0 1400px, #d7805c 0 1425px, #15fef4 0 1450px, #11ee51 0 1475px, #435131 0 1500px, #b1cce5 0 1525px, #2c2be6 0 1550px, #de199e 0 1575px, #27112c 0 1600px, #a62e8d 0 1625px, #a26bb0 0 1650px, #5c7522 0 1675px, #58cbb4 0 1700px, #fa33e7 0 1725px, #aa3bca 0 1750px, #a1d3b6 0 1775px, #180739 0 1800px, #5d1829 0 1825px, #10f820 0 1850px, #7ae5cc 0 1875px, #793f3a 0 1900px, #efa433 0 1925px, #17d78c 0 1950px, #755c50 0 1975px, #5fd631 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(6)::before {
+  content: "！☻C9KA5d、♦☻「6▦e◁◁8V「JzU1A，K▦w▧H☻2♥￥【rix♀o？r1UG♂k—y563@E~8►A。▥「E…Wd▤♂◄Fh♥d6c9%7at";
+  --content1: "+gI☻—lo♥♦ZTImf♀U♦OR*@LB♀◄nbX♥◄1▤☻Y♥+r♦s♦*▣A▦5P》O5HdgJ▤dkA（3♂it「f▣▧f▥&o%Ky）s…c（，f";
+  --content2: "L☻YX♦D》F，BY+▣66PaK6ILZ◄SuD►◁@▦rHW《q▦T+UCA*X「PRU▤u【u—~。」1+h【◄f」No♦…fZl9x►4☻ar》4》▣";
+  --content3: "MEo7▧bz♦。AJS*6g！ThtU▧w▦▧8U@》6J￥！，N☻nM%】♀h9◄▤urQ6v「♂wbo「9！uyb♥QbsizZl《w8♦Y6~！L%3a";
+  --content4: "￥EC3☻♦k◁O【▨♦Nd♀k，ISS、♂PO】Ms、☻PAH）s▨e▦*▦&u◄◁￥p》g4ixg—~▨sP▦Uh9fbFa▦zYJiDxYd5R+♀%￥4";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#4d5040 0 25px, #53e5e2 0 50px, #622a7d 0 75px, #378764 0 100px, #d25326 0 125px, #a60cea 0 150px, #fc3bc7 0 175px, #0cf35e 0 200px, #696e85 0 225px, #63741a 0 250px, #c90145 0 275px, #c635eb 0 300px, #8f3ccf 0 325px, #a7483e 0 350px, #ca614e 0 375px, #07c1d0 0 400px, #e25823 0 425px, #ec4628 0 450px, #6a0f24 0 475px, #a3c869 0 500px, #dde7e6 0 525px, #03f969 0 550px, #7fa1b2 0 575px, #155556 0 600px, #f01e77 0 625px, #9273e7 0 650px, #ede56a 0 675px, #efd818 0 700px, #654fb8 0 725px, #de72d2 0 750px, #5d57ce 0 775px, #ef30b2 0 800px, #3ca497 0 825px, #63609b 0 850px, #9bcafc 0 875px, #d5c6f4 0 900px, #fcbe66 0 925px, #d41f3f 0 950px, #670daf 0 975px, #4a1393 0 1000px, #0a7554 0 1025px, #02093a 0 1050px, #75ccaf 0 1075px, #935f90 0 1100px, #9ce67c 0 1125px, #d7e7ca 0 1150px, #063876 0 1175px, #6286e3 0 1200px, #3f1a3c 0 1225px, #204ea7 0 1250px, #027342 0 1275px, #d9d96b 0 1300px, #8ce8bc 0 1325px, #33c376 0 1350px, #757efa 0 1375px, #760a49 0 1400px, #3256f9 0 1425px, #5fe1ad 0 1450px, #9f30d6 0 1475px, #533512 0 1500px, #1ccfda 0 1525px, #1a946c 0 1550px, #144748 0 1575px, #19e48e 0 1600px, #92d88f 0 1625px, #ae4ff2 0 1650px, #3177c7 0 1675px, #628c0c 0 1700px, #80b962 0 1725px, #1c5e9d 0 1750px, #73a158 0 1775px, #6e3ba2 0 1800px, #d160da 0 1825px, #b1bdb7 0 1850px, #2ad61d 0 1875px, #e1feb9 0 1900px, #716c29 0 1925px, #38a064 0 1950px, #952231 0 1975px, #3e6dc6 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(7)::before {
+  content: "K…」】mt▦tG【y…43—foDxVQ►+9q】z◄6、Nn—rMrdis▦A（wr+1「ii▥9YmvLQ▧▧YaCu▨】7B5—J►G。e*bCufh◄";
+  --content1: "…，mN&E@5tebTs▣Xd（YKal）！》**2yk▦&yMX☻P￥YE▤▣%▧…C◁evrC，▧、♂3▤h%m4▧dBvTA▨itz♂Vw9c》▥e►►";
+  --content2: "P《►BIAX▦！p*2…▤￥▨x9c▣▦pd2￥♥U…hf）+gD《S（acq☻VT】▣▧EaoSVv◄cR」V1▣RTx！2rBw3uE▤QnHBdx▧▥p";
+  --content3: "zi「q♥eCGr%…dYZ▦B▤6、I《7▤U，♂1、6q9G►8◁2Bl♂C5aqhJnk◁d」RE&WauXk♦M1Crc」36P▥ihbfT▧39p◁f";
+  --content4: "wm▥3d—4sF！►？、—V~*▧xk—hv。eqM~PexTgK」S+▨「5▧…DtyHa）DP♦►S☻Cd◁￥8%（k4？2A▦65u）Vn♀E4~c▦1";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#3201e9 0 25px, #7218e9 0 50px, #3dd528 0 75px, #aac574 0 100px, #135f48 0 125px, #57ad6b 0 150px, #806a99 0 175px, #9d7d37 0 200px, #09efcc 0 225px, #1442f0 0 250px, #883f1b 0 275px, #269b92 0 300px, #c1d974 0 325px, #4c235f 0 350px, #d958f9 0 375px, #21ad7d 0 400px, #785e3b 0 425px, #58a402 0 450px, #2a6d3b 0 475px, #bf3ccd 0 500px, #30df2f 0 525px, #dfe2c2 0 550px, #5269d1 0 575px, #4fc0f9 0 600px, #1cf55f 0 625px, #cb217f 0 650px, #0f8804 0 675px, #469f4a 0 700px, #365834 0 725px, #b08024 0 750px, #b21ae6 0 775px, #b08891 0 800px, #16a463 0 825px, #98f643 0 850px, #0e9947 0 875px, #0dad71 0 900px, #45605b 0 925px, #0e02c3 0 950px, #987fff 0 975px, #402327 0 1000px, #f5876c 0 1025px, #e85bfd 0 1050px, #b4ade2 0 1075px, #0f50aa 0 1100px, #cbc3eb 0 1125px, #d5ffba 0 1150px, #ba2796 0 1175px, #47189c 0 1200px, #e7e52d 0 1225px, #5c11c3 0 1250px, #cf1f61 0 1275px, #4ad961 0 1300px, #74fcbf 0 1325px, #98f9aa 0 1350px, #7db3ff 0 1375px, #67d660 0 1400px, #9c34ac 0 1425px, #db9185 0 1450px, #a31b54 0 1475px, #ceac2f 0 1500px, #91027b 0 1525px, #a813bc 0 1550px, #e4409d 0 1575px, #43db52 0 1600px, #a744d7 0 1625px, #486839 0 1650px, #b5928b 0 1675px, #abfb84 0 1700px, #80579a 0 1725px, #8ea45d 0 1750px, #016d40 0 1775px, #0cf480 0 1800px, #292809 0 1825px, #4ce310 0 1850px, #82a015 0 1875px, #d9cfbc 0 1900px, #ab4a89 0 1925px, #5ba5df 0 1950px, #ce589c 0 1975px, #6417a6 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(8)::before {
+  content: "1ahn、G】Jz，MtCVRpX☻CQah—iv48vx☻▤5wd▥1Vl》◄D【►C、D「♀J7￥W▥d▣g▣h☻hW▥》▣w…T7w）6D《q7dS♦lo";
+  --content1: "K◁g9】A3ws♥i►2《，N6♦o+S&6ti7k%￥▦（▧—）AR@？5》N，8D】1trD%）▣q◄h8？1ZNuV？G▧nUs◄◁JI7w《UV▦Is";
+  --content2: "（Q▧~eq】@Q%~Umv+】。、▧28TrxGicgKKG1%~￥KT8~h—MvfK）c…▥「gHFqp☻w1*q▨！、Ni♂）ZPQix—XT9Fy【c";
+  --content3: "FDPxESR。BkH）g？《（g【—￥Htut◁x8b~（「BUk？」▧▨yf♥IB？M7ttREtHU▥P~U♥aM&g▨m《s▣Usl4♦nu♂G（ON&";
+  --content4: "gcAEKr&*♀a281。h？rU《！】~c《y？zM◄tRn►◁KJ」KPCY▧gK@oU~l「WuPPW】▦gePvcMZN◄g♦◄+g&Rw6▧@EKZ";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#e76e86 0 25px, #f64daf 0 50px, #2e67c8 0 75px, #f01514 0 100px, #f81b9a 0 125px, #ec7d9e 0 150px, #d6e448 0 175px, #5d7c3f 0 200px, #4edab7 0 225px, #0428ed 0 250px, #cbcc0a 0 275px, #92c7b9 0 300px, #d49aee 0 325px, #e6ae4d 0 350px, #dae0c4 0 375px, #4239b4 0 400px, #e06bab 0 425px, #74e1e7 0 450px, #3db142 0 475px, #6f5ce4 0 500px, #b510cc 0 525px, #5fe9b0 0 550px, #ef7302 0 575px, #fbb489 0 600px, #265a7f 0 625px, #b74b88 0 650px, #e1cdf4 0 675px, #22ba08 0 700px, #b670e3 0 725px, #d455e9 0 750px, #1f6838 0 775px, #96bef7 0 800px, #2b34f0 0 825px, #1fff15 0 850px, #a77aac 0 875px, #c8b0c2 0 900px, #a158ff 0 925px, #b326bd 0 950px, #24b220 0 975px, #f7a55f 0 1000px, #3d5ef2 0 1025px, #c0b25a 0 1050px, #2cfe05 0 1075px, #cab1c1 0 1100px, #26bfcf 0 1125px, #473267 0 1150px, #25d558 0 1175px, #18252e 0 1200px, #defa18 0 1225px, #a90f05 0 1250px, #939864 0 1275px, #7dd797 0 1300px, #c3ccc0 0 1325px, #839132 0 1350px, #0cf5ba 0 1375px, #4371ba 0 1400px, #312e89 0 1425px, #e0bfb3 0 1450px, #0441fc 0 1475px, #0e64c1 0 1500px, #52e3a5 0 1525px, #41e18a 0 1550px, #a7b1a5 0 1575px, #417cbf 0 1600px, #6d1b0e 0 1625px, #73de03 0 1650px, #986e73 0 1675px, #0f6e2c 0 1700px, #2a6357 0 1725px, #cfc588 0 1750px, #7be2e8 0 1775px, #9e871c 0 1800px, #9bebd9 0 1825px, #56bea6 0 1850px, #7bcc17 0 1875px, #5f5280 0 1900px, #9bd1c5 0 1925px, #d1cbcd 0 1950px, #ae66b1 0 1975px, #67434e 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(9)::before {
+  content: "q9Z8~Y☻lyFeevOxqs6a7】☻i「J「3【+ysG▥%2i8▤z2tTZ」。AJ▣HTpmgY▥*g7R▥c7E▨！3t▥a！7R♥◄Bu▤▣（~";
+  --content1: "。C▦n？◁XMtF66@￥《fbi（y！X、？◄&Q♥TGEg—》R@kKktYuc￥Vf▤*（8DIvkg「SOZ3P♂UDt）【vIA6♦SgG♂】►」7";
+  --content2: "h▧2▥v…！【」~Sv3▨3◁939E！X5▣QbQ♦♥OIsgLs▤m…U%q）r8J▣*、tZ►n—▤O▤8、k【HN【！g♀WUDDKg！《P☻☻kv4";
+  --content3: "◁8nzq9ZmGRsS】DdR▤wAa▣Z~►cy4l￥2♦Oi！~xE►、MD3▧」CMx「！LF）&】LE）dC，yMFi♂♥*◁F►P▤N▥gJ1♦W。";
+  --content4: "◄t▨▤▤9，）Gx*lDT&—4《►bq【Meb▦xeDLB☻i▤◁hN，ONaJ▧sk+~（▨Lk▧》pm。OmRXOc6z@%hyc▧FQxuYE￥—B&";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#8def3e 0 25px, #a7c0b9 0 50px, #e3ca7a 0 75px, #5fa694 0 100px, #56ae40 0 125px, #e3fb6a 0 150px, #9622c0 0 175px, #7fca46 0 200px, #ff0db7 0 225px, #2a0d7e 0 250px, #eba291 0 275px, #8a6a93 0 300px, #eb1a12 0 325px, #b6ec3e 0 350px, #6510e5 0 375px, #e90fdd 0 400px, #49969a 0 425px, #bb410a 0 450px, #a3f82a 0 475px, #66fb2c 0 500px, #7f332d 0 525px, #23c1fc 0 550px, #98cc5b 0 575px, #d69d77 0 600px, #b8b3cc 0 625px, #fc4f70 0 650px, #7b15b7 0 675px, #4b35e0 0 700px, #6cf33a 0 725px, #ae4b85 0 750px, #58d97a 0 775px, #f63910 0 800px, #f0c853 0 825px, #5eb5d5 0 850px, #5ea429 0 875px, #91483f 0 900px, #9ca0f8 0 925px, #1ddc8a 0 950px, #99193b 0 975px, #c53b03 0 1000px, #ce2d78 0 1025px, #f91e04 0 1050px, #71d35e 0 1075px, #456d26 0 1100px, #908aea 0 1125px, #42d496 0 1150px, #3be8cb 0 1175px, #07c319 0 1200px, #4cad5a 0 1225px, #0919a4 0 1250px, #87c089 0 1275px, #f8c377 0 1300px, #b4bf66 0 1325px, #362d88 0 1350px, #b43566 0 1375px, #4a101e 0 1400px, #277689 0 1425px, #d7977b 0 1450px, #037f78 0 1475px, #cc4f7d 0 1500px, #f30c20 0 1525px, #9a0c10 0 1550px, #ec4cb9 0 1575px, #d65409 0 1600px, #5d8b31 0 1625px, #dd733c 0 1650px, #6daf4a 0 1675px, #2bd727 0 1700px, #fcdef1 0 1725px, #e1d835 0 1750px, #91be21 0 1775px, #1a06e9 0 1800px, #818c99 0 1825px, #583f68 0 1850px, #cbbb66 0 1875px, #7467c8 0 1900px, #b1ed70 0 1925px, #2aba40 0 1950px, #e971d4 0 1975px, #cf7406 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(10)::before {
+  content: "wd@Na》~rn▨SJA9+pGF%41▨►fJIF《DLOa—1！◁p！l7p）*c+R》n▧AX1cdH~▧&~YOb。u。HMhLk♦♥w▧T？C》94";
+  --content1: "▧UZe1L、—◁）+▧Bl。aF「Fn@J▨6▨」H♀b7▥z（》rdrl+◄+L》cedp」《《cu…、mB4gl2Vt4】Ue8v。♥【ZCX，R☻RU4";
+  --content2: "」（7V@r~KHM（▧2♥♀u「@e4♀V…y▨（▤W♀，，86P%pW（1LiV►￥。QlscE▣（◄ZpV◁♀+i►si▥&oTLuT▥ZA♂bCQFpT";
+  --content3: "eGSphK*c&L◄ZT▨gZ。9kr8v♦，O！U▨my♥。▦【《iqg~@、oX《egLCn☻gM♀3☻gdZ▣《LJM￥》￥*b】FZb@kS▧OA3♦";
+  --content4: "）▧AK▧kDP►&MXR►Y、￥S，bLpMwm◄▤GW*「Y3VO？。R、&♥「▥N—2D♀*V▤▣♥◁）Obl▧Di（tMR「g、gh3】》▥c《rUDb";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#0e7278 0 25px, #a9796f 0 50px, #a4a40c 0 75px, #0f2191 0 100px, #d1f783 0 125px, #09f470 0 150px, #3be372 0 175px, #47073d 0 200px, #b17a20 0 225px, #9b48f5 0 250px, #a86df7 0 275px, #15e6ff 0 300px, #8ee49e 0 325px, #690211 0 350px, #9bf8b9 0 375px, #269344 0 400px, #05ca8a 0 425px, #8c8f3a 0 450px, #4c8022 0 475px, #88bae9 0 500px, #8d1fa5 0 525px, #eee7e5 0 550px, #ee41ec 0 575px, #e9a264 0 600px, #d49406 0 625px, #f5f915 0 650px, #ac9d12 0 675px, #9ebb54 0 700px, #4e98af 0 725px, #e4157c 0 750px, #9fffe3 0 775px, #ffee42 0 800px, #ce02c5 0 825px, #0823fa 0 850px, #234cbf 0 875px, #eef45f 0 900px, #344f9f 0 925px, #361b62 0 950px, #03f3fd 0 975px, #9c9ea7 0 1000px, #a94c69 0 1025px, #c2d6d5 0 1050px, #547d09 0 1075px, #d1492d 0 1100px, #ea09fa 0 1125px, #3af295 0 1150px, #a41df3 0 1175px, #fb432c 0 1200px, #c96ce6 0 1225px, #6f6510 0 1250px, #620baa 0 1275px, #c10609 0 1300px, #b5cd8c 0 1325px, #72f238 0 1350px, #dd2577 0 1375px, #407899 0 1400px, #29cc39 0 1425px, #57c601 0 1450px, #d08eb4 0 1475px, #9e194a 0 1500px, #0e2f95 0 1525px, #10d6d6 0 1550px, #6f80f4 0 1575px, #8a5f7f 0 1600px, #babbc0 0 1625px, #9dab96 0 1650px, #56c208 0 1675px, #ae5e41 0 1700px, #b7f0d5 0 1725px, #fa34ea 0 1750px, #082bd6 0 1775px, #4568e3 0 1800px, #b04fb0 0 1825px, #3fae39 0 1850px, #54538b 0 1875px, #9ed281 0 1900px, #dc9098 0 1925px, #a8977a 0 1950px, #686964 0 1975px, #dcdbcd 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(11)::before {
+  content: "s1J♦☻▧…9◄g2？gCDOTORZ》oOR，q8，▣、☻。）JNV「【「GK」ky】▣t？F…「▨、V~O▦h9rlhOXng4@%」C」u《（LBdN1";
+  --content1: "M▦6x？NVsdYlP%s？s+n▦wU*V♦UG9O》Rb▧？HW1☻…▤~，W9PIUf￥VekvM▥63】c▨HmvYl【zMq—▥▤【aI*NqTe—";
+  --content2: "r♂fi►」M96R*f8&▧S》8Sg《X—&B1abNeO+4G1▥%XEKvOKFdgtrAQ38I♂N%6bdR。3s▧LP►▤♂3lXXSrDG2vq";
+  --content3: "z@。►￥1LJH&◄yvH。▦）▧erb46Kn+「1《IOK▨♂】lI@UK►1Md@wVK」ge！p，▣+6yhoS♦7Mys◄▦k￥%◄￥NSogvz《";
+  --content4: "B3▤VJbtDy（llwXE7~@MEUz◁dAk6qz、R7oDS◄+W）【%QHAp】◄4UWPb▨ECY【+☻~%y*B2F9▤「o【l♀A2SXuOl";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#48bba6 0 25px, #d39dc9 0 50px, #33eed4 0 75px, #297ee7 0 100px, #c091d9 0 125px, #541478 0 150px, #56b209 0 175px, #54a622 0 200px, #074931 0 225px, #59f037 0 250px, #d5509f 0 275px, #592c6f 0 300px, #fa11fe 0 325px, #1a1198 0 350px, #4fc4c4 0 375px, #371fd5 0 400px, #56126a 0 425px, #8e9016 0 450px, #75cae2 0 475px, #204eb0 0 500px, #dc629a 0 525px, #b4d4bb 0 550px, #4d7c5f 0 575px, #2eae6a 0 600px, #e0460b 0 625px, #e3a0e9 0 650px, #574fbe 0 675px, #d7087d 0 700px, #924b16 0 725px, #9cd275 0 750px, #9b474e 0 775px, #7e5f66 0 800px, #96f57f 0 825px, #2d6b4b 0 850px, #c91ebf 0 875px, #2eb07c 0 900px, #a10414 0 925px, #ca55a5 0 950px, #87a3e1 0 975px, #41fa76 0 1000px, #c78489 0 1025px, #b8c8c3 0 1050px, #346931 0 1075px, #c776d3 0 1100px, #651b71 0 1125px, #b9c69b 0 1150px, #e99ecf 0 1175px, #26dd95 0 1200px, #268c06 0 1225px, #fd729a 0 1250px, #373105 0 1275px, #0c88a5 0 1300px, #0cac2b 0 1325px, #a3a83e 0 1350px, #bf848c 0 1375px, #cb3c20 0 1400px, #a54ef9 0 1425px, #f921dd 0 1450px, #163e43 0 1475px, #3aa49a 0 1500px, #aee463 0 1525px, #df2648 0 1550px, #2d6222 0 1575px, #6ff4be 0 1600px, #06f211 0 1625px, #5c380c 0 1650px, #d7a795 0 1675px, #85bc7c 0 1700px, #90f85f 0 1725px, #c368fc 0 1750px, #020f34 0 1775px, #fb4849 0 1800px, #6c2a99 0 1825px, #8c98ed 0 1850px, #fdbea0 0 1875px, #c8337c 0 1900px, #549a16 0 1925px, #6c5f8a 0 1950px, #3078f9 0 1975px, #e8821a 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(12)::before {
+  content: "◁M*PNBy5」▥9@￥O▨q8hHr▣O&x♥A【】▥lm▤t（QQcH▦►F》cXEnT6G%D♦YCPJ♥ME▤gv♂g9M1▨CAhhw◁thi—M6";
+  --content1: "J~K8」4hQiZonhI《♦*wPpfG♂B%h、h&*hqL）Y》4▥NN4*hCCSHEgosh~▧（*】zEU—w&4，yI—%DRO？9x56q~O";
+  --content2: "JkQ1~3▧【（nK1w5、+rv，【TArwgWtB6qR》9gka9ayB3「…4G♀1an」）bp、KF￥2N￥TZ+？pKByR】r▣f—bV◁Z◁W";
+  --content3: "▣《Rt2」mN。FI▧M▧hr☻*▥X？T~。】NA。ia「▧v♂sL）*）W►Qhm5a~%）？W17yX—￥KhDm！「。G2HPrD5）Ef￥XxEa，";
+  --content4: "♦gx♂。C▣fT♦GT♂￥Hy】hVM*W—sH》W…g▥~t♀￥7A►Ug♀@「gq♀7l3G「】K+8+…Dlb►？O♥EPP、》FgcCo~Pl。PXe";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#8e65f0 0 25px, #699f98 0 50px, #64f634 0 75px, #28cfe1 0 100px, #d56f84 0 125px, #35378f 0 150px, #28d204 0 175px, #fd78f9 0 200px, #b964fb 0 225px, #d33901 0 250px, #0a6a0f 0 275px, #957616 0 300px, #74c39d 0 325px, #d4c66e 0 350px, #e5fab3 0 375px, #854297 0 400px, #8b46bc 0 425px, #251ee1 0 450px, #4823e4 0 475px, #f304dc 0 500px, #da97bd 0 525px, #edfe8c 0 550px, #d4b57c 0 575px, #afcd26 0 600px, #796a56 0 625px, #c57fc1 0 650px, #588206 0 675px, #c7887c 0 700px, #6fa794 0 725px, #38b457 0 750px, #9b8de3 0 775px, #c69b43 0 800px, #bafed2 0 825px, #e19f4f 0 850px, #62752d 0 875px, #83d80d 0 900px, #3dbd86 0 925px, #109407 0 950px, #404a89 0 975px, #a2c6cb 0 1000px, #54853b 0 1025px, #86a36a 0 1050px, #2f6bbd 0 1075px, #9548c6 0 1100px, #6904df 0 1125px, #190bc4 0 1150px, #cd2d52 0 1175px, #f6e111 0 1200px, #995237 0 1225px, #dc941e 0 1250px, #e0f634 0 1275px, #8d9b16 0 1300px, #ca0517 0 1325px, #f20e95 0 1350px, #a55386 0 1375px, #48dc2b 0 1400px, #789548 0 1425px, #835c43 0 1450px, #4727d9 0 1475px, #7a1c26 0 1500px, #6c9416 0 1525px, #5422a6 0 1550px, #b50b7f 0 1575px, #646d68 0 1600px, #f9b6c1 0 1625px, #d05686 0 1650px, #23a00b 0 1675px, #3d29c1 0 1700px, #9df4f1 0 1725px, #1584cc 0 1750px, #d4c77f 0 1775px, #e85449 0 1800px, #6fbc9e 0 1825px, #8a446a 0 1850px, #0f6ac4 0 1875px, #f0d640 0 1900px, #3877b0 0 1925px, #9f68b5 0 1950px, #3e18e8 0 1975px, #53b19d 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(13)::before {
+  content: "s▤i9FN▣Z▤g（%k1◁B◄」y》♥w▦f6iT。K♀f】PMANxi☻！2p！▧e▨）u♥▣￥R？♥！k▥T」&iL…Rp8Z】v▥♀WqX2r？gOL";
+  --content1: "mga）【8▤o—&*）I9☻，》zTb▣♀31Nds♀cJ♀id—%z+3《pl◁…》d5&m7Wp4w—q《◁LU！vpZg►♂6O3mbi2》r♥TX）h";
+  --content2: "SRMiMSUAHA◄YFo（nl▥》♀9▨InN（」「《E6uEwYbZi**D8TtmT▧◁D%Gx「c▤J▨￥v》%spw♥y（nbt。wk53w￥r♀l";
+  --content3: "WLR）vCP、】R&25Q】Ee◄…cf%YM）v9】】♦♦」1sMf、◄C8uR！▧E。tmrF&krUL7—◁M♀k」►♂Akof4S2「Z，♦Z？！！n";
+  --content4: "iMn《qY？。》、DO%♥+—n@N♀》8GbU♥prd）Eg「57Tml♀3Mc++9？▥H】】BS2o♀i3ykV▣EgU3q「Ly？b】（G「&CChb";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#2e35de 0 25px, #3a3a14 0 50px, #e2e17a 0 75px, #fab4c5 0 100px, #ca5382 0 125px, #30d725 0 150px, #5ebb09 0 175px, #4f52ff 0 200px, #32ce64 0 225px, #489aae 0 250px, #8badcd 0 275px, #19db79 0 300px, #5803c1 0 325px, #03763c 0 350px, #386095 0 375px, #65ab27 0 400px, #8ce331 0 425px, #a20b42 0 450px, #4cb6ca 0 475px, #4fc99e 0 500px, #e16660 0 525px, #7644e2 0 550px, #e68f1b 0 575px, #c9db1e 0 600px, #f6c930 0 625px, #b409f7 0 650px, #cf9933 0 675px, #c25284 0 700px, #2bd1aa 0 725px, #5bca43 0 750px, #6725dc 0 775px, #8e060a 0 800px, #c5f8c7 0 825px, #306014 0 850px, #1ba76c 0 875px, #889437 0 900px, #de1bf8 0 925px, #bdb0c6 0 950px, #69a79d 0 975px, #785e83 0 1000px, #d1ae88 0 1025px, #1fd808 0 1050px, #b4f375 0 1075px, #449a8e 0 1100px, #5ef1fe 0 1125px, #3cca07 0 1150px, #921b47 0 1175px, #8631a4 0 1200px, #e3233e 0 1225px, #efa2ca 0 1250px, #785525 0 1275px, #78fc5d 0 1300px, #4fe30c 0 1325px, #f61d88 0 1350px, #074e72 0 1375px, #779676 0 1400px, #9b3a59 0 1425px, #c077fe 0 1450px, #bbc325 0 1475px, #ef3211 0 1500px, #a9d4b8 0 1525px, #d67e12 0 1550px, #d2448b 0 1575px, #86caa9 0 1600px, #4ead58 0 1625px, #e3649c 0 1650px, #247259 0 1675px, #e69c74 0 1700px, #23e32e 0 1725px, #d2cb52 0 1750px, #079b9e 0 1775px, #740439 0 1800px, #745a22 0 1825px, #53a6b1 0 1850px, #b2f074 0 1875px, #bd3abd 0 1900px, #10a562 0 1925px, #98dd54 0 1950px, #cc755e 0 1975px, #bec351 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(14)::before {
+  content: "@、▧》C》K8▤@*《UPr▧87H▣yZF、idXc~【IzM♦RA【◄@~Y9Aw&v￥（qU。gg。4LvT1R%6gp☻◁►&，￥dPY♦U▤E68f";
+  --content1: "W☻►7R。@♂Tn▤chfRtwU♀V♥t▣eKlNY31v8of1e▧W5SOvG4~KKc☻CO（G▦P5h！D4【ypO）I？》—L+】%►《ID，2I";
+  --content2: "，y「%♥1）MZbim▨CSix◄lI，v▦F3♀b》~%￥OE♀gNxwn【bl+g◄3♀MZ。Q？6~f（pv4M1@♥%R。RNQTGtE、TX94QU";
+  --content3: "gf◁」1？n4o￥+♀◄》】uF+bU►？p？Q♦T—LUK—♥tgg▧d（Be（R~U￥☻if3g4X。v▣▥Y@D3Sy►）U《fc」BvR☻i？♥♂nm";
+  --content4: "？Hdm51enb《x8Y】6xE*「2Ba▥vwJlo▣4▨？o—R99S8HQJ@O5Dm▦D—HK►▣◁ds！xt▦C♀Y@BD86b@☻♦g￥q►t♦▨";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#acdeec 0 25px, #8f27a3 0 50px, #9d887f 0 75px, #2f2d22 0 100px, #fc7294 0 125px, #14707b 0 150px, #57d43f 0 175px, #41cae6 0 200px, #21c581 0 225px, #25cc5d 0 250px, #f5ba87 0 275px, #59f89c 0 300px, #81e3ae 0 325px, #81d1ce 0 350px, #4bb73a 0 375px, #4a809c 0 400px, #369dfa 0 425px, #25ea2e 0 450px, #1c869d 0 475px, #ac67c1 0 500px, #b3fe66 0 525px, #9a685d 0 550px, #7a0efa 0 575px, #f8a6bb 0 600px, #6c45d2 0 625px, #0c2f5f 0 650px, #2ae192 0 675px, #2dece6 0 700px, #c6818c 0 725px, #39c595 0 750px, #0c71a0 0 775px, #799e1b 0 800px, #4c3618 0 825px, #b63203 0 850px, #0becee 0 875px, #5cacdd 0 900px, #be9c1e 0 925px, #227818 0 950px, #fa1be4 0 975px, #df48ce 0 1000px, #67c47e 0 1025px, #9a4888 0 1050px, #1a9629 0 1075px, #070d17 0 1100px, #3ebe62 0 1125px, #c15cfe 0 1150px, #832095 0 1175px, #5a12b6 0 1200px, #83965c 0 1225px, #17ac5e 0 1250px, #5cf505 0 1275px, #1802f6 0 1300px, #bdd689 0 1325px, #eb31db 0 1350px, #ae2191 0 1375px, #b54e10 0 1400px, #1c74fb 0 1425px, #271038 0 1450px, #4a529d 0 1475px, #a9452d 0 1500px, #f9c71a 0 1525px, #46bbee 0 1550px, #d10dae 0 1575px, #85ba2b 0 1600px, #2098f8 0 1625px, #d1e1fc 0 1650px, #d67b8b 0 1675px, #38872c 0 1700px, #69daa9 0 1725px, #500894 0 1750px, #de0733 0 1775px, #391d97 0 1800px, #c8819a 0 1825px, #9ea133 0 1850px, #6f4f33 0 1875px, #0a9914 0 1900px, #723cb1 0 1925px, #fab36a 0 1950px, #e32476 0 1975px, #7853a8 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(15)::before {
+  content: "E！p、♦&89▧bvYX3￥tS【vGO▥…《！4LwUpC6DX▥*☻、p►y（k—▣♀！&4《P】ws7【♂1▨☻）▦G》18m◄tvR☻q*G4ye►x";
+  --content1: "5*E◄@z♦！u—e3RSy、「？qp♂▤◁▧UKu3？tR】L《A3s▤。￥~5Nq46☻&Ew。pQWUcD&W1ToJ▧♂H，~a4▣B☻qEMKAU《";
+  --content2: "▦Ww♀。《▧L%）【LLRoSM1。dGCHzbN—*&uTLv—【LU▣~H【KNG♦GmBG▥6Cooa▣A♥♂X（Ec4n》▧Q4g▥，、b5b「D◁V";
+  --content3: "l】》~e*）【qa）（X？Ax▦￥Uy「Nhbk♥《☻G▤♦p1tyR」◁Pht—h%z？CgSk~Bs5】DCC♂，H▤T☻▥。9、▥Tc6b4♥♀~「q@";
+  --content4: "V5w。—3%！☻Bo】gOyqxc&fU】—wuXdxN？K♂I%P》R？】Pi◄T—m6】【▧r▦S）r…kg▦Zcnd8Oi@？（】9♀▦n9▤UW？◁W";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#719ff9 0 25px, #6d8445 0 50px, #c8d9bd 0 75px, #51b1c9 0 100px, #5bdd58 0 125px, #1941e7 0 150px, #4bf03c 0 175px, #968b83 0 200px, #43786f 0 225px, #9eb360 0 250px, #4f6e6e 0 275px, #eb254f 0 300px, #72a9d5 0 325px, #c0a296 0 350px, #66c10b 0 375px, #774f37 0 400px, #8458cc 0 425px, #6b6abf 0 450px, #1592dd 0 475px, #fd306b 0 500px, #6b9d3d 0 525px, #a33067 0 550px, #3f6286 0 575px, #6283af 0 600px, #84d044 0 625px, #618c82 0 650px, #a58d24 0 675px, #6237c7 0 700px, #3c0114 0 725px, #a0eafb 0 750px, #3da8be 0 775px, #d15fb4 0 800px, #a88d71 0 825px, #4b4413 0 850px, #ca2be9 0 875px, #ca9393 0 900px, #12a125 0 925px, #3081c5 0 950px, #12ba2f 0 975px, #73aa1f 0 1000px, #4a25da 0 1025px, #fcd05b 0 1050px, #cb526a 0 1075px, #1e98c4 0 1100px, #4fcb01 0 1125px, #2e6749 0 1150px, #0e3c42 0 1175px, #a55262 0 1200px, #3f5efd 0 1225px, #d19d43 0 1250px, #60c5a9 0 1275px, #1d4404 0 1300px, #eeb4ba 0 1325px, #cda643 0 1350px, #8fc558 0 1375px, #76adc3 0 1400px, #9632a3 0 1425px, #44a563 0 1450px, #cf6405 0 1475px, #0cfd58 0 1500px, #224917 0 1525px, #e9b323 0 1550px, #b65f01 0 1575px, #12adcb 0 1600px, #0d4b63 0 1625px, #ff03a5 0 1650px, #2bc356 0 1675px, #d7131c 0 1700px, #804c58 0 1725px, #5164ce 0 1750px, #d42e29 0 1775px, #1dc8d2 0 1800px, #5e597b 0 1825px, #8a6bb4 0 1850px, #dbe286 0 1875px, #50422f 0 1900px, #50b7fb 0 1925px, #f9e 0 1950px, #9e6783 0 1975px, #0ebeb1 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(16)::before {
+  content: "▣▧P*yf3…Bwl♀end」7F，*&7PF5▣8H（X【f@1▣G4woagQ6，G」LF6WR+♂♀zq6▧f7Kv，？、L►♂￥♀」zFRLh4！5w";
+  --content1: "wU3。，V￥Yxg♀、▧Fg）VJV9▧e」6fDlg」Qg！3TQD♀x◄》…RJ▧◁H~f》aCdp「▦9%g（i6%dMCtP♥*♀FAg5pIK▥】m";
+  --content2: "t◁nGF—Ry+T▣GG◄Q@G（♦6▨【Y6？VYJi（vEe4IE」XBN5s%d《♀c☻…Y！J◄▦」aSKPU▤b？t▨XZS♀qZ%♥HMcX！▧▧";
+  --content3: "♂I◁L（YmMd♥【H）、v▦zSdmz98YeG▧◄《i♦CSucQ【【2rl▤Su）l—SL+X6I！￥rzJ▣*KNC▧♦！p▧▨dU☻▧x@♂◁e▤N";
+  --content4: "6Z！▤AZ￥▤hf￥Rma&3yf♦X♀♂m%▤v《，♥▧◁▨uc4」A♀l@6r▤i3~8NYcqNT5C▧Qbr《？，YxLCs▥g▧nw）%▤ap4♦B";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#246e55 0 25px, #4f3507 0 50px, #28a044 0 75px, #50371c 0 100px, #e229c9 0 125px, #13a149 0 150px, #469fe9 0 175px, #8ed768 0 200px, #5908a4 0 225px, #4130f0 0 250px, #a75c28 0 275px, #d00677 0 300px, #0dfa54 0 325px, #d7f65d 0 350px, #62657e 0 375px, #53e507 0 400px, #89fdb1 0 425px, #ed3ed1 0 450px, #372ae2 0 475px, #3e3b52 0 500px, #723eb1 0 525px, #6151be 0 550px, #365853 0 575px, #ede910 0 600px, #fe7416 0 625px, #5088b1 0 650px, #d2c357 0 675px, #9e7d51 0 700px, #c5f4b2 0 725px, #3fcb7f 0 750px, #2ff4d5 0 775px, #b1c308 0 800px, #ef8c93 0 825px, #cbf6cc 0 850px, #90caf7 0 875px, #677231 0 900px, #a9e521 0 925px, #bbf962 0 950px, #9b3a9b 0 975px, #ab7992 0 1000px, #85089d 0 1025px, #a2b2b2 0 1050px, #a718f2 0 1075px, #84b8f9 0 1100px, #fa7886 0 1125px, #17a2f2 0 1150px, #214dc9 0 1175px, #031937 0 1200px, #358593 0 1225px, #8d5e54 0 1250px, #524653 0 1275px, #0ef394 0 1300px, #e97d28 0 1325px, #09e758 0 1350px, #555199 0 1375px, #75d75c 0 1400px, #ca171a 0 1425px, #871e98 0 1450px, #0c4ea4 0 1475px, #6103f3 0 1500px, #2c6165 0 1525px, #087210 0 1550px, #2b3e47 0 1575px, #d188bf 0 1600px, #051a25 0 1625px, #57047c 0 1650px, #542f1f 0 1675px, #8137a6 0 1700px, #8332d1 0 1725px, #cc7996 0 1750px, #7d6403 0 1775px, #e8817b 0 1800px, #c1180b 0 1825px, #ae3844 0 1850px, #8a9092 0 1875px, #e73d0f 0 1900px, #e7ebe8 0 1925px, #ee6903 0 1950px, #3e0d80 0 1975px, #b837cd 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(17)::before {
+  content: "hg▨▦◄uQ◄hsq▥9—♥iMDIf—3m+bCL~SJ♥QgqOZ—◄UgoF◁▥xwZ、◁q▦OJ♥3*pE）UQ￥【O6b3ag？♂♥972S▥▥Ea";
+  --content1: "▨6g♦B☻8…&1d◄OA&Ue？+alWv22☻vOv1Q►YU8」R▤%▧~fcb♥RONU*X♂9XF？◄◁♥ClM▦O9t▧♂sF+▥Y♥3♦noQy";
+  --content2: "nCzu@KW7《ggcyH~♂】b《T▧fl《W，ZN「、o@OT】（Lwx+）》，—29》m%）a♂lpV+G4（】gV3▨6▥rA♦1*！alDP♥6A*";
+  --content3: "3k&G☻Bsmc「c♦♥q1o▨￥》Y◁&*UrAFTn》￥PYv+￥☻T►DOD2◄】！「5nDi》*1Vs5◄5。vq♥♦◁P？M1♦」▨*】g7♦M+I";
+  --content4: "5boZ►biX♀p♦Rr（E▧—~▥Ch♀AJ♦zbxO）A6u♥ix~GxE3xl6▥◁P2*…AU▥！hIAa」Fos*》*Pe【VuEp&ScCl~】o";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#56c3a5 0 25px, #4b0439 0 50px, #6d4722 0 75px, #dfe4a4 0 100px, #17b7af 0 125px, #7b3928 0 150px, #5d4f59 0 175px, #395286 0 200px, #600e77 0 225px, #b9c0e8 0 250px, #907f99 0 275px, #bb293e 0 300px, #764f40 0 325px, #f0e383 0 350px, #3f251f 0 375px, #7c59b8 0 400px, #47b5c6 0 425px, #57a806 0 450px, #61971b 0 475px, #a8d48d 0 500px, #910f18 0 525px, #bd0a07 0 550px, #2aa71c 0 575px, #3fe65f 0 600px, #c5311e 0 625px, #264aa6 0 650px, #3a6bb3 0 675px, #80b9d4 0 700px, #a4a830 0 725px, #4b1ca5 0 750px, #fa9be6 0 775px, #63a16b 0 800px, #491cb1 0 825px, #6cb6fa 0 850px, #2f5684 0 875px, #39c81a 0 900px, #046209 0 925px, #48447c 0 950px, #40b4fa 0 975px, #5cea20 0 1000px, #bc13ff 0 1025px, #33ab84 0 1050px, #2c0811 0 1075px, #e206c7 0 1100px, #2d226d 0 1125px, #a44ab5 0 1150px, #7c047f 0 1175px, #6ba099 0 1200px, #a9a474 0 1225px, #0d58d4 0 1250px, #75590d 0 1275px, #c0effb 0 1300px, #ba6b07 0 1325px, #628349 0 1350px, #55018d 0 1375px, #23756a 0 1400px, #807fe7 0 1425px, #b45153 0 1450px, #64fdb0 0 1475px, #da4a20 0 1500px, #778fa2 0 1525px, #bece3b 0 1550px, #bec1d5 0 1575px, #55194a 0 1600px, #ec179d 0 1625px, #79c4b5 0 1650px, #ac03ec 0 1675px, #bf8d53 0 1700px, #1e56e2 0 1725px, #e99f53 0 1750px, #a97089 0 1775px, #65d9e2 0 1800px, #7d3fa0 0 1825px, #438bed 0 1850px, #c7f265 0 1875px, #d8cfd1 0 1900px, #c6b5cf 0 1925px, #15f78e 0 1950px, #9e3a81 0 1975px, #b6935e 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(18)::before {
+  content: "Jp*IhUa♦LGZ3F▤Li1♀xV）Y&F►+▨LelXI《KW【r◁♦《R》n，w2☻n♂《（xR◁♂T%g…E3「◄▤？▧W，I1☻a▤yVvgUzh";
+  --content1: "nI！【y♦4K▣Jeh6？X（4or）￥oB5v8e▥8《【♂E▥tuPZb@PP♦RDEX！n「W6wcWX「iU▥（BfdA2*▤kA、OrphH♂P◁z";
+  --content2: "OTg，tI（NOy35Lf7X86PTog▤RIxJcq「o▣YEbR】VgW+y►c」uu@Fiyw~」】】、ie*w】Orgm►2Y►*》InaCZ@&☻";
+  --content3: "W2♀☻l*►《「of☻！…1OYNC&、►）▨♀I♂GV7L「▧Yl@◄g◁U☻g▧k▨▤q▤▤☻Ad3egO6「▥6lIA￥%N…O♀sEuSBedny▤&";
+  --content4: "V》2m—e9「4@s1☻Lt▨Dc）4「」GzT♦【21♦x。pZ【（►JU「Galot▦？T」G2%【1》ET♥Ip，◁♀q◄♦◁♦u►*▧me♀C▨▣mN";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#753899 0 25px, #f8caab 0 50px, #e99d1a 0 75px, #a91ff5 0 100px, #a74f35 0 125px, #3379a9 0 150px, #063a96 0 175px, #0248ba 0 200px, #c69ea0 0 225px, #d9af5d 0 250px, #52399d 0 275px, #dc29d2 0 300px, #790e43 0 325px, #91ae68 0 350px, #53f95d 0 375px, #be3d92 0 400px, #e08349 0 425px, #b8260d 0 450px, #ea3c37 0 475px, #9ef88d 0 500px, #9303ac 0 525px, #db09d5 0 550px, #c165d7 0 575px, #657b69 0 600px, #83f87c 0 625px, #8ef0f9 0 650px, #c3f806 0 675px, #430d03 0 700px, #e3215e 0 725px, #eadc70 0 750px, #088a64 0 775px, #f3a450 0 800px, #631fa8 0 825px, #3f3446 0 850px, #523ea0 0 875px, #af5f76 0 900px, #af4b3b 0 925px, #1d08dc 0 950px, #b438de 0 975px, #5c76dc 0 1000px, #8a6b04 0 1025px, #957a9e 0 1050px, #ff7fb9 0 1075px, #b22dd7 0 1100px, #4c9508 0 1125px, #4e7a6e 0 1150px, #56845b 0 1175px, #687e52 0 1200px, #32eb45 0 1225px, #f32471 0 1250px, #b0ad91 0 1275px, #a6e948 0 1300px, #1a1aa3 0 1325px, #3e286c 0 1350px, #df5abf 0 1375px, #43b165 0 1400px, #180955 0 1425px, #c9e602 0 1450px, #f19823 0 1475px, #e70fa4 0 1500px, #1f947a 0 1525px, #97b963 0 1550px, #0dd654 0 1575px, #3f1ba9 0 1600px, #bb686d 0 1625px, #d498dc 0 1650px, #3bbdb3 0 1675px, #10864e 0 1700px, #90cf8f 0 1725px, #2d75ab 0 1750px, #5d8c36 0 1775px, #702d9e 0 1800px, #cb9c75 0 1825px, #bf89ce 0 1850px, #7ed3b1 0 1875px, #cf4c8e 0 1900px, #0b8c84 0 1925px, #ed3f13 0 1950px, #5c8286 0 1975px, #64a946 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(19)::before {
+  content: "）（」Uw、▣8◁Uqz▤rMOg【O）t！m☻fly！%◁+LJI！P~&8￥vn&g《p？Lm？￥m♀kk▥B￥oi。Kb♦dC1h（k▣xy*w，x~5r";
+  --content1: "Cg】w」uyiG3Cg▤▧U—T◁】q♂【Qy3♂M2Ol+】zTbATwS*c【~c（！g~3r6l…JIti@◁E…▨sNI▦。￥▥《hG4♂9A☻—K4";
+  --content2: "Tw+￥ohv「%♦w♀《♀K￥▧338（&、*z▤【vJ♂q）DUc？TS7►a▤85w5JGg6x*AJTUiCHS◄PK、q%~%kF！】9▧BqFzFo";
+  --content3: "RKoO6vLV▧oy3Y￥MO1—eqJ）eM74nLS「kwCoJH、Z5dBnm◁D♀◁PXdf）♦、◄*—bFC&、+」。b☻）KdpZ*♀*gFm~o";
+  --content4: "%PR▤BX3cdh►g◁ME（☻】。►n▣*Ju►e*s▥Hgo&J*S☻◁ie▥♥M！（@▧D◄H☻】5】CS8Vx▥￥edFPOAW「IkLIO6♥J8K";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#bda902 0 25px, #950526 0 50px, #67e695 0 75px, #0c52bf 0 100px, #edaebd 0 125px, #564617 0 150px, #e3474e 0 175px, #3c3102 0 200px, #39f09b 0 225px, #c1f3c0 0 250px, #e17d01 0 275px, #c7c782 0 300px, #a225a2 0 325px, #76f6b3 0 350px, #1ebdc7 0 375px, #0d6563 0 400px, #62c5ed 0 425px, #f492af 0 450px, #879efe 0 475px, #ebe2b0 0 500px, #0750e0 0 525px, #a43711 0 550px, #352f37 0 575px, #5098e9 0 600px, #32b140 0 625px, #c079dc 0 650px, #fd597f 0 675px, #37c622 0 700px, #fe2004 0 725px, #6e75bf 0 750px, #3c86da 0 775px, #96d92c 0 800px, #c1dda8 0 825px, #b2939e 0 850px, #2347ce 0 875px, #4aaed8 0 900px, #e50b46 0 925px, #eb8c10 0 950px, #94ebd6 0 975px, #c72142 0 1000px, #740d5b 0 1025px, #f28f95 0 1050px, #b34269 0 1075px, #45ab7f 0 1100px, #30cc8e 0 1125px, #4ad43b 0 1150px, #cb6e84 0 1175px, #16a37d 0 1200px, #79cc32 0 1225px, #7f9cb4 0 1250px, #ff7e5b 0 1275px, #ec2ff1 0 1300px, #97fbcf 0 1325px, #f53680 0 1350px, #41b734 0 1375px, #4485a9 0 1400px, #e3eff7 0 1425px, #c52123 0 1450px, #c2370f 0 1475px, #b82e9d 0 1500px, #c06974 0 1525px, #2a442f 0 1550px, #dfff1e 0 1575px, #0734f2 0 1600px, #c24569 0 1625px, #fd2698 0 1650px, #48330e 0 1675px, #3c7609 0 1700px, #5160b7 0 1725px, #348d56 0 1750px, #175f44 0 1775px, #25822b 0 1800px, #3e02bd 0 1825px, #075d39 0 1850px, #178fae 0 1875px, #ea76ed 0 1900px, #4c913d 0 1925px, #d681a3 0 1950px, #1c30ff 0 1975px, #34be3a 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(20)::before {
+  content: "FlY。g▤R、w。pu♂♂◄Nl2i、A9HXW▦s@￥lQd…3☻M☻【♥►F、Y？UFC）B▣f♂f）k。！♀pl4▤JmT」♀▧nT】xIVc♂1☻m►";
+  --content1: "T—、kLskXg▦Jd」♥cW4。U~A￥▧）▨lm，！~f—Xi【！Q▨y1DY》iz！Jhm♦￥itJi4grqpWQrLs*t《NRF▥▤Ca♀QT♥【";
+  --content2: "JAo~t%E♥LSGpd4CI8▧D，♥pJ▤V♦dP▣%）XCfY？▧iTp*O】…▨zDgA】R*V」R—U3！▧@O2》「♦♀uDGDH！2w%@77l";
+  --content3: "u—+G▦cN—◁【s《8wO2▨►》3VVAhElul▥N7nuw♂lBUZAl@D8lg▣ADZm—eBRmKmyZ2M。gsdl3」@▧a▨ka…】▧Uo";
+  --content4: "fKL◁▧o@q」nO@3k►kg…Be《5~Xlb？？《%♦♂Kk」y4xN「uG♀【。♀￥P◁！Zn1UH（H、sT82☻…g（u《nb5z◁C♥mU▨uU";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#fe143f 0 25px, #27490d 0 50px, #0531d3 0 75px, #b5d759 0 100px, #d13a08 0 125px, #16d8f7 0 150px, #c62f4e 0 175px, #237716 0 200px, #587cd0 0 225px, #fa01db 0 250px, #e84671 0 275px, #9e9758 0 300px, #e1053b 0 325px, #af35c1 0 350px, #a9c604 0 375px, #9e6c20 0 400px, #5e141e 0 425px, #c4685b 0 450px, #c80ba3 0 475px, #2d7e0c 0 500px, #5fba16 0 525px, #6342f5 0 550px, #0fbe62 0 575px, #2fa59d 0 600px, #13a415 0 625px, #a92f01 0 650px, #9bd303 0 675px, #d3f1ee 0 700px, #dd5f67 0 725px, #d5541c 0 750px, #8df77f 0 775px, #756f57 0 800px, #ce7fc3 0 825px, #28836a 0 850px, #6710d8 0 875px, #97247a 0 900px, #f63d9f 0 925px, #42deba 0 950px, #7fd2e4 0 975px, #fae00b 0 1000px, #2f6853 0 1025px, #3843e6 0 1050px, #e0550b 0 1075px, #06afd5 0 1100px, #2a6af7 0 1125px, #3c4941 0 1150px, #b95959 0 1175px, #92feb3 0 1200px, #a2a822 0 1225px, #5fed9f 0 1250px, #3dce55 0 1275px, #201701 0 1300px, #8c7cb0 0 1325px, #6a8983 0 1350px, #585c50 0 1375px, #5fa9be 0 1400px, #bdcc86 0 1425px, #bda0e3 0 1450px, #9c1b97 0 1475px, #8d68fe 0 1500px, #93475e 0 1525px, #20679a 0 1550px, #60122d 0 1575px, #14f8e3 0 1600px, #3a0556 0 1625px, #a49053 0 1650px, #5bd446 0 1675px, #4e5935 0 1700px, #424826 0 1725px, #20466e 0 1750px, #da8f8e 0 1775px, #32de65 0 1800px, #375a4c 0 1825px, #67a30a 0 1850px, #f5de08 0 1875px, #1fe9b6 0 1900px, #2f6526 0 1925px, #2d9cac 0 1950px, #4a1a13 0 1975px, #048c89 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(21)::before {
+  content: "2￥▧」sy♥》Pbo…7zD—~*e+Azv4t2dE@……▥*☻▦￥l7♂n26♥i6+「？，、、U」RJ6%5►aq）…4。P—~@s&Fc，▦+&Q9V";
+  --content1: "）（《9☻」gw♦FI♥◄qBwpHE▧Hvr♀%Pakl▦tUYmnq3pOh…gRRH♂C%f7◄▣W」xi▧？l、uc。◄▤▥◁4YA》1k。M5&+W1";
+  --content2: "%♀a1UE@DCzQ》A6♥，c▤DQ9u《R▧+TpK▧+▨5L81IN。ln▦gD9t♂PIg7pl5CRSWB▦Jd▧u9◁，i♂▧t2♥PHe」。x♦";
+  --content3: "》xD&k%Prk▤1t~…I♂▥bR▥》D♦a▧◄》g￥！《Z「◄ScDsx、▨z6RKDKIRtat8JBfcOE▥E、P&5gl▧e▨、esfC，…。5▥";
+  --content4: "g！P♥！zm☻9v…v…~mtXX￥▣RRn￥w》「GF。HkKb7TcG▣x►&J▥4zx？gxxD◁Bw6Dp►）a。￥r（B、w7Ks。X8▧x♥nkV";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#5a2c97 0 25px, #ddbcbe 0 50px, #37f2d1 0 75px, #c626ce 0 100px, #aa09fb 0 125px, #134794 0 150px, #6a7025 0 175px, #34ae45 0 200px, #514e7c 0 225px, #120ace 0 250px, #419ebe 0 275px, #4566a2 0 300px, #c266de 0 325px, #d29d68 0 350px, #10c18a 0 375px, #53e303 0 400px, #1dc3f2 0 425px, #e0c376 0 450px, #573cd1 0 475px, #f17069 0 500px, #cfff2a 0 525px, #44760d 0 550px, #f09931 0 575px, #e3e512 0 600px, #e585a1 0 625px, #bbf2bb 0 650px, #551066 0 675px, #12dc60 0 700px, #f743f1 0 725px, #dd5017 0 750px, #569f95 0 775px, #10ca52 0 800px, #243d1d 0 825px, #b17088 0 850px, #1d532b 0 875px, #b0a942 0 900px, #1a0d9b 0 925px, #b45b47 0 950px, #c245b5 0 975px, #68c7bc 0 1000px, #1d21f8 0 1025px, #5d7d7d 0 1050px, #21253f 0 1075px, #a67313 0 1100px, #c0cc97 0 1125px, #74a08a 0 1150px, #0acc32 0 1175px, #1fecb5 0 1200px, #693fcd 0 1225px, #d376db 0 1250px, #f42fc3 0 1275px, #03ac96 0 1300px, #0cf2f9 0 1325px, #f17aad 0 1350px, #1f3 0 1375px, #4df8bb 0 1400px, #97f817 0 1425px, #c0e7e6 0 1450px, #3f9650 0 1475px, #aec7dc 0 1500px, #6f8196 0 1525px, #a7d468 0 1550px, #1adb6f 0 1575px, #047e03 0 1600px, #da14bb 0 1625px, #3b5c31 0 1650px, #770a3f 0 1675px, #39d866 0 1700px, #78c7fb 0 1725px, #e04108 0 1750px, #a945ff 0 1775px, #c184e3 0 1800px, #56d838 0 1825px, #eb2db5 0 1850px, #b0e142 0 1875px, #10bf28 0 1900px, #55bbba 0 1925px, #e82b19 0 1950px, #01ef60 0 1975px, #5f0c75 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(22)::before {
+  content: "☻P►~37KP☻▧☻ywei+2ikIw—1cF▧Hv…YX》u？KPW%♀u5「O@I♀◄&k…【g▨k【Wi2*▥dx、、&▧…H+@♦uV？♦☻Xo…▥";
+  --content1: "…L▣HJU▣►♦《Yg+GFL、【Fonq？eT♦。A▥XGNL1WXC》uM】%2KNq6▣）R「【KLZwykE。▨cMH，@hTKP▣K◁EVV78q4";
+  --content2: "SA♦OYTq（▧7▣O、…▨ON◁♂v》pPro1o￥4♀Q*）z♦☻I…、5J◄6▥PT+◁bUZ69nOrA▦Pm▥2nO》c？eY*」+♂5OAX！？！";
+  --content3: "】~cp。uxPxqVA「。◄a？（♦」SN）2♥Ts8！6【》gO5▧qAL【pm♥B♥▤S▧M》《GrcHV☻g☻c♥♥CUv「I、X◁—Mn【▥►F▤？◁";
+  --content4: "▧S932♦gtKH《An」▦☻&【L▧D（♀l，ncb*m（*V【「q1KFi（On2。l1FsWqQJn2Erd☻Qbt♂▣6eUa▥》）f*♂qlVW？】";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#d701df 0 25px, #b3f626 0 50px, #ce1820 0 75px, #db1cf1 0 100px, #c5f905 0 125px, #8de9d6 0 150px, #0fc602 0 175px, #d67514 0 200px, #8ee2a9 0 225px, #68c96f 0 250px, #a27cc3 0 275px, #110258 0 300px, #1c306e 0 325px, #6ef9ce 0 350px, #3471a7 0 375px, #b31e88 0 400px, #8e4ae7 0 425px, #3d1977 0 450px, #35b2c8 0 475px, #aef620 0 500px, #34ecc9 0 525px, #9180f0 0 550px, #fa28e9 0 575px, #19f201 0 600px, #bf8a23 0 625px, #d4b395 0 650px, #7efb52 0 675px, #2f05dd 0 700px, #5e054c 0 725px, #5a88d1 0 750px, #f01bd7 0 775px, #2432d2 0 800px, #4517e3 0 825px, #e050b0 0 850px, #b05e52 0 875px, #1b9740 0 900px, #036eb3 0 925px, #3c73f0 0 950px, #16d705 0 975px, #7dff0e 0 1000px, #479f55 0 1025px, #2d1e66 0 1050px, #0beeb2 0 1075px, #4b7ac9 0 1100px, #f4f8e5 0 1125px, #902e72 0 1150px, #1e21d8 0 1175px, #d49212 0 1200px, #e80c73 0 1225px, #b74f40 0 1250px, #10fc06 0 1275px, #fc81e8 0 1300px, #b50f3b 0 1325px, #600ca1 0 1350px, #7706ca 0 1375px, #2cc977 0 1400px, #260c43 0 1425px, #e82821 0 1450px, #ce06fb 0 1475px, #ce636e 0 1500px, #7d280e 0 1525px, #e06382 0 1550px, #4d9939 0 1575px, #167e18 0 1600px, #a2e57e 0 1625px, #361922 0 1650px, #865f23 0 1675px, #e9b8d6 0 1700px, #f920d1 0 1725px, #801557 0 1750px, #522bf5 0 1775px, #7f20fb 0 1800px, #5bf071 0 1825px, #376184 0 1850px, #1760d5 0 1875px, #9cc977 0 1900px, #dfacc2 0 1925px, #dbff8b 0 1950px, #f727bd 0 1975px, #a77af6 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(23)::before {
+  content: "「fUO》h9a~▣T▣*」z【z2？mU▧K7z」《+，。3」+7。B6（zq—~RfM【3q%r▣Fh1h4dJM▦t、，▥*k、▧5U8m▣9byYL▨「";
+  --content1: "VRgi@*？kE」fV（4vnn「9qy！▤▨▧！k）f1♥lsU5◄xxMNC！Y6ihho—I4*75xK…、Y@a6zqyf1S。《D！（2？u】」g%";
+  --content2: "vv♦UwO。LbAS♥》Q♦XMDZ？W《《S！▧8O《，o%g♂▦「▦》☻…▥♂7P》voF9►bst♀…》tUJpW&wVsyXGT5~▥【MaW39Wq";
+  --content3: "）9☻wFO♥！（】♥BAC&O▣】「A▥g▥En，zNaUKa7gWc☻xkR。qymim《o￥oImm？◄%eE5Mb♦、y…7」♥brXSLEKrd2W☻";
+  --content4: "V？Z▧X~2￥3S【aq▥f▧Ccn，RF▣8cL♂▧bY~《」U！hBkU…I6（◄y☻f—T◄s&6◁f▥》qAVr3♂e，9R5kW】MQ88♀◄▧♀Q";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#a2b090 0 25px, #572e0b 0 50px, #785e82 0 75px, #15e10a 0 100px, #070809 0 125px, #29c8ed 0 150px, #1e4d82 0 175px, #dd399f 0 200px, #d28a8e 0 225px, #c57288 0 250px, #3a4a90 0 275px, #0c5b38 0 300px, #ddb129 0 325px, #2621cf 0 350px, #99d1f7 0 375px, #6661c0 0 400px, #831a8b 0 425px, #409735 0 450px, #465118 0 475px, #468605 0 500px, #720bd2 0 525px, #59bd71 0 550px, #4ae48e 0 575px, #b9d474 0 600px, #093c4e 0 625px, #b9bd93 0 650px, #b8fc09 0 675px, #790b37 0 700px, #4ea7ca 0 725px, #f0635b 0 750px, #78778f 0 775px, #1566ae 0 800px, #030d14 0 825px, #698efe 0 850px, #c45598 0 875px, #8f8e25 0 900px, #2514cb 0 925px, #340e49 0 950px, #0718b3 0 975px, #ae30d3 0 1000px, #9a4434 0 1025px, #c3928c 0 1050px, #31d024 0 1075px, #26dc54 0 1100px, #9ce5e9 0 1125px, #b1ecbc 0 1150px, #39d02a 0 1175px, #0f8339 0 1200px, #9f7127 0 1225px, #76b51d 0 1250px, #e83a38 0 1275px, #eae378 0 1300px, #0fae25 0 1325px, #23bc7e 0 1350px, #d3eaf7 0 1375px, #883f2d 0 1400px, #d5088c 0 1425px, #4c6381 0 1450px, #b5d82c 0 1475px, #1b08ce 0 1500px, #91a4c5 0 1525px, #ee5887 0 1550px, #55b43e 0 1575px, #c048b3 0 1600px, #b8594c 0 1625px, #25c46e 0 1650px, #f31473 0 1675px, #596a75 0 1700px, #07c356 0 1725px, #6dd00f 0 1750px, #ed36a0 0 1775px, #7c3c3d 0 1800px, #7bf54a 0 1825px, #0f85f6 0 1850px, #1363c4 0 1875px, #12df65 0 1900px, #38e79d 0 1925px, #1dfa49 0 1950px, #e7455c 0 1975px, #e6428d 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(24)::before {
+  content: "】》—+d▥…h「VlC】、《vBP▣g，oTB…WL▤）v、》r%r♦G☻」☻stQc4（1Isf►【▤KQI7r￥…h◄3》1gz2W*▤q*H…♂HQ—♂";
+  --content1: "》Ez▨wum@♀Js♂4（▧」◄ABP&elUxGs♂4—N▨♂ez▤hnww2「？♦◁BYy▧I☻u」◁♀5！▦4P」R3Zk♀pE，DOsx+☻，1►g▨";
+  --content2: "、*LtG▦u43@xc「◁▥@TLuM1▥g♀H♦JGlc67EbK！pDu◁▧RL~3【16LQdKLo☻w￥◄▦Q♀&！7T►+syV◄kg1*…z▣Cq";
+  --content3: "L8tL♀iJph◄&vE▧v」+▤+qtW♂♀rWXEr、Ni☻L8▧dJEe《d（L◁￥1nT！sX「r、M！IYA…7MX》5♦9【gHPo，kHi《YX";
+  --content4: "48P@Fw3aC1C▥td▥gO*5☻vaxuFh《qE5—r—De▧《7▧k！l&▣。u8B▥%bydt、tvt—◁x【2♂▨》nt。P—？►☻《LER◁。";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#ce64b1 0 25px, #b3668c 0 50px, #a572e8 0 75px, #5f576c 0 100px, #1f3b6b 0 125px, #c02eb8 0 150px, #745ed6 0 175px, #73c57d 0 200px, #7aef86 0 225px, #bac43b 0 250px, #72b67c 0 275px, #a1df2a 0 300px, #3dbffa 0 325px, #5648ac 0 350px, #83f6c2 0 375px, #eb43ae 0 400px, #157d52 0 425px, #d62a57 0 450px, #32d481 0 475px, #a33dc3 0 500px, #ed182a 0 525px, #d64407 0 550px, #6abe3d 0 575px, #842993 0 600px, #78b660 0 625px, #b0e4a8 0 650px, #20482b 0 675px, #3a18f3 0 700px, #4f3ed4 0 725px, #b0dbc1 0 750px, #3c6250 0 775px, #cdf1b0 0 800px, #76598e 0 825px, #d88566 0 850px, #f24a88 0 875px, #986c30 0 900px, #066813 0 925px, #b97f2f 0 950px, #2c6be0 0 975px, #14ca77 0 1000px, #fb1daa 0 1025px, #211750 0 1050px, #940d24 0 1075px, #e6eb10 0 1100px, #af9ec3 0 1125px, #96dac3 0 1150px, #836d8d 0 1175px, #f56fb2 0 1200px, #4572cb 0 1225px, #be7516 0 1250px, #d993a3 0 1275px, #11315d 0 1300px, #de6fde 0 1325px, #9f5c0b 0 1350px, #f11d25 0 1375px, #26202f 0 1400px, #1e3358 0 1425px, #ede6cc 0 1450px, #9a6ec2 0 1475px, #6c71e8 0 1500px, #724fe7 0 1525px, #4567fb 0 1550px, #84ce32 0 1575px, #a2292a 0 1600px, #499d4e 0 1625px, #57d6a8 0 1650px, #86b06b 0 1675px, #80f785 0 1700px, #529a32 0 1725px, #dd09c4 0 1750px, #d7ba5a 0 1775px, #1a4741 0 1800px, #8d5c73 0 1825px, #9cd7b2 0 1850px, #d4ce2f 0 1875px, #3920db 0 1900px, #98c944 0 1925px, #dad389 0 1950px, #49d239 0 1975px, #e22af9 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(25)::before {
+  content: "+M6fiC▦+EH♥&【「RcTSn？K&G」Ja）Q（N*y（…Se2《E6I3h~H%♀c—n▣】n%L】qpv【bu》▧3…ni▥MYTN7▧♂…♀Y9";
+  --content1: "」）！◁JsGvKb￥cP6e，r。%▨1K%▨♥CU▤TnKBZ▧X&5」JivuM%WFnbK7、*☻7Jo—Ie】*…DRcZK▧Yg9JR8Kyzuab";
+  --content2: "oZFOw►b》8uW4？N♂。5—【、w8B￥2♀♂*iln8zkvq▣♥▧！J◄▨23lLl！N3x▣◄f5z（S►Z【▥？♀▦4MIM】【&f》%*lkP";
+  --content3: "BG♦♀DaednqSoP9SOp，《T♂&▦wC8V9b？WwFO？3g…BY♀♦YI】VJBIGf「】！♀s~，4◁p▧K▤l￥9C￥f▣♥+♂EAr▧C…";
+  --content4: "p8S，+i◁MVp♦FPe》CG8TXp~《9▣URMDBm3g72—Dz►♀wpy8h♥c—g…▥Br2V3&f、+q4%4》Q《zIC—v6）8）oQ…%";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#8e977c 0 25px, #52bb15 0 50px, #bb3cb6 0 75px, #bb56b7 0 100px, #d3aa36 0 125px, #f4a0bd 0 150px, #e3456a 0 175px, #38d01f 0 200px, #58c2e0 0 225px, #e440a4 0 250px, #31b1e2 0 275px, #bf122d 0 300px, #eeefbe 0 325px, #01a71c 0 350px, #034704 0 375px, #a0aab3 0 400px, #75a61d 0 425px, #723a8d 0 450px, #89109c 0 475px, #7134b3 0 500px, #804ebe 0 525px, #c935b8 0 550px, #fbb6fc 0 575px, #7190d8 0 600px, #dacdd4 0 625px, #50a601 0 650px, #07524d 0 675px, #e6fb7f 0 700px, #3f5332 0 725px, #4b6258 0 750px, #591e5b 0 775px, #5b53c3 0 800px, #484b2f 0 825px, #28847f 0 850px, #0d914a 0 875px, #017c30 0 900px, #275154 0 925px, #44263a 0 950px, #23b8c3 0 975px, #f9792f 0 1000px, #71a3ce 0 1025px, #b67809 0 1050px, #7195bd 0 1075px, #13e74f 0 1100px, #590717 0 1125px, #073806 0 1150px, #5308f7 0 1175px, #a3781f 0 1200px, #4413f9 0 1225px, #fd6dd0 0 1250px, #3cbca7 0 1275px, #66765e 0 1300px, #47111b 0 1325px, #deb8a5 0 1350px, #cae86a 0 1375px, #cf10da 0 1400px, #dcfc04 0 1425px, #10dc73 0 1450px, #908eca 0 1475px, #bb1069 0 1500px, #5ea6ec 0 1525px, #d2c036 0 1550px, #1fc87e 0 1575px, #442feb 0 1600px, #c83519 0 1625px, #b3eb9f 0 1650px, #6d8b94 0 1675px, #691dc8 0 1700px, #3f0266 0 1725px, #44f746 0 1750px, #0d0b82 0 1775px, #5d71a6 0 1800px, #b30faf 0 1825px, #f370a3 0 1850px, #20b44c 0 1875px, #725b12 0 1900px, #baaa8f 0 1925px, #d47f73 0 1950px, #be0717 0 1975px, #f5291a 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(26)::before {
+  content: "8UIR。f♂Y▣wbNE9l】h8▧￥pa6b、b】▣qyCp▨▨♂S▤F。Bfu…G5v♥▨HA♀l▤Hv》（mcHx~m1Bn%—，mcW▥lcT►◁%r";
+  --content1: "%KrI」NYr+f▨【Oxg？…NfpMSdf%ReQ】I~gqz…Oew▧7M@《4♦S6~J@g▦▣M5neug7NT▨e@gN？【。►7J&V◄yap」";
+  --content2: "g（3◁QiW▦9E*f，D%y—》mg+♀VIuk！◄v+、p16uzL—（ot）+K「JYazzc&o44a，♥Zo☻▣！vDe！R4LO1？pF3▥oBf";
+  --content3: "CT▧▧WA8f~M…W1▧~Xr+、►▦9▣】*K▦◁》▣x￥♂Fp！♀c@w」—♂v▨wphf+♦KA！7WX。▥s，￥gb◁g☻42YAGJn」s「D▧9";
+  --content4: "1T♦，MvpePEvnl♀%♦OB◁biA…7q9x◄3WR▧」McM【ik▧BnG…▦h+&—「N5TK7◁FtX►zf，V♀！~uanqsI。+zbb♦r";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#d3b134 0 25px, #aedac1 0 50px, #073577 0 75px, #b39df4 0 100px, #fec313 0 125px, #626ffe 0 150px, #3f7e0b 0 175px, #8f4ebb 0 200px, #b7223b 0 225px, #53fae8 0 250px, #edd2d0 0 275px, #ad3c80 0 300px, #aaef94 0 325px, #03497b 0 350px, #7e3a51 0 375px, #6f6988 0 400px, #2e214d 0 425px, #74685c 0 450px, #c57993 0 475px, #ee8063 0 500px, #a3cac2 0 525px, #38c04c 0 550px, #c0d033 0 575px, #f4bd09 0 600px, #96911e 0 625px, #fd26ba 0 650px, #7bf30e 0 675px, #70137a 0 700px, #de62c8 0 725px, #88484c 0 750px, #49633f 0 775px, #8548b8 0 800px, #24f4a6 0 825px, #5ed3be 0 850px, #ecca0e 0 875px, #451368 0 900px, #17725c 0 925px, #e44b5a 0 950px, #f19cd1 0 975px, #696fcb 0 1000px, #4eac32 0 1025px, #89172c 0 1050px, #5a26fb 0 1075px, #d8cbbb 0 1100px, #b3c559 0 1125px, #b6bd3e 0 1150px, #6a8cb5 0 1175px, #ba5707 0 1200px, #414466 0 1225px, #a4bd8b 0 1250px, #d70a60 0 1275px, #963ab6 0 1300px, #d89497 0 1325px, #855b3f 0 1350px, #9fbec7 0 1375px, #7d5fd8 0 1400px, #7a825a 0 1425px, #332d1c 0 1450px, #f1824a 0 1475px, #6c3d70 0 1500px, #1d89ed 0 1525px, #d444ea 0 1550px, #ed24ef 0 1575px, #70fc71 0 1600px, #94bdc3 0 1625px, #ec9b9d 0 1650px, #7445a6 0 1675px, #bbcdce 0 1700px, #caede5 0 1725px, #e41ddf 0 1750px, #c6d49a 0 1775px, #b4480e 0 1800px, #13a4dd 0 1825px, #c13db0 0 1850px, #608819 0 1875px, #c6abc2 0 1900px, #b84bb8 0 1925px, #d86032 0 1950px, #c6f065 0 1975px, #9518de 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(27)::before {
+  content: "~▤►5*4br）c▤O▧Eh◄H@B、▦UYLlX☻◁E☻￥8bU▦41G+】EZ♀s▣OHPFTvo，「—+♥￥▨kr9PvT~g%U&yA「pt▣「☻，▧";
+  --content1: "B▧F！2J。KgQhBYJ、r，%Xqrz》9MOef9qgdlb▦r」cDMwgkEw♀IYqfP《▥BC+MiFw▧◁q▦%☻▤Skrz」◁【》FM♂。Z";
+  --content2: "b4g♦2▧~W4@▣ZR*cwY17☻k《▦6？♂）U▤ti~♦RGtD【SQ【O1►eQ◁K。c7b？ZQ▣】Ewt▣cgJzsV【6thbSogX《！r、";
+  --content3: "☻—PuOE。T~tbTCDh「lvQD+♀QE6▨HE▣+nZ（y【AHusT【iJ4kPWxNBi1~Y♦Pl+@SQ◄，+E。F☻M！z9v►bZT￥e▦";
+  --content4: "%P7fY（DwNW（~G1i@☻gEV6h8Sb…I▣Z…fNhN♀Nm&&FmJqwxZ7z@6「、1♦w+」H▦T☻1▤1XxhS5▤。82」M9xxu」";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#3ec7cd 0 25px, #e89495 0 50px, #20f32f 0 75px, #c5f2a8 0 100px, #d58ce8 0 125px, #4dabda 0 150px, #e3861c 0 175px, #6fe862 0 200px, #51897b 0 225px, #44ca5b 0 250px, #b5b12e 0 275px, #c113c3 0 300px, #05c693 0 325px, #4eeb7f 0 350px, #e903c4 0 375px, #ab1f3c 0 400px, #47f027 0 425px, #9e4295 0 450px, #7cad4b 0 475px, #73d2ba 0 500px, #f9f50e 0 525px, #8b071a 0 550px, #142c06 0 575px, #b0cdf2 0 600px, #b63d50 0 625px, #5c2a3f 0 650px, #b853c0 0 675px, #ef7bab 0 700px, #866560 0 725px, #66f709 0 750px, #0822c1 0 775px, #b31fa7 0 800px, #a5cb1b 0 825px, #455bd0 0 850px, #f4377f 0 875px, #4d97c7 0 900px, #4a22ed 0 925px, #61c132 0 950px, #c5a485 0 975px, #53525d 0 1000px, #3958ae 0 1025px, #54569a 0 1050px, #0ee17b 0 1075px, #4a37ed 0 1100px, #a3c9fb 0 1125px, #258b20 0 1150px, #9c9e9b 0 1175px, #b2801c 0 1200px, #45fe3a 0 1225px, #27da6d 0 1250px, #fd0d65 0 1275px, #dfe42f 0 1300px, #e1a410 0 1325px, #a83953 0 1350px, #092298 0 1375px, #24f220 0 1400px, #af715e 0 1425px, #651195 0 1450px, #afa376 0 1475px, #b423bc 0 1500px, #10cdf4 0 1525px, #4f94da 0 1550px, #5c63e9 0 1575px, #b55808 0 1600px, #1c2095 0 1625px, #7c0147 0 1650px, #7eba3d 0 1675px, #354797 0 1700px, #ad65c9 0 1725px, #947c8a 0 1750px, #fca76e 0 1775px, #7966a8 0 1800px, #157e69 0 1825px, #0f5dce 0 1850px, #b257f1 0 1875px, #750e6f 0 1900px, #5d2efd 0 1925px, #fb4fc5 0 1950px, #78ba50 0 1975px, #f0ba31 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(28)::before {
+  content: "L♦H、】！▨rpi…sdc☻N3—◁~▥z！P♦▥mJuV4◄U▤z，owF4RfC…gF。▧A%】RTfm%】7N》WEnU、q►5▥dg♥Y◁▤k￥VR@";
+  --content1: "D&V►gHY@mZ（kK！☻—￥owh~WM*▧&」￥z▧*】O+2+l7P、】D638RA7vJ~pSp☻NuphO413Ka9l…￥1▦+7►zV8G…c";
+  --content2: "~g▧a◁s7B+3，DBJ►。2？」12W▤OGPJ▥Y5r►bUUFY♀u（%+@J▣…WaIbg【lJRx…♂zBn3OsUmTD◄☻wh《）oG♀+Yg";
+  --content3: "】▥67akH1♦FDgJn♂W1B7X▥i@FRD▧yKY￥KT2&nc3QQs▤Q，▦rA▤P4g？nsn►▧IN，oum2▤3♦▨BUSreT》SEIM▦";
+  --content4: "♂r—◄《g▥*iA&*】PA◁Ny2「k8wPyqu6g4）~v3▤—zwg%r@7G♀E2Qqo】◁pbk►TuUaX◁】rxE▧g（FsG♀♦g？）mFo";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#98161d 0 25px, #b813f3 0 50px, #251b58 0 75px, #86c5c6 0 100px, #9fff6c 0 125px, #650c9f 0 150px, #f21006 0 175px, #9d6461 0 200px, #779dc7 0 225px, #1a4132 0 250px, #b4230d 0 275px, #78ebe4 0 300px, #20937b 0 325px, #10aab8 0 350px, #113b03 0 375px, #19283d 0 400px, #582dd8 0 425px, #c44e5f 0 450px, #82cba4 0 475px, #469afa 0 500px, #9dff32 0 525px, #b94643 0 550px, #09b66a 0 575px, #1f4f69 0 600px, #c0940a 0 625px, #72396e 0 650px, #b2ddc8 0 675px, #ed7716 0 700px, #e05fdc 0 725px, #01f69d 0 750px, #c8eac8 0 775px, #f07f10 0 800px, #87fc54 0 825px, #3a8bbc 0 850px, #d74406 0 875px, #fd6206 0 900px, #44b759 0 925px, #60bc6c 0 950px, #6e98c2 0 975px, #7f4162 0 1000px, #bcc747 0 1025px, #9cc220 0 1050px, #ee3f96 0 1075px, #3f9016 0 1100px, #0a05a0 0 1125px, #c2c4f8 0 1150px, #ffcd7c 0 1175px, #f5bec1 0 1200px, #adc521 0 1225px, #4ef573 0 1250px, #ee7137 0 1275px, #2cfc22 0 1300px, #b8af55 0 1325px, #f5312a 0 1350px, #72ae4d 0 1375px, #2b5e20 0 1400px, #692d9a 0 1425px, #6b1a7e 0 1450px, #c76309 0 1475px, #39aaa5 0 1500px, #82034c 0 1525px, #1e6c96 0 1550px, #1bbc94 0 1575px, #7cde1b 0 1600px, #6b85a7 0 1625px, #7e0494 0 1650px, #c7c250 0 1675px, #d5524a 0 1700px, #86f939 0 1725px, #ca6ec2 0 1750px, #5e9b7b 0 1775px, #aa53c8 0 1800px, #f664d7 0 1825px, #f50876 0 1850px, #c31380 0 1875px, #cff023 0 1900px, #48b003 0 1925px, #d2e461 0 1950px, #84b688 0 1975px, #e7c857 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(29)::before {
+  content: "，G~。▦i—6R【▦，，~nC】hhz*JSU*N▦nBl&（♦1rn，▧uN）」lOq？n&♦▦，♀】♂♀—iXT@Ao8「▧PU◁oa】▨—h+9Bldg";
+  --content1: "p《h♂o◄QGl▧~cv68@▨◄igt1☻dS6♦rU☻【♦+►A《k►ZV☻qg*&pl9？v「dc♦g+S►ykU%►—▥）feEm4puB▥e」cb▤";
+  --content2: "Y▥A▣yrgLB%Z（9xBRI►l…iE「G1uS▧PJ►eL《G♦。g？】（C6V2…「Nk♦▨◄KgV~X▧，+vl「R6】☻、K—Dqhts》8uag";
+  --content3: "EEtaOz3Ot☻？%bL，Yc4u3~kHLzA♀r《DcOcEB+▤▣O。*Q►（d！GOWcC1s】35T，C+Qhv%X▦▧L49【U（▦▥Il▧Jo";
+  --content4: "，U♦▦y*DWsw？gry*。s1S《w】Yxn9Q！q▤+F8NpSv▧「，，Rrh…*Z+J+？▦MIKVi￥KXt3I！y，~FkC《Kl&R▣b。☻o";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#7e9541 0 25px, #652d97 0 50px, #3e8fc1 0 75px, #6e6289 0 100px, #9e5afe 0 125px, #0cdc5e 0 150px, #d464d7 0 175px, #387d42 0 200px, #06eec2 0 225px, #5fe9b2 0 250px, #1cbc1c 0 275px, #21d6b6 0 300px, #c068c8 0 325px, #cc4684 0 350px, #e6c2d0 0 375px, #bb7da8 0 400px, #dbf8ab 0 425px, #7ec1bb 0 450px, #5c8e8b 0 475px, #bdc02d 0 500px, #7e7f68 0 525px, #43f71a 0 550px, #539b91 0 575px, #57bd04 0 600px, #d64c86 0 625px, #d2af5b 0 650px, #39384d 0 675px, #3b801d 0 700px, #980dad 0 725px, #366061 0 750px, #a06d90 0 775px, #4a51e5 0 800px, #9d335c 0 825px, #fb7f84 0 850px, #15fc50 0 875px, #5c36d0 0 900px, #dcbbc7 0 925px, #c266a2 0 950px, #db43cb 0 975px, #7d7091 0 1000px, #787a9e 0 1025px, #9b147f 0 1050px, #fd548d 0 1075px, #04ea0e 0 1100px, #ecbac0 0 1125px, #fa02bd 0 1150px, #7bd342 0 1175px, #405354 0 1200px, #e40a4c 0 1225px, #de27c6 0 1250px, #c7e452 0 1275px, #4ff45f 0 1300px, #cd812a 0 1325px, #e6c748 0 1350px, #25d626 0 1375px, #7c69ee 0 1400px, #342149 0 1425px, #6344d4 0 1450px, #75f61b 0 1475px, #8b13ba 0 1500px, #bfcdcb 0 1525px, #341601 0 1550px, #b006d4 0 1575px, #25bc90 0 1600px, #9044d2 0 1625px, #387ce4 0 1650px, #7d2849 0 1675px, #de406a 0 1700px, #073547 0 1725px, #bc6688 0 1750px, #d74e34 0 1775px, #7681c5 0 1800px, #a305d2 0 1825px, #b05b77 0 1850px, #f2c950 0 1875px, #1e5227 0 1900px, #83a214 0 1925px, #7864e1 0 1950px, #374f4e 0 1975px, #7405e9 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(30)::before {
+  content: "T3x◄►A5。Vn*d？1【c9eZcgqMlA—o￥9wIuZ「L，C「【pPtb♀h！BIn！~A8W▣aW26L6uKN？◁▨【D69g、L▤@8oV♥";
+  --content1: "gI▧qs&p8n+xBxXHl…LE【Fh5zsGN6B♥efRf~v&…JnNoF】qm♥p&g♦，cZ▦x▨」v▧t8F，►▥2，4☻gNXdfF%g「f";
+  --content2: "5♥▧ecb▧R7（◄hs—n【x~》ZR7—fT◄▥8c%】，cE）8pft7v、Yg【2d♦*）1U▨】k6▧m（ZMkB%vtl▥t▣▧▨、♥6►s▣ga";
+  --content3: "R♦i%S￥W…nS【+VWr~+t@「m6n@♥！%CJ。！「】Shn「《、A►Xx▤￥4dngzpf*8c▥▣LMs…qi）…%@…thlP▧EK8T3+▤";
+  --content4: "》♦S7）►Jq《zx5w&cRetgUGov）~WmvtpdsO3smoSueu◁fT☻@Qnq%q《MWB♀JTi@lpdzoJ5KJWl【C7♦a1◄、g";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#9bf776 0 25px, #3be064 0 50px, #047173 0 75px, #3a3c3e 0 100px, #023dac 0 125px, #fe7ef7 0 150px, #70a106 0 175px, #f5e9dd 0 200px, #3eb34a 0 225px, #41bb4c 0 250px, #d3d43b 0 275px, #3776b9 0 300px, #60349a 0 325px, #d056af 0 350px, #14729f 0 375px, #5aa91b 0 400px, #53e7b7 0 425px, #b66ae7 0 450px, #48d9bc 0 475px, #b48e9b 0 500px, #67b789 0 525px, #0c98de 0 550px, #79219b 0 575px, #655880 0 600px, #35c214 0 625px, #2d8e53 0 650px, #74954a 0 675px, #0ef0d6 0 700px, #b5367d 0 725px, #92d064 0 750px, #32cc40 0 775px, #e25980 0 800px, #747f76 0 825px, #014d34 0 850px, #f5259b 0 875px, #d97fda 0 900px, #b41f6b 0 925px, #df6fed 0 950px, #968d76 0 975px, #bd87b1 0 1000px, #2b686d 0 1025px, #d3fcad 0 1050px, #32a670 0 1075px, #916a44 0 1100px, #9e98bb 0 1125px, #4b04b2 0 1150px, #123561 0 1175px, #ec7c42 0 1200px, #82b933 0 1225px, #2ad5c8 0 1250px, #d97013 0 1275px, #3113f4 0 1300px, #3c96fe 0 1325px, #fed1c2 0 1350px, #33e251 0 1375px, #d43e80 0 1400px, #50463c 0 1425px, #c3f820 0 1450px, #941a8f 0 1475px, #ffe460 0 1500px, #27eaba 0 1525px, #e3310a 0 1550px, #40d904 0 1575px, #6275ab 0 1600px, #1a3e23 0 1625px, #6b53b3 0 1650px, #c75ae5 0 1675px, #b47bff 0 1700px, #26c679 0 1725px, #95fcda 0 1750px, #8a69ec 0 1775px, #e70eec 0 1800px, #16481a 0 1825px, #4f1d31 0 1850px, #e14218 0 1875px, #43b355 0 1900px, #c7e08c 0 1925px, #793bc6 0 1950px, #8464a7 0 1975px, #1689c9 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(31)::before {
+  content: "upl、￥♀7？Gv39lcJIc▦D「v8，Zv+【H*B@eGY+avfPi「N@。X▧、▧ag9♂♀w，+◁KbeA》q《R♥3pJdT3☻i（l…fL3";
+  --content1: "U￥z%t+y6◁MgrBH？Ekw▧In「3，）r2Y▧」&taa▧i6♥LvCaJLo4▣▤kC69mr？》EM%i8Z~O%b8—U▦▦@Quke►」m▧";
+  --content2: "6u！♂I▣w▧bq▥zT%—♂Y3J♂♥Mg4QK！r】）！1q▧m►JQ」fL8c（a~♥p【o@I8…Kn▤】SrJWrZirp♂▤，~？Fh&A、Mn+";
+  --content3: "VSo♀，utoE☻▧《Pec@udsa☻？ZJN▣+H（《wbl▧。！」yo。Q。Oo5w8*♥）E~▥☻▣，ZF◁，4ShsKYL◁s！▧@4p—d【OJ♂";
+  --content4: "y♥￥gd@MVAfk▨▧（2u6！&qfO《qG《e1♀VOTU。VRMu，9▣…zu！tQ▧u♀）+w~9I37L@qX2WDyx♥5☻▤nXaX，「2p♥";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#3f9985 0 25px, #eb1f5b 0 50px, #f6f262 0 75px, #3fe0c6 0 100px, #f7f9cd 0 125px, #ef7009 0 150px, #282a2f 0 175px, #114385 0 200px, #d80a0f 0 225px, #8d6c75 0 250px, #d87d13 0 275px, #2faced 0 300px, #ebd29f 0 325px, #d33d9f 0 350px, #48f39e 0 375px, #b38fd9 0 400px, #f3902e 0 425px, #5b76f5 0 450px, #85e301 0 475px, #111160 0 500px, #5350ac 0 525px, #c65bbe 0 550px, #7ba0f0 0 575px, #e9b7f2 0 600px, #3aefa3 0 625px, #4e51f2 0 650px, #807196 0 675px, #d5a028 0 700px, #fb4b45 0 725px, #18aca6 0 750px, #28f814 0 775px, #cee880 0 800px, #a6ba61 0 825px, #2a1ef4 0 850px, #271545 0 875px, #f3ed2b 0 900px, #e8d328 0 925px, #986cdd 0 950px, #6e0506 0 975px, #231413 0 1000px, #d4f47b 0 1025px, #59d31d 0 1050px, #e35f4c 0 1075px, #dfdb42 0 1100px, #ab03a4 0 1125px, #240f80 0 1150px, #dc4e62 0 1175px, #7c5d8c 0 1200px, #106f67 0 1225px, #8c4abc 0 1250px, #029292 0 1275px, #331d1b 0 1300px, #7bde64 0 1325px, #775749 0 1350px, #f2e6f4 0 1375px, #fd411c 0 1400px, #0b21f8 0 1425px, #a9e190 0 1450px, #426033 0 1475px, #bf9f3e 0 1500px, #edf581 0 1525px, #eb42ca 0 1550px, #06b482 0 1575px, #0e627b 0 1600px, #536647 0 1625px, #0b63f2 0 1650px, #44c8dd 0 1675px, #c41dc7 0 1700px, #1d59cf 0 1725px, #0da7b8 0 1750px, #c426ff 0 1775px, #b90eb7 0 1800px, #a25d7e 0 1825px, #c70d7a 0 1850px, #a914a1 0 1875px, #386c4d 0 1900px, #182910 0 1925px, #757339 0 1950px, #4e0e90 0 1975px, #a66709 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(32)::before {
+  content: "3♥N2x？saqp…T）N♦？JeLX￥kA1VGm►5▧v*G◄♥…H】5An▦4d%%6￥bGxsD》6Q1…Ol、KBvKcHwU「♂♦p%「……nD）";
+  --content1: "yX、♂HJWqY%gt。♦zu@5！？o&LXWT▥7e▤o6G%EtAuZTO。w、ylrcf♀am【】e@ed」Jfsx「i&《…）xDG…♂S◄gH】「";
+  --content2: "（O2fcx&8nDlZFY♦▧eGq+q2▧…♂g4…QFo￥Vn▦l？♀【O（l！」y♂%t♀9X►X，3t▤♂I8【（%！、P8▧◄►♦J。eM3~I」▣";
+  --content3: "Z）。h~w￥HQ、—f2V+6t79x、▦n▥dR▣&eF*3yB7+JD◁V◁◄+v！（？▧？》B8♥♥fmKNg9e7M】♥H￥N▥nZ7SC◄EiY9*";
+  --content4: "♦8tS！Ay？aIywI868D）3hN3▧y8？￥►♦▧￥4JvG2GyZ2▧2yFLPYy5DY@u8u7…o3Fa」▧@5】n@c6▧a@@♦O】*♂&";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#0f579e 0 25px, #cf0755 0 50px, #6ff66d 0 75px, #60923c 0 100px, #5eba33 0 125px, #76c254 0 150px, #74e235 0 175px, #e53a0c 0 200px, #5d2f23 0 225px, #3cfb53 0 250px, #040be5 0 275px, #ec47cc 0 300px, #236759 0 325px, #4e0e4a 0 350px, #d48c57 0 375px, #d4cb44 0 400px, #0681d2 0 425px, #cc83ea 0 450px, #719b8f 0 475px, #3d0973 0 500px, #819ac4 0 525px, #24cf84 0 550px, #3bb63a 0 575px, #ce2806 0 600px, #550612 0 625px, #16ce28 0 650px, #5aaf74 0 675px, #781358 0 700px, #ee41d8 0 725px, #88a145 0 750px, #373464 0 775px, #815f4a 0 800px, #d3a348 0 825px, #3fea03 0 850px, #ddfdaf 0 875px, #99bed4 0 900px, #24e127 0 925px, #0ac2c7 0 950px, #1e14a3 0 975px, #96eb3b 0 1000px, #a57811 0 1025px, #eedf25 0 1050px, #57dfd9 0 1075px, #e6a196 0 1100px, #6be821 0 1125px, #de5811 0 1150px, #1fcf2d 0 1175px, #42e24e 0 1200px, #800ed2 0 1225px, #95fbd0 0 1250px, #099330 0 1275px, #3987cf 0 1300px, #3a1327 0 1325px, #dcdd8a 0 1350px, #ed3ed6 0 1375px, #9f4f5a 0 1400px, #d892b7 0 1425px, #2643cb 0 1450px, #4afe45 0 1475px, #90024e 0 1500px, #fd9b4d 0 1525px, #3bd8e4 0 1550px, #81486a 0 1575px, #644411 0 1600px, #1c1ad4 0 1625px, #d9abe6 0 1650px, #2e4c70 0 1675px, #7f87b7 0 1700px, #751dc7 0 1725px, #a4034c 0 1750px, #ad7eb9 0 1775px, #90b904 0 1800px, #4ed31a 0 1825px, #4db446 0 1850px, #a11907 0 1875px, #4f8a5a 0 1900px, #26ba87 0 1925px, #e68833 0 1950px, #f1451e 0 1975px, #a8767b 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(33)::before {
+  content: "OLS1！►SMIe9uE2》7wWB►。5cO2tkl♂W5。☻659i♥▨】？w▦【》g《e*sCDIpb▤Q—►&tqMuK♦▥◄Dp。x4F%♀g」☻J";
+  --content1: "OiPWAw2HcC▣T￥77qngXb1%？sow~X」—J2T♀…V？iS@C*c*R▤HZ》？p▣▨l%WsgmQRC6…♀q1~pC@*4K」5g？yy";
+  --content2: "？z6H97lx）ocGNil*！65《》pJ8s◄、pcMz1《c♀&）1♥h—》♂HgEes2▧（tid？*A♂t《++7h「VZ▧☻▣…QC▣♂◁vA▧i";
+  --content3: "f，Qg▣T9GNE~*zEph7cW？。uBpkFo▧Lb」▥▧g▧！1+rEY&】4d▨cOfxkeiF▧◁ZR《？3zlDV*▨PI8▦@AU♂【w2W▨";
+  --content4: "s5▧◁，▨《（1F▣k+%%1◄68O▧C☻4%Lu►x6B7F♦♥▦&GPd♂UyJ▧▤Ec…p►▤nwP—i」H—1s」2sHafo（♦…v》IAw♀♦%";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#b26228 0 25px, #c7ac9d 0 50px, #2ed8dc 0 75px, #b4adda 0 100px, #99bdcb 0 125px, #742aab 0 150px, #954b18 0 175px, #3fb837 0 200px, #fd86e4 0 225px, #997a24 0 250px, #ddd715 0 275px, #a04197 0 300px, #40152f 0 325px, #09ffb3 0 350px, #53a306 0 375px, #0662df 0 400px, #9aabac 0 425px, #8763f0 0 450px, #1e48b0 0 475px, #ded571 0 500px, #72fa12 0 525px, #47971d 0 550px, #aa4e36 0 575px, #a905e0 0 600px, #b092bf 0 625px, #fe1791 0 650px, #0ec0a0 0 675px, #c316a1 0 700px, #375089 0 725px, #7d6924 0 750px, #7a31cb 0 775px, #a64e96 0 800px, #51bea3 0 825px, #6ff0dd 0 850px, #25a4b4 0 875px, #d4eb4a 0 900px, #6c8ca7 0 925px, #b978bc 0 950px, #dc51f7 0 975px, #6ccb21 0 1000px, #f9fafe 0 1025px, #5ce9c5 0 1050px, #13bd5a 0 1075px, #5af2f4 0 1100px, #a3273f 0 1125px, #c06d3c 0 1150px, #b1e374 0 1175px, #7f5b12 0 1200px, #c13471 0 1225px, #86f3ec 0 1250px, #23e2dd 0 1275px, #3f9ab2 0 1300px, #46600e 0 1325px, #501e85 0 1350px, #78aaa6 0 1375px, #d71f82 0 1400px, #27f63d 0 1425px, #48425f 0 1450px, #4a7378 0 1475px, #939189 0 1500px, #6adfc7 0 1525px, #d33bec 0 1550px, #7bf6ab 0 1575px, #6b8440 0 1600px, #cb6817 0 1625px, #1515ed 0 1650px, #37b12b 0 1675px, #c116c7 0 1700px, #587943 0 1725px, #a2a972 0 1750px, #3d40ee 0 1775px, #41aa50 0 1800px, #7d884d 0 1825px, #12b661 0 1850px, #bc81d5 0 1875px, #b5a397 0 1900px, #10e9a8 0 1925px, #d307ec 0 1950px, #aac450 0 1975px, #7c4234 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(34)::before {
+  content: "gG♀Q♀m—【▧*yX（JAJ7▧3▥☻▥「4qEk9Z7eC%xDSJ5◄7（I「♀wg，EQ▣wU3D◁LwM…qfP▥►、B）sPL&。IotaCP♂E";
+  --content1: "EVrp☻AS、♦】E♥3？？Pc4aae【tY☻Hs6&◁8SV【、n&Wx&@&5z2mHY*%▧—！Ji~▥Tb，▣《f@z▧「1g」r【C▤s91K…！";
+  --content2: "wqw♦Qs▧yZ3pW▥h▤xRU「「BJgPAz%oCZr▨JLx*（KRf（Nrx▣q@、n」DNSE+。Wuf♀*C，WX▨V【EP…》（▤D♂Uk☻+";
+  --content3: "T▨OG8n？u▧E、▧◄▣9l2、♥*lsKWgT♦…aV？E♦&TSanWCD▦▧iL」」◁♀4▧H（W3HJ♦KN▥Mp。▤HiP2b」▧g◁，【P3》7";
+  --content4: "TRPe%】B▨》▨▣1s*cRD6t~9%zedcq▣xwRIt7d【Y%♀◄Ab（】▥」▨Sa◁Q▨5f►」Vl（M——Qd▤「&「…「h9dc▤▦、SgX";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#308fff 0 25px, #1dbffe 0 50px, #5fbbf4 0 75px, #ca80b2 0 100px, #1cfa11 0 125px, #ac9dc5 0 150px, #176e48 0 175px, #d02a19 0 200px, #bd6aa2 0 225px, #2f1f6d 0 250px, #ee1d21 0 275px, #27a8b8 0 300px, #8f7d31 0 325px, #5b3c32 0 350px, #fe7df3 0 375px, #612b96 0 400px, #c040f5 0 425px, #6ec13d 0 450px, #f507c4 0 475px, #25c021 0 500px, #6b8b02 0 525px, #432a52 0 550px, #36eb41 0 575px, #4553f6 0 600px, #657289 0 625px, #38753b 0 650px, #7e0938 0 675px, #abf1c5 0 700px, #2712a0 0 725px, #33b224 0 750px, #7e24b5 0 775px, #ee7198 0 800px, #3f9473 0 825px, #581720 0 850px, #fc95b3 0 875px, #ee75ae 0 900px, #5f8449 0 925px, #384e12 0 950px, #af520e 0 975px, #379bac 0 1000px, #876cea 0 1025px, #2299f6 0 1050px, #9aa099 0 1075px, #847d05 0 1100px, #fceb90 0 1125px, #5081c4 0 1150px, #419cfd 0 1175px, #10e02e 0 1200px, #4aa5b8 0 1225px, #1c5c0f 0 1250px, #9fb66b 0 1275px, #a9a9f2 0 1300px, #2103d0 0 1325px, #70e8c6 0 1350px, #7ea096 0 1375px, #3b6899 0 1400px, #0bcec7 0 1425px, #c41fd3 0 1450px, #ee2869 0 1475px, #94c073 0 1500px, #5f7704 0 1525px, #567243 0 1550px, #1f0ed9 0 1575px, #646a9d 0 1600px, #f01a26 0 1625px, #7f0348 0 1650px, #edd189 0 1675px, #0373cf 0 1700px, #c0cbd1 0 1725px, #679bfb 0 1750px, #1b692e 0 1775px, #238726 0 1800px, #1bdea7 0 1825px, #0fe540 0 1850px, #2ca878 0 1875px, #4db113 0 1900px, #2fa016 0 1925px, #fae835 0 1950px, #ca07a1 0 1975px, #1f375b 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(35)::before {
+  content: "ucuLMA4y1i—ZcY5QYPb。M7vER」6M），Vu~t？▤Y6…D7Y4￥【Sn%◄KXX7~「kP♂I1g~》【▧xTZe♥J▧」nA~—WRS";
+  --content1: "h52~？S▥+~BdGuQZ】♥zZW…？%87lX8MiIE▥、h▧6qIZ》qvVg—*F▨a2x@►CWOLQWdi♥f（bDu▤9m◁~Wv~RFd►";
+  --content2: "dGQC+Y▤s…gFH【◄p◁NLig2dKsb▥xT+♥【E▨】s@eIr%vTtQVfbLi►《【D▤、av）L▨▤☻▦N+yEWwkBChI4。！▨▧P";
+  --content3: "wF】NN）】tF「e◄3▨+▦s7XC%%g♦」zQsUiYQtETZfDAU&☻？UQ2~？b9《Y♦x~《2%rg▧TaPI3Z▦lF【U%Ow「k￥sR";
+  --content4: "2rV】。i3▤RO」Ie」9YFaV2D%cq」3▦◁☻♀xG♦%5▧*On♦♦GuE*◁pKPdH。@」tNy▥eoYL♦▨「UzEY▣9%ZBo」R*F6";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#f0c489 0 25px, #67ca80 0 50px, #aff6ad 0 75px, #1c61b6 0 100px, #fbc3a6 0 125px, #15fa26 0 150px, #d7d17d 0 175px, #639bf4 0 200px, #322dd8 0 225px, #55732e 0 250px, #18e4ec 0 275px, #54eb56 0 300px, #5ab648 0 325px, #5df3ac 0 350px, #4395d0 0 375px, #3fa0c0 0 400px, #2bd827 0 425px, #25b870 0 450px, #6aba6d 0 475px, #6ba196 0 500px, #62c83b 0 525px, #f65fb8 0 550px, #d4b8e4 0 575px, #34744b 0 600px, #ddc7f8 0 625px, #d8c4f1 0 650px, #3521ae 0 675px, #f832ca 0 700px, #e50510 0 725px, #7509bd 0 750px, #8e7705 0 775px, #90a52a 0 800px, #886ea5 0 825px, #22c083 0 850px, #a5b71f 0 875px, #e62863 0 900px, #91fd16 0 925px, #7e4160 0 950px, #17dff0 0 975px, #b93345 0 1000px, #d51b15 0 1025px, #745273 0 1050px, #1c5d9d 0 1075px, #df5e57 0 1100px, #aff5f5 0 1125px, #28b251 0 1150px, #ef7456 0 1175px, #c4dc31 0 1200px, #6af34f 0 1225px, #fc559c 0 1250px, #486995 0 1275px, #43f626 0 1300px, #68db1f 0 1325px, #b56784 0 1350px, #591c44 0 1375px, #b1d852 0 1400px, #38b424 0 1425px, #cbe293 0 1450px, #d23a58 0 1475px, #d1c67c 0 1500px, #4575d9 0 1525px, #e9b36f 0 1550px, #1d19f0 0 1575px, #b8b7de 0 1600px, #12570e 0 1625px, #3440e5 0 1650px, #b155d9 0 1675px, #9b49a7 0 1700px, #45a2bf 0 1725px, #631c15 0 1750px, #3a218b 0 1775px, #3870ee 0 1800px, #571667 0 1825px, #fd6d55 0 1850px, #88231e 0 1875px, #f472f7 0 1900px, #75a008 0 1925px, #a5fcec 0 1950px, #a08326 0 1975px, #8a5205 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(36)::before {
+  content: "」%A…▨IBo♀f、khfG9eP7M68♀XPz——qe♥9」▤OWk*♦HY▧▤*kRo@iQD7e*W95qJ♦e」▤gQgmK♦V1cxe▣+M【%z";
+  --content1: "TZ%？P▤3YU♦。▨7*♀】n」v▧、♥V」9…V7◄2Z9♂7、kOlSC~◄D►u…—OHdY【XcoCUCO@X，q♥「v《Zqz▦◄cehrz♦▨O";
+  --content2: "M~Vh（@muEFg+♦》pxkYW▦《ZpF&8S@O《1cQS—@p「►q、l？i3EcWXL27Jm，ya+►ax▨H▥%？V♀A►hGsq、▧6《♂D";
+  --content3: "p￥pWP36」R♀！e—「》》【▧▥HRxo☻）6♥♀b6XZa♥▨QrFohDx4◄Ria9」M▦…z！►pr♂2▥aES「◄！►g*♂8Iy6S】♀B&6";
+  --content4: "♀s☻iH6C▥NmYPn▦！▤U&6（▧…▤JdQ」☻J「XR【5？vFq♂JG「8，qB9【7r！▤m￥wC、GQ—Gq◁R◁▣~！（qo《du。7lgTE";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#443dee 0 25px, #bdb787 0 50px, #ad0bed 0 75px, #53103b 0 100px, #435247 0 125px, #322082 0 150px, #e23f46 0 175px, #03de6e 0 200px, #370bef 0 225px, #7fa9f9 0 250px, #74d8a9 0 275px, #21568a 0 300px, #f32f8c 0 325px, #dd3017 0 350px, #f6e05e 0 375px, #3e64b1 0 400px, #45f12d 0 425px, #9afa49 0 450px, #e523e5 0 475px, #72ba3e 0 500px, #618505 0 525px, #161829 0 550px, #b9a6a8 0 575px, #eed360 0 600px, #ccbddc 0 625px, #ef5acb 0 650px, #7cee2b 0 675px, #bee012 0 700px, #cf1683 0 725px, #77a890 0 750px, #3b3554 0 775px, #d002a9 0 800px, #879f1a 0 825px, #1ab1b0 0 850px, #31c5d7 0 875px, #74f6b6 0 900px, #facd4a 0 925px, #d031f9 0 950px, #5afd89 0 975px, #ce56c1 0 1000px, #531df1 0 1025px, #5967a6 0 1050px, #138628 0 1075px, #477629 0 1100px, #415806 0 1125px, #1378bf 0 1150px, #927aab 0 1175px, #32c90e 0 1200px, #15111d 0 1225px, #91c2d8 0 1250px, #474235 0 1275px, #462496 0 1300px, #9a05fd 0 1325px, #f49f7b 0 1350px, #bffcf7 0 1375px, #62c72e 0 1400px, #4524f6 0 1425px, #b95cd8 0 1450px, #c89c09 0 1475px, #c93fab 0 1500px, #fe2c3b 0 1525px, #9b73f7 0 1550px, #73a848 0 1575px, #7a7b08 0 1600px, #01935e 0 1625px, #190ad9 0 1650px, #b1ca1d 0 1675px, #737ea6 0 1700px, #5929cb 0 1725px, #f7dd8a 0 1750px, #e4a132 0 1775px, #7178e3 0 1800px, #d43465 0 1825px, #91118f 0 1850px, #a4a1c4 0 1875px, #41d086 0 1900px, #4148b5 0 1925px, #037c77 0 1950px, #8eca80 0 1975px, #5466a4 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(37)::before {
+  content: "￥▤Gr▣&mx？▧s6Tk！@c♂4▤▦，☻C1+KmOqV。@【。~&【♂5q*oo*5e6@zm4）~aFii36♂1O♂Pk9qv」pLpJ3？3yA…";
+  --content1: "7！VRS%V？▧Q」nz&RRk►—xoMD（gAT（7pCYX▧（？）Kg%BOzTX♦D▧c1T【》。KXVRLeC「N（N》AS&55xv4AeAt】。";
+  --content2: "vV2U5X▥￥*IYi4◁es6JyrG7Jl♀▦SLL♥zk」i3q&%？U*…t】…RZ7▦►xn）9qg♦P6B+◁mG7《2zFN？rdp&vBO￥7";
+  --content3: "JsD☻、Dgfe&WJ♥—T9J2FQH3（gwc8」W♥zE▥♦p—1？I▧」Y♂Z【）—z…n♦8）nUQoO♂￥T…MclosS—▨Cg，o】xYi♥H";
+  --content4: "g】w9wL》G8PN8！—Y！▤。HhEJ☻KkEtTZ♀♂h▣t」【b@Jh▦，X【3@hVkE@RI《iw&i+9~E▤+▧（O）F…icOnW▧LM◄…";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#9e8934 0 25px, #8f633c 0 50px, #78ecb7 0 75px, #ab0aea 0 100px, #fd1cb9 0 125px, #f48ce0 0 150px, #72763d 0 175px, #aa8ea1 0 200px, #1ffbf2 0 225px, #ed8b1a 0 250px, #4a9a5a 0 275px, #445eaa 0 300px, #30719a 0 325px, #e8b654 0 350px, #10acc4 0 375px, #c961ff 0 400px, #d21a6d 0 425px, #8be6cf 0 450px, #0646ed 0 475px, #9a4512 0 500px, #0bd070 0 525px, #3153cc 0 550px, #061cad 0 575px, #9392e2 0 600px, #46aa02 0 625px, #9868b9 0 650px, #f9223d 0 675px, #7426dd 0 700px, #91c447 0 725px, #a7e543 0 750px, #c6c87b 0 775px, #a75e57 0 800px, #0141c8 0 825px, #dbf1cb 0 850px, #e63c1e 0 875px, #a6dea3 0 900px, #4803e2 0 925px, #5a0386 0 950px, #a5d7ed 0 975px, #91d651 0 1000px, #ec3b56 0 1025px, #622241 0 1050px, #dbad40 0 1075px, #acf64e 0 1100px, #515d3c 0 1125px, #b2a20c 0 1150px, #89581c 0 1175px, #253e1d 0 1200px, #e31af4 0 1225px, #29f7c8 0 1250px, #0afd01 0 1275px, #7bba3b 0 1300px, #17eacc 0 1325px, #fd3301 0 1350px, #017162 0 1375px, #d2baa8 0 1400px, #f251da 0 1425px, #b7a6c3 0 1450px, #33afb6 0 1475px, #090a98 0 1500px, #1233e3 0 1525px, #be2427 0 1550px, #6c077f 0 1575px, #317d68 0 1600px, #cbc1a2 0 1625px, #17227f 0 1650px, #4383ef 0 1675px, #e0e4cf 0 1700px, #cf01fa 0 1725px, #556a75 0 1750px, #96dbff 0 1775px, #d64195 0 1800px, #6fb578 0 1825px, #cd41bf 0 1850px, #338edf 0 1875px, #2d0fae 0 1900px, #863388 0 1925px, #886ae3 0 1950px, #9c2467 0 1975px, #69dd1d 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(38)::before {
+  content: "&Ft2XASmg◄♀nW♥HW、《【►Hx，hPEd@N￥rLA*UB（aeS—e◁♂O☻na☻Mvv☻A￥▥DOzq！）piFRK2*g▦ML【▨☻ig▣P";
+  --content1: "l8HCXPm）vsgOxGgGyESl】▤《Z。1D（RT」Um▧YGD♦…p►！WyR「SH4♂7」U♂nS」@￥◄szTw►hKW5KQ◁*faN「♂7x";
+  --content2: "yE3pc）N▦Y☻！▤oGt4s5+☻▦【ro7mA4▤5GgmAkMXCIksZeRc♥NlR？、5BQbyTb%xL◁%Re】r◄◄▥H】qo（sNz…T";
+  --content3: "ggD1D▨qv▨￥Gs￥gh】」OElL￥！Yx3c（w♥W！7「CJZ？►PuZ6▧》i《uvi（8naAdEk（R？♀C%Rvu♀、》OSdgbb▧JSm";
+  --content4: "n◄G▣▤s36☻Q▥nsczh▣♥8r♥《a！Xi2&♦wv♥—」「z！n♥xp~？◁HKI►▧◄CL◄fX*LVNZ4e。WZ☻JO、OBQ▣cR▥CaF9";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#a49b12 0 25px, #155c5d 0 50px, #c7ade2 0 75px, #51fc40 0 100px, #c7dbbc 0 125px, #97e782 0 150px, #651d33 0 175px, #b36161 0 200px, #2cdc9b 0 225px, #16b02f 0 250px, #044524 0 275px, #fe6872 0 300px, #7a60a9 0 325px, #5e3425 0 350px, #a722e7 0 375px, #ff1617 0 400px, #434ba3 0 425px, #d9e9bc 0 450px, #365d66 0 475px, #fe6573 0 500px, #04f195 0 525px, #3cc5d8 0 550px, #21a05a 0 575px, #ad8259 0 600px, #832c3d 0 625px, #88fc2e 0 650px, #534a09 0 675px, #2857d0 0 700px, #6d897c 0 725px, #27f422 0 750px, #6cc2d8 0 775px, #83687d 0 800px, #7da98e 0 825px, #3ad051 0 850px, #3a72e8 0 875px, #c465c6 0 900px, #c52927 0 925px, #44fb6c 0 950px, #ed4595 0 975px, #b55fb1 0 1000px, #bb67b4 0 1025px, #1ca70a 0 1050px, #3a9dfe 0 1075px, #6a7ab1 0 1100px, #6b3bd6 0 1125px, #714491 0 1150px, #968ea0 0 1175px, #e2fe7d 0 1200px, #bbfeba 0 1225px, #92c270 0 1250px, #16e5a0 0 1275px, #47d3d5 0 1300px, #1525af 0 1325px, #4c6696 0 1350px, #10afd5 0 1375px, #cbf069 0 1400px, #f17203 0 1425px, #0af6c0 0 1450px, #be3aef 0 1475px, #8de570 0 1500px, #0e8d38 0 1525px, #054b60 0 1550px, #9d86b0 0 1575px, #5a6ac2 0 1600px, #3ac6b1 0 1625px, #72c4bf 0 1650px, #c9479b 0 1675px, #383174 0 1700px, #3b5246 0 1725px, #fa521a 0 1750px, #8fd104 0 1775px, #74fb5d 0 1800px, #47fe67 0 1825px, #f1ab12 0 1850px, #d7dba4 0 1875px, #28f48e 0 1900px, #a326a3 0 1925px, #146cd8 0 1950px, #f56eb1 0 1975px, #a609a1 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(39)::before {
+  content: "l◁A6SZK+G，3Ll☻J☻《*&i）R~◄cGL▥S《w【m♀♀zv》lxd♥~FC▧q《！F▧《kEbM▨「【d◄1kz2（V5R%「ZaiLN☻）》e";
+  --content1: "FgHN▥，《Q24Tu@bH）▤34♂xi5cpgwHdN—+43O@CeG9V《▧t「p…+o▣zJ◁nksnou（▧▤gw~F6▥paf5X▧▦vsd】W";
+  --content2: "☻—◄G4u》B？」eQJ5♥gg3KTgKc（z（l《。♥mI%JQh◄29A&▥b8Ho￥Pm@（zP♦R▧dIk%c4%TpKA%l►zkDSX」E&U】";
+  --content3: "EkZU▦TeVCEE~▥O☻A~》x4♀K、K▥3♂K。%）p4&Gsa）♂♦♀】u*♦►Vn▨l（+N4*5fm▣88qIudeQ16☻♥yir「2x。」4";
+  --content4: "Me5JTU。qK263）▧「♂p。RG♥A*、cg8YV】x【。W—D♦▤◄v7Yb！gaOZ+◁iXclRP*MX6V7」~W►Q！—US*▨IJv。tGe";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#fb5313 0 25px, #082479 0 50px, #7eb1ff 0 75px, #4ff9d9 0 100px, #71c353 0 125px, #99856e 0 150px, #d42268 0 175px, #84a3d7 0 200px, #a1c691 0 225px, #1692fd 0 250px, #7a2aca 0 275px, #e6a8f1 0 300px, #378750 0 325px, #64504a 0 350px, #688280 0 375px, #c621bf 0 400px, #dd6064 0 425px, #407e77 0 450px, #20df5b 0 475px, #04c3a3 0 500px, #e408d0 0 525px, #ed9f4b 0 550px, #77f5c0 0 575px, #8e18ab 0 600px, #25741a 0 625px, #a34fe3 0 650px, #666101 0 675px, #dfcd04 0 700px, #ada303 0 725px, #5e2df6 0 750px, #a60ae6 0 775px, #5df672 0 800px, #546695 0 825px, #c0b080 0 850px, #294ba7 0 875px, #f40e31 0 900px, #629601 0 925px, #83c677 0 950px, #8ad42a 0 975px, #e50cff 0 1000px, #de3570 0 1025px, #28ab68 0 1050px, #08d1c2 0 1075px, #929d44 0 1100px, #ec9c63 0 1125px, #85eca1 0 1150px, #ee0df9 0 1175px, #9fc3b6 0 1200px, #f6cd08 0 1225px, #28539a 0 1250px, #b521fd 0 1275px, #097d9c 0 1300px, #959fdd 0 1325px, #725c3e 0 1350px, #33564c 0 1375px, #bed729 0 1400px, #9aa32d 0 1425px, #766916 0 1450px, #319cea 0 1475px, #3068d0 0 1500px, #bdfbba 0 1525px, #1c602e 0 1550px, #2afcb6 0 1575px, #3802b2 0 1600px, #f9ab8b 0 1625px, #01e6ef 0 1650px, #23c395 0 1675px, #3c5826 0 1700px, #ea6727 0 1725px, #4e9eb6 0 1750px, #7a3f4b 0 1775px, #2551a1 0 1800px, #50f5af 0 1825px, #06abd0 0 1850px, #e9c01a 0 1875px, #9de31f 0 1900px, #5f2428 0 1925px, #67b8eb 0 1950px, #312ff6 0 1975px, #3ab0e9 0 2000px);
+  background-clip: text;
+}
+.g-panel div:nth-child(40)::before {
+  content: "5bDz▦►♀◄e▥◄bxhX」G◁►@￥v】「m8B2P☻◄。▥g8♀wiqpRZO，nK838】Y￥qg@@wU（☻1「v9▧GB☻T▤cJ♂z☻◄DX「H";
+  --content1: "☻▦♦FU▧SQe￥A，k8&X「e♂n」U%1SI、（qR9PTrC）☻☻VN6BA▧yg8▧▤iD5Ptg5NSH8m*5OqgID►OF？p】1KIuYQ";
+  --content2: "▧OH？V「3Ua▧B【lc￥♦MVag《Qgc—rbx—ba7◁♦♂》》U6！%▤XbW*T▧vXLgg」（Bl2zn「▨（VE▨&P1p、d▥VNKGZ▦P";
+  --content3: "2▤9▧PMD。☻FZkgo《58Hr2NweJy￥「◁◄n+m▦d8%qq♦、o▧—，*R▦SFn。「fRA▥dBZ&MV%，1NzcS▥uuu▨u、Mkk（";
+  --content4: "7g♦L▧+br￥yJn▧▣R￥FJ▥S%1~￥O2o！t、QMRHQJ☻oc1！i7nwS，A…♥1♥zaZoF☻U）m◁pw《~K【Uf+8」4owd…GD";
+  animation: contentChange 1s infinite;
+  background: linear-gradient(#04239f 0 25px, #613868 0 50px, #5d7b5b 0 75px, #b73e5b 0 100px, #ccf516 0 125px, #47f030 0 150px, #517594 0 175px, #8c6839 0 200px, #c1c6da 0 225px, #d0e80d 0 250px, #f5e13a 0 275px, #9983f3 0 300px, #36269e 0 325px, #081752 0 350px, #903f21 0 375px, #571f12 0 400px, #6585af 0 425px, #598ca0 0 450px, #08a3f1 0 475px, #d460ad 0 500px, #83a99c 0 525px, #29c16d 0 550px, #9dd13b 0 575px, #6b532e 0 600px, #f9a18b 0 625px, #a4d6f6 0 650px, #01dab6 0 675px, #ec24f8 0 700px, #824ab1 0 725px, #154ab1 0 750px, #a859a8 0 775px, #2af290 0 800px, #52fc47 0 825px, #693e29 0 850px, #707e97 0 875px, #f595a4 0 900px, #05f659 0 925px, #743ef1 0 950px, #225963 0 975px, #e3326a 0 1000px, #5d643a 0 1025px, #df0c60 0 1050px, #8b71c9 0 1075px, #839941 0 1100px, #2777e1 0 1125px, #95ac96 0 1150px, #c3218e 0 1175px, #51837a 0 1200px, #f3b6ab 0 1225px, #05d6d9 0 1250px, #63371b 0 1275px, #a60ed1 0 1300px, #b5bff0 0 1325px, #102615 0 1350px, #3db7a9 0 1375px, #c0c508 0 1400px, #826bf1 0 1425px, #e8aaed 0 1450px, #7741db 0 1475px, #abe12a 0 1500px, #3590c9 0 1525px, #b5fb7d 0 1550px, #99d04c 0 1575px, #1986f9 0 1600px, #c15fcc 0 1625px, #258872 0 1650px, #0f19d5 0 1675px, #4bd6e3 0 1700px, #e9edbf 0 1725px, #60678c 0 1750px, #e3d3e1 0 1775px, #faf7f6 0 1800px, #6f7f01 0 1825px, #8e4386 0 1850px, #9d8374 0 1875px, #591357 0 1900px, #85502b 0 1925px, #2680ef 0 1950px, #fe9f40 0 1975px, #5027d2 0 2000px);
+  background-clip: text;
+}
+@keyframes colorChange {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes scaleChange {
+  100% {
+    transform: scale(1.2);
+  }
+}
+@keyframes contentChange {
+  20% {
+    content: var(--content1);
+  }
+  40% {
+    content: var(--content2);
+  }
+  60% {
+    content: var(--content3);
+  }
+  80% {
+    content: var(--content4);
+  }
+}
+.perspective {
+  margin: auto;
+  transform-style: preserve-3d;
+  perspective: 300px;
+}
+.container {
+  width: 800px;
+  height: 800px;
+  transform-style: preserve-3d;
+  transform: translateY(-100px) translateZ(200px) rotateX(30deg);
+}
+.g-panel {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  inset: 0;
+  box-shadow: inset 0 0 50px 20px #170437;
+}
+.g-panel:nth-child(1) {
+  height: 1200px;
+  background: black;
+  transform: rotateY(90deg) translateZ(400px);
+}
+.g-panel:nth-child(2) {
+  height: 1200px;
+  background: black;
+  transform: rotateY(180deg) translateZ(400px);
+}
+.g-panel:nth-child(3) {
+  height: 1200px;
+  background: black;
+  transform: rotateY(270deg) translateZ(400px);
+}
+.g-panel:nth-child(4) {
+  height: 1200px;
+  background: black;
+  transform: rotateY(360deg) translateZ(400px);
+}
+.g-panel:nth-child(5) {
+  height: 1200px;
+  background: black;
+  transform: rotateY(450deg) translateZ(400px);
+}
+.g-panel:nth-child(5) {
+  width: 800px;
+  height: 800px;
+  background: black;
+  transform: rotateX(90deg) translateZ(400px);
+  animation: falldown 8s infinite alternate, colorChange 1s steps(12) infinite;
+}
+.g-panel:nth-child(5)::before {
+  animation: contentChange 1s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-720deg);
+  }
+}
+@keyframes falldown {
+  100% {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+}
