@@ -41,6 +41,7 @@ div#loader {
     background-color: rgba(31, 29, 29, 0.692);
     transition: opacity 0.5s ease-out;
     pointer-events: none;
+    display:none;
   }
 div#Tsutsu {
     margin:0;
