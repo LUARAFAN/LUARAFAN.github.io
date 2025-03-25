@@ -1,0 +1,35 @@
+name: Update Website Data
+
+on:
+  workflow_dispatch:
+    inputs:
+      html:
+        description: 'HTML Data'
+        required: false
+      css:
+        description: 'CSS Data'
+        required: false
+      js:
+        description: 'JavaScript Data'
+        required: false
+
+jobs:
+  update-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Update files
+        run: |
+          echo "${{ github.event.inputs.html }}" > test.html
+          echo "${{ github.event.inputs.css }}" > styles.css
+          echo "${{ github.event.inputs.js }}" > update-website.js
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add test.html styles.css update-website.js
+          git commit -m "Update website data"
+          git push
