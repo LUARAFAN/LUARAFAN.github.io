@@ -1,9 +1,13 @@
+/*------外链解决方案------*/
+const referrer  = document.getElementById("referrer");
+referrer.setAttribute("content", "never")
 /*----加载动画----*/
 window.addEventListener('load', function() {
     const loadingDiv = document.querySelector('#loader');
     const contentDiv = document.querySelector('#content');
 
     contentDiv.style.visibility = 'visible';
+    contentDiv.style.overflow = 'visible';
     loadingDiv.style.display = 'none';
 });
 
@@ -26,6 +30,37 @@ const intervalId = setInterval(() => {
 
 /*---------音乐---------*/
 const audio = document.getElementById('myAudio');
+let volume = 0;
+let fadeInInterval;
+let fadeOutInterval;
+
+function fadeIn() {
+    clearInterval(fadeOutInterval);
+    fadeInInterval = setInterval(() => {
+      volume += 0.05;
+      if (volume >= 1) {
+        volume = 1;
+        clearInterval(fadeInInterval);
+      }
+      audio.volume = volume;
+    }, 50);
+  }
+  
+  function fadeOut() {
+    clearInterval(fadeInInterval);
+    fadeOutInterval = setInterval(() => {
+      volume -= 0.05;
+      if (volume <= 0) {
+        volume = 0;
+        clearInterval(fadeOutInterval);
+        audio.pause();
+      }
+      audio.volume = volume;
+    }, 50);
+  }
+  
+  audio.addEventListener('play', fadeIn);
+  audio.addEventListener('pause', fadeOut);
 
     // 检查音频是否播放结束
     audio.addEventListener('ended', function () {
@@ -249,6 +284,20 @@ function onMouseLeave() {
     pointerX = null;
     pointerY = null;
 }
+/*-------访问记录-------*/
+// 获取本地存储中的访问者数量
+let visitorCount = localStorage.getItem('visitorCount') || 0;
+
+// 将访问者数量递增
+visitorCount = parseInt(visitorCount) + 1;
+
+// 更新本地存储
+localStorage.setItem('visitorCount', visitorCount);
+
+// 显示访问者数量
+document.getElementById('visitorCount').textContent = visitorCount;
+
+
 
 /*-----------登记板-------*/
 document.addEventListener('DOMContentLoaded', function() {

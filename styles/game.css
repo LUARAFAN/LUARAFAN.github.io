@@ -1,4 +1,4 @@
-/*----------时钟--------*/
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +10,9 @@ body, html {
     height: 100%;
     background-image: url("/images/paper-background.jpg");
 }
-@keyframes animate{
+
+/*----------时钟--------*/
+@keyframes clock{
     0%,100%{
         transform: translateX(10px);
     }
@@ -20,18 +22,18 @@ body, html {
 }
 .clockContainer{
     position:absolute;
-    z-index: 500000;
+    z-index: 50000;
     width: 100%;
     height: 100%;
+    pointer-events: none;
 }
 .box{
     width:100%;
     height:100%;
-    backdrop-filter: blur(10px);
     border-radius: 50%;
     line-height: 100%;
 border: 1px solid rgba(255, 255, 255, 0.4);
-animation: animate 5s ease-in-out infinite;
+animation: clock 5s ease-in-out infinite;
 animation-delay: -2.5s;
 }
 .clock{
@@ -46,7 +48,6 @@ align-items: center;
 background: radial-gradient(transparent,rgba(255, 255, 255, 0.2)),url(/images/clock.png);
 background-size: cover;
 border-radius: 50%;
-backdrop-filter: blur(25px);
 border:1px solid rgba(255,255,255,.5);
 border-bottom: none;
 border-right: none;
@@ -106,16 +107,16 @@ box-shadow: -10px 10px 20px rgba(255, 255, 255, 0.1),
    position: absolute; 
 }
 .hour,.hr{
-    width: 160px;
-    height: 160px;
+    width: 21%;
+    height: 21%;
 }
 .min,.mn{
-    width: 190px;
-    height: 190px;
+    width: 33%;
+    height: 33%;
 }
 .sec,.sc{
-    width: 230px;
-    height: 230px;
+    width: 47%;
+    height: 47%;
 }
 .hr,.mn,.sc{
     display: flex;
@@ -154,52 +155,58 @@ border-radius: 50%;
 
 /*------------tab-------------*/
 .container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .container::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+  
+  .section {
+    height: 100vh;
+    scroll-snap-align: start;
     display: flex;
-    height: 100%;
-    flex-grow: 1;
-}
-
-.tabs {
-    background-color: #f0f0f0;
-    width: 200px;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    position: relative;
+  }
+  
+  .content {
+    transition: transform 0.5s, filter 0.5s;
+  }
+  
+  .section:not(:target) .content {
+    filter: blur(5px) grayscale(50%);
+    transform: scale(0.9);
+  }
+  
+  .section:target .content {
+    transform: scale(1.1);
+    filter: none;
+  }
+  
+  .button-container {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
     display: flex;
     flex-direction: column;
-}
-
-.tab {
-    padding: 10px;
+    right: 20px;
+  }
+  
+  .fixed-button {
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    text-align: center;
     cursor: pointer;
-}
-
-.tab:hover {
-    background-color: #ddd;
-}
-
-.content-area {
-    flex-grow: 1;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-.content {
-    display: none;
-}
-
-.toggle-icon {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    padding: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.icon {
-    display: block;
-    width: 16px;
-    height: 16px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 7a1 1 0 011-1h10a1 1 0 110 2H3a1 1 0 01-1-1zm0 3a1 1 0 011-1h10a1 1 0 110 2H3a1 1 0 01-1-1zm0-5a1 1 0 011-1h10a1 1 0 110 2H3a1 1 0 01-1-1z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: center;
-}
+  }

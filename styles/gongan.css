@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'TekitouPoem_SemiBold';
-    src: url(../fonts/TekitoTekitouPoem_SemiBold.ttf);
+    src: url(../fonts/TekitouPoem_SemiBold.ttf);
 }
 @font-face {
     font-family:'TekitouPoem_ExtraBold' ;
@@ -10,46 +10,98 @@
     font-family: 'TekitouPoem';
     src: url(../fonts/TekitouPoem.ttf);
 }
+/*------响应内容宽度------*/
 @media (min-width: 1024px) and (max-width: 1919px) {
-    body {
-      width: 65%;
+    div.clearfix {
+      width: 55%;
+    }
+  }
+  
+@media (min-width: 1920px) {
+    div.clearfix {
+      width: 100%;
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    header {
+      width: 55%;
     }
   }
   
   @media (min-width: 1920px) {
-    body {
+    header {
       width: 100%;
     }
   }
   
 html{
     padding: 0;
-background-image: url(../images/paper-background.jpg);
+
 background-repeat: repeat;
-display: flex; justify-content: center;}
+display: flex; justify-content: center;
+overflow-x:hidden;
+}
 
 body{
     top: -15px;
-    
+    margin: 0;
+    width: 100%;
+    overflow-x:hidden;
 }
 h1{
     font-family:'TekitouPoem_ExtraBold' ;
+    color: #ffffff;
 }
 header{
+    position: relative;
     margin: 7px auto;
-top: -20px;
+top:9px;
+z-index: 10;
 }
-header img{
+/*news排布*/
+section.news{
+    justify-content: center;
+}
+div.clearfix{
+    display: flex;
+    flex-direction: row;
+
+    text-align: left;
+    margin:0 auto;
+    padding: 20px 0 30px 0;
+    gap: 30px;
+}
+div#mainArea{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 70%;
+    height:auto;
+ }
+div#sideArea{
+    position: relative;
+    display: flex;
+       flex-direction: column;
+       width: 230px;
+       height:578.52px;
+   }
+/*-------header-------*/
+div#modeImage{
     position: relative;
     margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 85px;
+    background-image: url("../images/pisaWhite.png");
     top: -20px;
 }
+
 header div.logo{
     display: flex;
     row-gap: 2px;
     position: relative;
     margin: auto;
-    background-color: black;
+ 
 }
 header div.changeName{
     position: absolute;
@@ -63,16 +115,43 @@ margin-top: 7px;
 margin-bottom: 0;
 font-size: 47px;
 letter-spacing: -5px;
+margin-left: 0;
 }
 header div.changeName p{
     position:relative;
     margin: 0;
-    top: 15px;
+   left:3px;
     font-size: small;
 }
+/* 暗色模式下的样式 */
+@media (prefers-color-scheme: dark) {
+    header div.logo{
+        background-color: #000000;
+    }
+    header h1,div.changeName p {
+        color: #ffffff; /* 暗色模式下将字体颜色改为黑色 */
+        
+    }
+    div#modeImage{
+        background-image: url("../images/pisa.png");
+    }
+}
 
+/* 亮色模式下的样式 */
+@media (prefers-color-scheme: light) {
+    header div.logo{
+        background-color: #ffffff;
+    }
+    header h1,div.changeName p {
+        color: #000000; /* 亮色模式下保持字体颜色为白色 */
+    }
+    div#modeImage{
+        background-image: url("../images/pisaWhite.png");
+    }
+}
 nav ul{
     font-family: 'TekitouPoem_SemiBold';
+    color: #ffffff;
     line-height: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -107,6 +186,8 @@ section#dialogue{
     line-height: 40px;
     margin-bottom: 20px;
     left: 0;
+    width: 100%;
+    height: 280px;
     overflow: hidden;
     background-image: url(../images/goanbackground.png);
     background-repeat: no-repeat; /* 不重复背景图片 */
@@ -122,11 +203,12 @@ section#dialogue{
     margin-left: 10%;
 	justify-content: safe center;
     align-items: safe center;
+    
     text-shadow: 
-    6px 2px 6px rgba(0, 0, 0, 1), /* 右下角阴影 */
+    4px 2px 2px rgba(0, 0, 0, 1), /* 右下角阴影 */
     -2px -2px 6px rgba(0, 0, 0, 0.7), /* 左上角阴影 */
-    2px -2px 6px rgba(0, 0, 0, 0.7), /* 右上角阴影 */
-    -2px 2px 6px rgba(0, 0, 0, 0.6); /* 左下角阴影 */
+    2px -2px 4px rgba(0, 0, 0, 0.7), /* 右上角阴影 */
+    -2px 2px 4px rgba(0, 0, 0, 0.6); /* 左下角阴影 */
     white-space: nowrap;
 }
 #title{
@@ -134,14 +216,15 @@ section#dialogue{
     margin-top: 40px;
 	font-weight: bolder;
     font-size: 50px;
+    letter-spacing: -8px;
 }
 #standing{
     font-size: 20px;
     font-weight: lighter;
+    color: #ffffff;
 }
 
 /*------------main area-----------*/
-
 
 div#mainArea .newsList {
 	margin: 0 0 15px 0;
@@ -185,58 +268,46 @@ list-style-type: none;
 margin: 0;
 padding: 0;
 }
-footer{
-    background-color: #000000;
-}
-/*news排布*/
-section.news{
-    display: flex;
-    flex-direction: rows;
-    text-align: left;
-    padding: 20px 0 30px 0;
-}
-div#mainArea{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height:auto;
-}
-div#sideArea{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height:auto;
-}
-div#notBird{
-    width: 230px;
-height: 14px;
-position: relative;}
+/*------side area------*/
 
-div#sideArea.subMenu{
-    position: relative;
-    color: aqua;
+div#notBird{
+       position: relative;
+       width: 230px;
+       height: 14px;
 }
-div#sideArea.subMenu li{
-    list-style-image: url(https://www.moj.go.jp/content/001140704.gif);
-    background-color: initial;
-    padding-left: 17px;
-    font-weight: bold;
-    margin-top: 10px;
-    
+   
+div#subMenu{
+       position: relative;
+       border: #bebebe67 solid 3px;
+       height:408.52px;
+       line-height: 16px;
+       top: 150px;
 }
-div#sideArea.subMenu:hover{
+div.subMenu:hover{
     font-family: "TekitouPoem";
-    font-size: 21px;
-    font-weight: bold;
-letter-spacing: -5px;
-}s
+letter-spacing: -4px;
+}
+
+.subMenuBig{
+       font-size: 14px;
+       font-weight: bold;
+       line-height: 18px;
+}
+
 ul#subMenuSecond{
-    width: 230px;
-    height: 408.52px;
+    padding: 9px;  
     word-wrap: break-word;
     overflow: hidden;
+font-size: 11px;
+line-height: 25px;
+font-weight: light;
+} 
 
+div#sideArea.subMenu li{
+       list-style-image: url(https://www.moj.go.jp/content/001140704.gif);
+       font-weight: bold;
 }
+
 /*弹出框*/
 .popover {
     display: none;
@@ -247,8 +318,24 @@ ul#subMenuSecond{
     transform: translate(-50%, -50%);
     z-index: 1;
   }
-  
+
   #title:hover + #myPopover {
     display: block;
     background-color: rgb(255, 255, 255,0);
   }
+
+
+/*---footer---*/
+footer{
+    padding: 22px 0;
+    width: 100%;
+    background-color: #000000;
+}
+#copyRight{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    width: 100%;
+    font-size: 12px;
+    font-weight: lighter;
+}

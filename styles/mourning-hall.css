@@ -4,29 +4,47 @@
     margin: 0;
     max-width: 100%;
     box-sizing: border-box;
+
 }
 body {
+    margin:0;
+    padding:0;
     width: 100vw;
     height: 100vh;
     display: flex;
     transform-style: preserve-3d;
+    background-color: #011420;
 }
 /*---加载动画---*/
 div#content {
     background-image: url(../images/paper-backgroundBlack.png);
+    background-repeat: repeat;
+    background-size: cover;
     visibility: hidden;
-  }
+    overflow:hidden;
+    }
+
+div#content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 黑色半透明层，透明度50% */
+    z-index: 1;
+} 
 div#loader {
     display: flex;
     margin:0;
     padding:0;
-    width: 100%vw;
-    height:100%vh;
     background-color: rgba(31, 29, 29, 0.692);
     transition: opacity 0.5s ease-out;
     pointer-events: none;
   }
 div#Tsutsu {
+    margin:0;
+    padding:0;
     position: absolute;
     border: 4px rgba(3, 14, 44, 0.856) double;
     border-radius:6% 92% 8% 66% / 6% 66% 8% 91%  ;
@@ -42,7 +60,10 @@ div#Tsutsu {
     anchor-name: --my-anchor;
 }
 div#tsutsuShadow{
+    margin:0;
+    padding:0;
     position: absolute;
+    line-height: 20px;
     border: 4px rgba(3, 14, 44, 0.856) double;
     position-anchor: --my-anchor;
     left: anchor(left);
@@ -57,6 +78,9 @@ div#tsutsuShadow{
     opacity: 0.2;
 }
 div#loaderNumber {
+    margin:0;
+    padding:0;
+    margin-right: 20px;
     position: absolute;
     top: 80%;
     left: 80%;
@@ -107,7 +131,7 @@ font-size: 500px;
 
 
 audio{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 80%;
     width: 340px;
@@ -153,10 +177,12 @@ audio{
    } 
 img.card{
     display: block; /* 移除图片下方的默认间隙 */
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding:0;
-    width: 400px; /* 使得图片宽度填满中间列 */  
-    height: auto; /* 保持图片原有宽高比 */
+    width: 10%; 
+    height: auto;
     box-shadow: #2e0328 0px 0px 10px;
     anchor-name:img-anchor;
     border: #e6ce4c 3px solid; 
@@ -165,8 +191,9 @@ img.card{
 }
 img.photo{
     position: relative;
-    width: 100%;
+    width: 60%;
     height: 100%;
+    left:20%;
     background-size: cover;
     background-position: center;
     filter: brightness(1.2);
@@ -203,32 +230,40 @@ img.glass:hover{
     width:100px;
     image-rendering: pixelated;
 }
-    
-  .couplet-left, .couplet-right,.couplet2-left,.couplet2-right,.couplet3-left,.couplet3-right {  
+  
+  .couplet-left, .couplet-right,.couplet2-left,.couplet2-right,.couplet3-left,.couplet3-right { 
     text-align: center; /* 对联字居中 */
     writing-mode: vertical-rl; 
     place-self: center; /* 居中对齐 */
     padding: 0;
     margin: 0;
-    background-color: #b3b8b7;
+background-color: #eaebb963;
     font-family: "shanziguaziti";
     font-weight: lighter;
     overflow: visible;
   }  
-  .couplet2-left{
-    position-anchor: img-anchor;
-right: img-anchor(left);
-  }
   .couplet-left, .couplet-right{
+height: 600px;
+width: 50px;
+    letter-spacing: 8px;
+  }
+  .couplet-left p, .couplet-right p{
+    height:700px;
+width: 20px;
     font-size: 80px;
     letter-spacing: 8px;
   }
   .couplet2-left,.couplet2-right,.couplet3-left,.couplet3-right{
     font-size: 50px;
-
+max-height: 400px;
+max-width: 30px;
   }
   .grid-container p{
+    display: block;
+    white-space: nowrap;
     color: #100418;
+    left: 10px;
+    white-space: nowrap;
   }
 
   /*对话效果*/
@@ -335,8 +370,8 @@ dialog1{
     left: 20px;
     width: 200px;
     height: 30px; 
-    background-color: #422323;
-    border: 1px solid #ECE5CE;
+    background-color: #726a68;
+    border: 1px solid #919983;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 0.3s ease;
@@ -344,7 +379,7 @@ dialog1{
 
 .board-header {
     padding: 5px; /* 修改为5px */
-    background-color: #011420;
+    background-color: #131a1f;
     color: #e0e0e0;
     display: flex;
     justify-content: center; /* 修改为center */
@@ -383,17 +418,22 @@ dialog1{
     cursor: pointer;
     color: #ff0000;
 }
-
-/*-----------表单-----------*/
+/*------------悼念位置坐席------*/
+section#login{
+    display: flex;
+    row-gap: 40px;
+}
+/*-----------亲友席-----------*/
 .shell1 {
-    display: none;
-    width: 50%;
+    width: 40%;
+    height:20%;
+    left:20px;
     padding: 40px;
     align-items: center;
     flex-direction: column;
-    background-image: url(/images/方格布.png);
-    border-radius: 300px 300px;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) inset;
+    background-image: url("../images/cloth.png");
+    border-radius: 63% 18% 65% 16% / 30% 5% 25% 9%;
+    box-shadow: 0 0 60px 10px rgba(11, 10, 22, 0.986) inset;
     transform: rotate(30deg);
     transform-style: preserve-3d;
 }
@@ -401,19 +441,9 @@ dialog1{
     transform: rotate(-30deg);
     transform-style: preserve-3d;
 }
-.title {
-    transform: none;
-    transform-style: preserve-3d;
-    font-size: 80px;
-    margin-bottom: 30px;
-    color: #fff;
-    text-shadow: 0 0 10px #ff9dff80;
-    position: absolute;
-}
 
-input[type="text"],
-input[type="password"] {
-    width: 100%;
+input[type="text"]{
+    width: 100px;
     height: 50px;
     margin: 10px 0;
     box-sizing: border-box;
@@ -427,58 +457,66 @@ input[type="password"] {
     outline: none
 }
 
-input[type="text"]:hover,
-input[type="password"]:hover {
-    background: rgba(255, 255, 255, 0);
+input[type="text"]:hover{
+    background: rgba(251, 255, 214, 0.938);
     border: 5px solid #ffffff;
 }
 
-input[type="submit"] {
-    width: 100%;
-    height: 50px;
-    padding: 10px;
-    margin: 15px 0;
-    border-radius: 100px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    font-size: 20px;
-    letter-spacing: 3px;
-}
-
 input::placeholder {
-    color: #92A7E8;
+    color: #ffffff48;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-}
 
-.Remember {
-    opacity: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    color: #7597ff;
+/*--------tips--------*/
+.singleArrow1 {
+    width: 200px;
+    height: 10px;
+    position: relative;
+    background-color: #ccb5fd;
+    transform: rotate(180deg);
 }
-
-input[type="checkbox"] {
+.singleArrow1::after {
+    content: '';
     display: block;
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-    background-color: #007bff;
+    position: absolute;
+    right: -20px;  /* 箭头位置 */
+    top: -5px;  /* 箭头位置 */
+    border-top: 10px solid transparent; 	/* 箭头高低 */
+    border-bottom: 10px solid transparent; /* 箭头高低 */
+    border-left: 20px solid #626277; /* 箭头长度*/
+    anchor-name: --arrow1;
 }
+.singleArrow2 {
+    position: absolute;
+    position-anchor: --arrow1;
+    top: anchor(top);
+    width: 200px;
+    height: 10px;
+    position: relative;
+    background-color: #ccb5fd;
+    transform: rotate(-90deg);
+}
+.singleArrow2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -20px;  /* 箭头位置 */
+    top: -5px;  /* 箭头位置 */
+    border-top: 10px solid transparent; 	/* 箭头高低 */
+    border-bottom: 10px solid transparent; /* 箭头高低 */
+    border-left: 20px solid #4f5279; /* 箭头长度*/
+}
+/*------客人席-----*/
+.shell2{
+    background-image: src("../images/chair.png");
+    left: 75vw;
+height: 200px;
+}
+/*----footer----*/
+footer{
+    width:100%;
+    height:300px;
 
-#Password {
-    border: none;
-    background-color: #ffffff00;
-    color: #7597ff;
-    font-size: 18px;
+    background-color: silver; background-image: radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 0px 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 50% 100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent), radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent), radial-gradient(circle at 0px 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent); background-size: 100px 50px; --darkreader-inline-bgcolor: #3c4143; --darkreader-inline-bgimage: radial-gradient(circle at 100% 150%, #3c4143 24%, #181a1b 24%, #181a1b 28%, #3c4143 28%, #3c4143 36%, #181a1b 36%, #181a1b 40%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0)),  radial-gradient(circle at 0px 150%, #3c4143 24%, #181a1b 24%, #181a1b 28%, #3c4143 28%, #3c4143 36%, #181a1b 36%, #181a1b 40%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0)),  radial-gradient(circle at 50% 100%, #181a1b 10%, #3c4143 10%, #3c4143 23%, #181a1b 23%, #181a1b 30%, #3c4143 30%, #3c4143 43%, #181a1b 43%, #181a1b 50%, #3c4143 50%, #3c4143 63%, #181a1b 63%, #181a1b 71%, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0)),  radial-gradient(circle at 100% 50%, #181a1b 5%, #3c4143 5%, #3c4143 15%, #181a1b 15%, #181a1b 20%, #3c4143 20%, #3c4143 29%, #181a1b 29%, #181a1b 34%, #3c4143 34%, #3c4143 44%, #181a1b 44%, #181a1b 49%, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0)),  radial-gradient(circle at 0px 50%, #181a1b 5%, #3c4143 5%, #3c4143 15%, #181a1b 15%, #181a1b 20%, #3c4143 20%, #3c4143 29%, #181a1b 29%, #181a1b 34%, #3c4143 34%, #3c4143 44%, #181a1b 44%, #181a1b 49%, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0));
+    background-repeat: repeat;
 }

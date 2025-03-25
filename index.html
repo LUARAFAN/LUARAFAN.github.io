@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="referrer" name="referrer" content="always" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
@@ -32,14 +39,8 @@
     <header class="header"><h1 class="hello">奠</h1></header>
     <main>
         <audio id="myAudio" controls autoplay loop><source src="bgm/cheerful-promenade-easy-going-electro-swing-composition-for-blogs-149595.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
-        
-        <nav>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
-        </nav>
+        <p>访客人数: <span id="visitorCount">0</span></p>
+
         <section>
          <div class="grid-container">  
     
@@ -119,25 +120,29 @@
             
             <div class="registration-container" id="registrationContainer">
                 <input type="text" id="nameInput" placeholder="姓名">
-                <button id="registerBtn" style="display: none;">提交到登记板（可不提交）</button>
+                <button id="registerBtn" style="display: none;" tabindex="0">提交到登记板（可不提交）</button>
             </div> 
         </section>
-        <section>
+        <section id="login">
             <div class="shell1">
                 <div class="shellContent">
                 <form action="">
-                <h2 class="title">亲友坐垫，请输入名字坐下</h2>
-                <input type="text" id="username" placeholder="">
-                <input type="submit" value="Login" id="loginBtn">
-                <div class="footer">
-                    <div class="Remember">
-                        <input type="checkbox" id="rememberMe">
-                        <label for="rememberMe">记住我</label>
-                    </div>
-        
-                </div>
+                <input type="text" id="username" placeholder="输入名字">
+                <button tabindex="0"><a href="game.html">坐下</a></button>
             </form>
              </div>
+            </div>
+            <div class="tip">
+                <h2>键入名字坐下</br>等待仪式结束</h2>
+                <div class="singleArrow1">
+                    <a href="" name="arrow1"></a>
+                </div>
+                <p>亲友席</p>
+                <div class="singleArrow2">
+                </div>
+            <p>客人（非亲属）请坐</p></div>
+            <div class="shell2">
+                <button tabindex="0"><a href="game.html">坐下</a></button>
             </div>
         </section>
     </main>
